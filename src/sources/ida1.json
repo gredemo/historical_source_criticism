@@ -1,0 +1,113 @@
+{
+  "id": "ida_lindgren_kansas_1871",
+  "title": "Ida Lindgren - Brev från Kansas, 1871",
+  "type": "primary_source",
+  
+  "full_text": "Amerika kan vara bra i många avseenden, men visst ej att hava tjänare. Ty om de äro aldrig så bra i Sverige – så fort de komma på Amerikas fria jord, bli de långt ifrån bra, utan vilja vara herrar och damer själva och vilja snarare passas upp än passa. [...] Händerna vilja ej rätt vänja sig vid dessa arbeten, utan äro än rosor, än kardborrar, men aldrig sammetslena liljor. [...] Häromkvällen... knackade det på dörren... kommo parvis in ej mindre än 20 personer. De kallade detta för ”surprise party”.",
+  
+  "level1": {
+    "instruction": "Vi ska undersöka Idas nya liv i Amerika. Hitta orden som beskriver arbetet och de sociala förändringarna.",
+    
+    "step1": {
+      "title": "Steg 1: Det hårda arbetet",
+      "instruction": "Ida skriver om hur hennes händer förändrats av allt arbete. Klicka på de ord hon använder för att beskriva sina händer nu.",
+      "hint": "Leta efter växter som sticks eller är röda: 'rosor', 'kardborrar'.",
+      "text_highlight": "Och händerna vilja ej rätt vänja sig vid dessa arbeten, utan äro än rosor, än kardborrar, men aldrig sammetslena liljor.",
+      "correct_words": ["rosor", "kardborrar"],
+      "success_threshold": 2,
+      "feedback": {
+      "rosor": "Bra! Rosorna symboliserar hoppet i början.",
+      "kardborrar": "Helt rätt, det beskriver det hårda arbetet."
+    }
+},
+    
+    "step2": {
+      "title": "Steg 2: Tjänarna som blev herrar",
+      "instruction": "Ida märker att samhället är annorlunda i Amerika. Vilka ord använder hon för att beskriva vad tjänarna vill bli?",
+      "hint": "Leta efter: 'herrar', 'damer', 'passas upp'.",
+      "text_highlight": "så fort de komma på Amerikas fria jord... vilja vara herrar och damer själva och vilja snarare passas upp än passa.",
+      "correct_words": ["herrar", "damer", "passas", "upp"],
+      "success_threshold": 2,
+      "feedback": {}
+    },
+    
+    "step3": {
+      "title": "Steg 3: En ny tradition",
+      "instruction": "Hitta det engelska uttrycket för den oväntade festen Ida beskriver.",
+      "hint": "Leta efter ett uttryck inom citattecken i slutet av texten.",
+      "text_highlight": "Vad tycker du, ha de ej lustiga tillställningar? De kallade detta för ”surprise party”.",
+      "correct_words": ["surprise", "party"],
+      "success_threshold": 2,
+      "feedback": {}
+    }
+  },
+  
+  "level2": {
+  "title": "Nivå 2: Analys av klass och status",
+  "source_title": "Idas beskrivning av tjänarna",
+  "instruction": "Läs Idas text och fundera på hur synen på klass förändras i det nya landet.",
+  "source_text": "Amerika kan vara bra i många avseenden, men visst ej att hava tjänare. Ty om de äro aldrig så bra i Sverige – så fort de komma på Amerikas fria jord, bli de långt ifrån bra, utan vilja vara herrar och damer själva och vilja snarare passas upp än passa.",
+  "template": {
+    "step1": {
+      "question": "Vad tror du Ida menar med att tjänarna vill vara 'herrar och damer själva'?",
+      "type": "dropdown",
+      "options": [
+        { "text": "De vill tjäna mer pengar i Sverige.", "correct": false, "feedback": "Nja, hon skriver om hur de förändras när de når Amerika." },
+        { "text": "De vill inte längre underordna sig andra utan vara jämlika.", "correct": true, "feedback": "Rätt! Den 'fria jorden' gör att de gamla klassgränserna suddas ut." },
+        { "text": "De vill köpa fina kläder.", "correct": false, "feedback": "Det handlar mer om deras status och vilja att bli uppassade." }
+      ],
+      "template_output": "Ida beskriver en social förändring där [VALT SVAR]."
+    },
+    "step2": {
+      "question": "Hur beskriver hon sina händer för att visa att hon nu gör allt arbete själv?",
+      "type": "text_input",
+      "min_length": 10,
+      "required_keywords": ["rosor", "kardborrar", "liljor"],
+      "min_keywords_match": 1,
+      "example": "Händerna är som kardborrar men aldrig sammetslena liljor.",
+      "template_output": "Hon använder liknelsen: [ELEVENS CITAT]."
+    }
+  }
+},
+  
+  "level3": {
+    "title": "Nivå 3: Källkritik - Perspektiv och Typ",
+    "instruction": "Fundera på källans betydelse för historiker.",
+    "source_comparison": {
+      "source_a": {
+        "title": "Ida Lindgren (Privat brev)",
+        "perspective": "En kvinna som skriver till sin syster om sin tunga vardag."
+      },
+      "source_b": {
+        "title": "Emigrationsreklam (Broschyr)",
+        "text": "I Amerika väntar rikedom och bördig jord för alla! Här behöver ingen slita förgäves.",
+        "type": "Reklam/Propaganda",
+        "perspective": "Vill locka folk att flytta."
+      }
+    },
+    "task": {
+      "question": "Varför är Idas brev en viktig källa trots att hon bara skriver om 'småsaker' som kragar och disk?",
+      "type": "free_text",
+      "min_words": 30,
+      "evaluation": {
+        "required_concepts": [
+          {
+            "concept_name": "Vardagshistoria",
+            "keywords": ["vardag", "verklighet", "kvinna", "arbete", "sanning", "privat"],
+            "points": 1,
+            "feedback": "✅ Bra! Du ser värdet i den personliga berättelsen."
+          },
+          {
+            "concept_name": "Kritik av myten",
+            "keywords": ["skillnad", "reklam", "svårt", "slita", "inte bara bra"],
+            "points": 1,
+            "feedback": "✅ Utmärkt! Du kopplar brevet till att det ger en mer nyanserad bild än reklamen."
+          }
+        ]
+      },
+      "model_answer": {
+        "text": "Idas brev är en förstahandskälla som ger oss en inblick i kvinnors vardag och det hårda arbetet som ofta utelämnades i reklambroschyrer. Det visar också de sociala spänningarna när det svenska klassamhället mötte den amerikanska idén om jämlikhet (att tjänare ville bli herrar)."
+      }
+    }
+  }
+}

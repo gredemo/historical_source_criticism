@@ -1,0 +1,378 @@
+{
+  "id": "himmler_posen_1943",
+  "title": "Heinrich Himmler - Tal i Posen, 4 oktober 1943",
+  "type": "primary_source",
+  
+  "full_text": "Jag syftar nu på judeevakueringen, utrotandet av det judiska folket. Det är sådant som är lätt att säga. 'Det judiska folket utrotas', säger varje partikamrat, 'naturligtvis, det står i vårt program, eliminering av judarna, utrotning, det gör vi'. Och så kommer de alla, de präktiga 80 miljonerna tyskar, och var och en har sin anständiga jude. Naturligtvis är de andra svin, men just den här är en prima jude. Av alla dem som pratar på detta sätt har ingen sett på, ingen stått ut med det. De flesta av er vet vad det betyder när hundra lik ligger bredvid varandra, när 500 ligger där eller när 1000 ligger där. Att ha stått ut med detta, och – bortsett från undantag på grund av mänsklig svaghet – ha förblivit anständiga, det har gjort oss hårda. Detta är ett ärofullt blad i vår historia som aldrig skrivits och som aldrig kommer att skrivas, för vi vet hur svårt vi skulle ha det om vi ännu idag i varje stad – under bombanfallen och krigets bördor och umbäranden – hade judar som hemliga sabotörer, agitatorer och uppviglare. Om judarna fortfarande vistades i den tyska folkkroppen, skulle vi nu förmodligen ha kommit till det läge vi var i 1916/17. De förmögenheter de hade, har vi tagit ifrån dem. Jag har givit strikta order, som har utförts av Obergruppenführer Pohl, att denna förmögenhet, självklart, utan undantag ska tillfalla riket. Vi har inte behållit något för egen del. Enskilda som har felat straffas enligt en order som jag gav i början och som varnande: Var och en som tar så mycket som en mark är en död man. Ett antal SS-män – de är inte så många – har brutit mot denna order, och de kommer att dö utan förbarmande. Vi hade den moraliska rätten, vi hade plikten gentemot vårt folk att döda detta folk som ville döda oss. Men vi har ingen rätt att berika oss själva med en enda päls, en enda klocka, en enda mark, en enda cigarett eller någonting annat. Vi utrotade en bacill eftersom vi inte till slut ville bli sjuka av bacillen och dö av den. Jag tänker aldrig godta att ens den minsta lilla varhärd uppstår här och biter sig fast. Var den än skulle bildas, kommer vi gemensamt att bränna bort den. Allt som allt kan vi emellertid säga att vi har fullgjort denna ytterst svåra plikt av kärlek till vårt folk. Och vi har inte tagit någon skada av det i vårt inre, i vår själ, i vår karaktär",
+  
+  "level1": {
+    "instruction": "Du ska träna på att hitta NYCKELORD - ord som är viktigast för att förstå texten. Vi gör detta i tre steg som blir svårare och svårare.",
+    
+    "step1": {
+      "title": "Steg 1: Hitta FÖRSVAR-orden",
+      "instruction": "Himmler försvarar folkmordet genom att säga SS-männen gjort något BRA. Klicka på ord som visar detta.",
+      "hint": "Klicka på dessa ORD i texten: 'ärofullt', 'anständiga', 'moraliska', 'rätten', 'plikten'. Du behöver hitta minst 3 av dem.",
+      "text_highlight": "Detta är ett ärofullt blad i vår historia som aldrig skrivits och som aldrig kommer att skrivas, för vi vet hur svårt vi skulle ha det om vi ännu idag i varje stad – under bombanfallen och krigets bördor och umbäranden – hade judar som hemliga sabotörer, agitatorer och uppviglare. Att ha stått ut med detta, och – bortsett från undantag på grund av mänsklig svaghet – ha förblivit anständiga, det har gjort oss hårda. Vi hade den moraliska rätten, vi hade plikten gentemot vårt folk att döda detta folk som ville döda oss.",
+      
+      "correct_words": [
+        "ärofullt",
+        "anständiga",
+        "moraliska",
+        "rätten",
+        "plikten"
+      ],
+      
+      "secondary_words": [
+        "hårda",
+        "fullgjort"
+      ],
+      
+      "feedback": {
+        "ärofullt": "Perfekt! 'Ärofullt blad i vår historia' - Himmler vill att SS-männen ska känna sig STOLTA.",
+        "anständiga": "Ja! 'Förblivit anständiga' - trots att de mördat, kallar han dem anständiga.",
+        "moraliska": "Excellent! Detta är kärnan - han säger de hade RÄTT att döda.",
+        "rätten": "Rätt! 'Moraliska rätten' - han försöker rättfärdiga morden.",
+        "plikten": "'Plikt gentemot vårt folk' - han säger de var TVUNGNA att göra det."
+      },
+      
+      "missing_feedback": "Du missade viktiga FÖRSVAR-ord! Himmler använder ord som 'ärofullt' (för att de ska känna sig stolta), 'anständiga' (trots att de mördat), 'moraliska rätten' (de hade RÄTT att göra det). Leta efter EXAKT dessa ord i texten och klicka på dem. Försök igen!",
+      
+      "success_threshold": 3
+    },
+    
+    "step2": {
+      "title": "Steg 2: Hitta VARNINGS-orden",
+      "instruction": "Himmler varnar för korruption och stöld bland SS-männen. Klicka på ord som handlar om straff och berikande.",
+      "hint": "Klicka på dessa ORD i texten: 'straffas', 'död', 'brutit', 'förbarmande', 'berika', 'felat'. Du behöver hitta minst 3 av dem.",
+      "text_highlight": "Jag har givit strikta order, som har utförts av Obergruppenführer Pohl, att denna förmögenhet, självklart, utan undantag ska tillfalla riket. Vi har inte behållit något för egen del. Enskilda som har felat straffas enligt en order som jag gav i början och som varnande: Var och en som tar så mycket som en mark är en död man. Ett antal SS-män – de är inte så många – har brutit mot denna order, och de kommer att dö utan förbarmande. Vi hade den moraliska rätten, vi hade plikten gentemot vårt folk att döda detta folk som ville döda oss. Men vi har ingen rätt att berika oss själva med en enda päls, en enda klocka, en enda mark, en enda cigarett eller någonting annat.",
+      
+      "correct_words": [
+        "straffas",
+        "död",
+        "brutit",
+        "förbarmande",
+        "berika",
+        "felat"
+      ],
+      
+      "secondary_words": [
+        "varhärd",
+        "order"
+      ],
+      
+      "feedback": {
+        "straffas": "Rätt! 'Enskilda som har felat straffas' - han hotar med straff.",
+        "död": "Ja! 'Var och en som tar så mycket som en mark är en död man' - dödsstraff för stöld!",
+        "brutit": "'Ett antal SS-män har brutit mot denna order' - det HÄR är problemet han ser.",
+        "förbarmande": "Exakt! Hårt hot - de kommer 'dö utan förbarmande'.",
+        "berika": "'Vi har ingen rätt att berika oss själva' - varnar för personlig vinning.",
+        "felat": "Bra! 'Enskilda som har felat' - några SS-män har gjort fel."
+      },
+      
+      "missing_feedback": "Du missade viktiga VARNINGS-ord! Himmler varnar för 'straffas' och 'död' (hot om dödsstraff), 'brutit' och 'felat' (SS-män som gjort fel), 'berika' och 'förbarmande' (stöld och straff). Leta efter EXAKT dessa ord i texten och klicka på dem. Försök igen!",
+      
+      "success_threshold": 3
+    },
+    
+    "step3": {
+      "title": "Steg 3: Självständigt - Hitta BÅDA typerna",
+      "instruction": "Nu utan tips! Hitta både FÖRSVARS-ord och VARNINGS-ord. Du klarar detta - du har övat i Steg 1 och 2!",
+      "hint": "Tänk tillbaka: Vilka ord handlade om att försvara? Vilka ord handlade om straff? Hitta minst 5 totalt.",
+      "text_highlight": "Detta är ett ärofullt blad i vår historia som aldrig skrivits och som aldrig kommer att skrivas. Att ha stått ut med detta, och ha förblivit anständiga, det har gjort oss hårda. Vi hade den moraliska rätten, vi hade plikten gentemot vårt folk att döda detta folk som ville döda oss. Enskilda som har felat straffas enligt en order som jag gav i början: Var och en som tar så mycket som en mark är en död man. Ett antal SS-män har brutit mot denna order, och de kommer att dö utan förbarmande. Men vi har ingen rätt att berika oss själva med en enda päls, en enda klocka, en enda mark, en enda cigarett eller någonting annat.",
+      
+      "correct_words": [
+        "ärofullt",
+        "anständiga",
+        "moraliska",
+        "rätten",
+        "plikten",
+        "straffas",
+        "död",
+        "brutit",
+        "förbarmande",
+        "berika",
+        "felat"
+      ],
+      
+      "feedback": {
+        "ärofullt": "Bra! FÖRSVAR-ord.",
+        "anständiga": "Rätt! FÖRSVAR-ord.",
+        "moraliska": "Ja! FÖRSVAR-ord.",
+        "rätten": "Korrekt! FÖRSVAR-ord.",
+        "plikten": "Exakt! FÖRSVAR-ord.",
+        "straffas": "Bra! VARNINGS-ord.",
+        "död": "Rätt! VARNINGS-ord.",
+        "brutit": "Ja! VARNINGS-ord.",
+        "förbarmande": "Korrekt! VARNINGS-ord.",
+        "berika": "Exakt! VARNINGS-ord.",
+        "felat": "Perfekt! VARNINGS-ord."
+      },
+      
+      "adaptive_feedback": {
+        "has_both_types": "Utmärkt! Du ser att Himmler gör TVÅ saker: (1) Försvarar morden ('ärofullt', 'moralisk rätt'), (2) Varnar för korruption ('död man', 'straffas'). Detta är kärnan i talet!",
+        "only_defense": "Du hittade FÖRSVARS-orden ('ärofullt', 'moralisk rätt') men missade VARNINGS-orden. Himmler måste också disciplinera sina män - leta efter ord om straff och dödsstraff.",
+        "only_warning": "Du hittade VARNINGS-orden ('död man', 'straffas') men missade FÖRSVARS-orden. Himmler måste FÖRST rättfärdiga morden innan han kan varna - leta efter ord om 'ärofullt', 'anständiga', 'moralisk rätt'.",
+        "too_few": "Du behöver hitta mer! Talet har två delar: (1) Försvar av morden, (2) Varning för korruption. Försök hitta minst 5 ord totalt - några från varje del."
+      },
+      
+      "success_threshold": 5
+    }
+  },
+  
+  "level2": {
+    "title": "Nivå 2: Förstå orden - Bygg precision steg för steg",
+    "instruction": "Nu ska du lära dig att vara SPECIFIK och PRECIS i din analys. Vi bygger upp din text steg för steg.",
+    
+    "source_text": "Jag har givit strikta order, som har utförts av Obergruppenführer Pohl, att denna förmögenhet, självklart, utan undantag ska tillfalla riket. Vi har inte behållit något för egen del. Enskilda som har felat straffas enligt en order som jag gav i början och som varnande: Var och en som tar så mycket som en mark är en död man. Ett antal SS-män – de är inte så många – har brutit mot denna order, och de kommer att dö utan förbarmande. Vi hade den moraliska rätten, vi hade plikten gentemot vårt folk att döda detta folk som ville döda oss. Men vi har ingen rätt att berika oss själva med en enda päls, en enda klocka, en enda mark, en enda cigarett eller någonting annat.",
+    
+    "template": {
+      "step1": {
+        "question": "Vad är huvudproblemet Himmler pratar om?",
+        "type": "dropdown",
+        "options": [
+          {
+            "text": "Korruption och stöld bland SS-män",
+            "correct": true,
+            "feedback": "Rätt! Han varnar för att SS-män STJÄL från judiska offer."
+          },
+          {
+            "text": "Att SS-männen är för snälla",
+            "correct": false,
+            "feedback": "Nej, läs igen. Han pratar om SS-män som 'tar en mark', 'berika sig själva'."
+          },
+          {
+            "text": "Att judarna kommer tillbaka",
+            "correct": false,
+            "feedback": "Nej, det handlar om vad SS-männen GÖR, inte om judarna."
+          }
+        ],
+        "template_output": "I texten finns problemet [VALT SVAR]."
+      },
+      
+      "step2": {
+  "question": "Vilka SPECIFIKA ord visar detta problem? (Skriv ett citat från texten)",
+  "type": "text_input",
+  "min_length": 10,
+  "required_keywords": [
+    "mark",
+    "död",
+    "berika",
+    "päls",
+    "klocka",
+    "cigarett",
+    "förmögenhet",
+    "brutit",
+    "straffas",
+    "felat",
+    "förbarmande",
+    "order"
+  ],
+  "min_keywords_match": 1,
+  "example": "Till exempel: 'Var och en som tar så mycket som en mark är en död man' ELLER 'vi har ingen rätt att berika oss själva'",
+  "feedback": {
+    "has_keyword": "Perfekt! Du citerar konkreta ord från texten. Detta är specifikt, inte vagt.",
+    "too_vague": "Bra start! Men lägg till mer från citatet - vilka KONKRETA ord använder Himmler? (t.ex. 'död man', 'berika', 'brutit mot order')",
+    "too_short": "Citatet är för kort. Ge mer kontext - hela meningen där Himmler beskriver problemet."
+  },
+  "template_output": "Detta ser jag i orden [ELEVENS CITAT]."
+},
+      
+      "step3": {
+        "question": "Vad AVSLÖJAR dessa ord om verkligheten i lägren? (Förklara med EGNA ORD - inte bara citera!)",
+        "help_text": "Tänk: Varför varnar Himmler? Vad säger det om SS-männens beteende? Skriv 2-3 meningar med EGNA ORD.",
+        "type": "text_input",
+        "min_length": 20,
+        "required_concepts": [
+          {
+            "required_keywords": ["verklig", "faktisk", "hände", "förekom", "problem fanns", "ss-män", "stöld", "korrupt", "berika", "problem", "skedde", "exempel", "visar", "betyder", "därför"],
+            "min_keywords_match": 2,
+            "feedback": "Bra! Du förstår att Himmlers VARNING avslöjar att problemet var VERKLIGT."
+          },
+          {
+            "keywords": ["ss-män", "stöld", "stal", "tog", "plundring"],
+            "feedback": "Bra! Du ser vad SS-männen GJORDE."
+          }
+        ],
+        "anti_patterns": [
+          {
+            "phrases": ["det påverkar", "vissa problem", "lite information"],
+            "warning": "⚠️ Var mer SPECIFIK! VAD hände? VILKET problem? Använd konkreta ord."
+          }
+        ],
+        "template_output": "Detta visar att [ELEVENS FÖRKLARING]."
+      },
+      
+      "step4": {
+  "question": "Ge ett KONKRET exempel från texten - vilka FÖREMÅL nämner Himmler att SS-männen stal?",
+  "type": "text_input",
+  "min_length": 10,
+  "required_keywords": [
+    "päls",
+    "klocka",
+    "mark",
+    "cigarett",
+    "förmögenhet"
+  ],
+  "min_keywords_match": 1,
+  "example": "Till exempel: 'Himmler säger att ingen får ta en enda päls, klocka, mark eller cigarett'",
+  "feedback": {
+    "has_example": "Perfekt! Du ger ett KONKRET exempel från texten, inte bara abstrakta ord.",
+    "no_example": "Bra försök! Men Himmler nämner mycket KONKRETA saker som SS-männen stal. Leta efter: 'päls', 'klocka', 'mark', 'cigarett'. Skriv om dessa specifika föremål!"
+  },
+  "template_output": "Till exempel nämns [ELEVENS EXEMPEL]."
+},
+      
+      "final_assembly": {
+        "instruction": "Nu sätter vi ihop din precisa analys:",
+        "show_complete": true,
+        "evaluation": {
+          "4_parts": "Perfekt! Din analys har alla fyra delar: (1) Problem identifierat, (2) Citat från text, (3) Förklaring av betydelse, (4) Konkret exempel. Detta är C-nivå-precision!",
+          "3_parts": "Bra! Du har nästan allt. Gå tillbaka och förbättra den del som saknas.",
+          "2_parts": "Du är på rätt väg men behöver mer. Se till att du har: problem + citat + förklaring + exempel."
+        }
+      }
+    }
+  },
+  
+  "level3": {
+    "title": "Nivå 3: Källjämförelse - Himmler & de Wind",
+    "instruction": "Nu ska du jämföra två källor som beskriver SAMMA verklighet från olika perspektiv.",
+    
+    "source_comparison": {
+      "source_a": {
+        "title": "Himmler (SS-ledare)",
+        "type": "Tal till SS-generaler",
+        "perspective": "Förövare"
+      },
+      "source_b": {
+        "title": "Eddy de Wind (överlevande)",
+        "text": "Judinnor och arbetsslaver kunde SS-männen puckla på efter behag. Och när helt andra behov trängde sig på höll de sig gladeligen till godo med judinnor: 'Och vill du inte självmant, så tar jag dig med våld.' En fånge som blev ertappad med att organisera en futtig brödbit fick ta emot käpprapp. Samtidigt skedde alla svartabörshandel med guld, diamanter och slakthusvaror (vid ett tillfälle ett parti på hela fjorton grisar) via SS.",
+        "type": "Självbiografi",
+        "perspective": "Offer/överlevande"
+      }
+    },
+    
+    "task": {
+      "question": "Skriv en kort analys (minst 30 ord) om vad du lär dig genom att JÄMFÖRA dessa två källor.",
+      "type": "free_text",
+      "min_words": 30,
+      
+      "evaluation": {
+        "required_concepts": [
+  {
+    "concept_name": "Identifierar olika perspektiv",
+    "keywords": [
+      "perspektiv",
+      "synvinkel",
+      "olika",
+      "förövare",
+      "offer",
+      "ss",
+      "överlevande",
+      "himmler",
+      "de wind",
+      "ena sidan",
+      "andra sidan"
+    ],
+    "points": 1,
+    "feedback": "✅ Du ser att källorna har olika PERSPEKTIV"
+  },
+  {
+    "concept_name": "Ser källbekräftelse",
+    "keywords": [
+      "bekräfta",
+      "bekräftar",
+      "stämmer överens",
+      "båda visar",
+      "båda säger",
+      "samma",
+      "konfirmera",
+      "styrka",
+      "stödja",
+      "stödjer",
+      "stöder",
+      "överensstämmer",
+      "motsäger inte",
+      "liknande",
+      "bekräftelse"
+    ],
+    "points": 1,
+    "feedback": "✅ Du ser att källorna BEKRÄFTAR varandra"
+  },
+  {
+    "concept_name": "Ger konkreta exempel",
+    "keywords": [
+      "fjorton grisar",
+      "guld",
+      "diamanter",
+      "svartbörs",
+      "päls",
+      "klocka",
+      "mark",
+      "våldtäkt",
+      "puckla"
+    ],
+    "points": 1,
+    "feedback": "✅ Du ger KONKRETA exempel från källorna"
+  },
+  {
+    "concept_name": "Förklarar vad detta betyder",
+    "keywords": [
+      "detta visar",
+      "detta betyder",
+      "därför",
+      "vilket avslöjar",
+      "man kan se",
+      "det bevisar"
+    ],
+    "points": 1,
+    "feedback": "✅ Du FÖRKLARAR vad källorna betyder tillsammans"
+  }
+],
+        
+        "anti_patterns": [
+          {
+            "phrases": [
+              "källorna säger olika saker",
+              "vissa skillnader",
+              "det påverkar trovärdigheten",
+              "lite information",
+              "några problem"
+            ],
+            "warning": "⚠️ Var mer SPECIFIK! VILKA skillnader? VILKA problem? VAD säger källorna konkret?"
+          }
+        ],
+        
+        "feedback_levels": {
+          "4": "Perfekt! Du visar C-nivå genom att: (1) Se olika perspektiv, (2) Hitta bekräftelser, (3) Ge konkreta exempel, (4) Förklara vad det betyder. Din analys är SPECIFIK och PRECIS!",
+          "3": "Bra! Du har 3 av 4 delar. För att nå C-nivå fullt ut, lägg till: Om du saknar perspektiv: Var kommer Himmler från? Var kommer de Wind från? Om du saknar bekräftelse: Säger de samma SAK fast från olika håll? Om du saknar exempel: Vilka konkreta saker nämns? Om du saknar förklaring: VAD lär vi oss av att ha båda källorna?",
+          "2": "Du är på rätt väg! Men du behöver vara mer SPECIFIK: CITERA konkreta ord från båda källorna, FÖRKLARA hur de bekräftar eller motsäger varandra, GE exempel, inte bara allmänna påståenden",
+          "1": "Försök igen och var mycket mer konkret: Vad säger Himmler om korruption? Vad säger de Wind om SS-männens beteende? Hur STÄMMER detta överens? Ge SPECIFIKA exempel (fjorton grisar, guld, diamanter)",
+          "0": "Din text är för vag. Du måste: CITERA konkreta ord från texterna, Vara SPECIFIK om vad källorna säger, Ge EXEMPEL, FÖRKLARA vad det betyder. Använd strukturen: 'Himmler säger X, de Wind säger Y, detta visar att Z'"
+        }
+      },
+      
+      "hints": [
+        "Tips 1: Himmler VARNAR för något - vad? De Wind BESKRIVER något - vad? Är det samma sak?",
+        "Tips 2: Tänk på: Varför skulle Himmler varna om det inte var ett VERKLIGT problem?",
+        "Tips 3: Ge konkreta exempel: 'fjorton grisar', 'guld och diamanter', 'päls och klocka'"
+      ],
+      
+      "model_answer": {
+        "text": "Himmler varnar SS-männen att 'var och en som tar så mycket som en mark är en död man', vilket visar att stöld och korruption var ett problem. De Wind bekräftar detta när han beskriver att SS-män bedrev 'svartbörhandel med guld, diamanter och slakthusvaror', till exempel 'ett parti på hela fjorton grisar'. Detta visar att Himmlers varning inte var teoretisk - korruptionen FÖREKOM verkligen. Samtidigt har källorna olika perspektiv: Himmler försvarar morden och vill stoppa korruptionen, medan de Wind beskriver SS-männens brott från offrens synvinkel. Tillsammans ger källorna en mer komplett bild än vad en källa ensam kan ge.",
+        
+        "analysis": "Detta svar visar C-nivå eftersom det: ✅ Identifierar olika perspektiv, ✅ Ser källbekräftelse, ✅ Ger konkreta exempel, ✅ Förklarar vad det betyder, ✅ Är SPECIFIKT och PRECIST"
+      }
+    }
+  },
+  
+  "progress_tracking": {
+    "completion_criteria": {
+      "level1_step1": "at_least_3_correct",
+      "level1_step2": "at_least_3_correct",
+      "level1_step3": "at_least_5_correct",
+      "level2": "all_4_steps_completed",
+      "level3": "at_least_3_of_4_concepts"
+    }
+  }
+}

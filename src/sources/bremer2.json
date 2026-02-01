@@ -1,0 +1,105 @@
+{
+  "id": "bremer_boklin_1862",
+  "title": "Fredrika Bremer till Böklin - Om inbördeskriget, 1862",
+  "type": "primary_source",
+  
+  "full_text": "Ditt yttrande öfver Amerikanska kriget, Unionen Lincoln, Seward och England gladde mig. [...] Men säkert är det att Slaveriinstitutionen och de skiljaktiga interessen som den alstrat med thy åtföljande bitterhet m. m. äro grunden till kriget. [...] Mig bedröfvar bitterheten i kriget, och att Unionen skall tilllåta sig sådana handlingar som att förderfva Charlestowns hamn! [...] Att Amerika kommer att framgå renadt och förädladt ur detta krigets blodsdop och att Slafveriets utdömmande från Norra Amerikas jord, genom detta krig och dess resultat är besegladt det tror jag visst.",
+  
+  "level1": {
+    "instruction": "Fredrika analyserar det pågående inbördeskriget i USA. Hitta orden som beskriver orsaken och målet.",
+    
+    "step1": {
+      "title": "Steg 1: Krigets orsak",
+      "instruction": "Vad anser Fredrika är den verkliga grunden till att kriget startade? Klicka på nyckelorden.",
+      "hint": "Leta efter: 'Slaveriinstitutionen', 'interessen', 'bitterhet'.",
+      "text_highlight": "Men säkert är det att Slaveriinstitutionen och de skiljaktiga interessen som den alstrat med thy åtföljande bitterhet m. m. äro grunden till kriget.",
+      "correct_words": ["Slaveriinstitutionen", "interessen", "bitterhet", "grunden"],
+      "success_threshold": 3
+    },
+    
+    "step2": {
+      "title": "Steg 2: Krigets förödelse",
+      "instruction": "Fredrika är bedrövad över krigets handlingar. Vilken specifik händelse nämner hon som ett slöseri med 'Guds välgerningar'?",
+      "hint": "Hon nämner en hamn. Klicka på 'Charlestowns' och 'hamn'.",
+      "text_highlight": "Mig bedröfvar bitterheten i kriget, och att Unionen skall tilllåta sig sådana handlingar som att förderfva Charlestowns hamn!",
+      "correct_words": ["Charlestowns", "hamn", "bitterheten"],
+      "success_threshold": 2
+    },
+    
+    "step3": {
+      "title": "Steg 3: Hoppet om framtiden",
+      "instruction": "Vad tror Fredrika blir slutresultatet för Amerika efter kriget? Klicka på de positiva orden.",
+      "hint": "Leta efter: 'renadt', 'förädladt', 'blodsdop', 'besegladt'.",
+      "text_highlight": "Att Amerika kommer att framgå renadt och förädladt ur detta krigets blodsdop och att Slafveriets utdömmande... är besegladt det tror jag visst.",
+      "correct_words": ["renadt", "förädladt", "blodsdop", "besegladt"],
+      "success_threshold": 3
+    }
+  },
+  
+  "level2": {
+    "title": "Nivå 2: Historiska sammanhang",
+    "instruction": "Analysera Fredrikas syn på kriget och de inblandade parterna.",
+    "source_text": "Ditt yttrande öfver Amerikanska kriget, Unionen Lincoln, Seward och England gladde mig. [...] Slafveriets utdömmande från Norra Amerikas jord, genom detta krig och dess resultat är besegladt det tror jag visst.",
+    
+    "template": {
+      "step1": {
+        "question": "Vilken historisk person nämner Fredrika som är kopplad till Unionen?",
+        "type": "dropdown",
+        "options": [
+          { "text": "Washington", "correct": false, "feedback": "Nej, han tillhörde en tidigare era." },
+          { "text": "Lincoln", "correct": true, "feedback": "Rätt! Abraham Lincoln var president under inbördeskriget." },
+          { "text": "Calhoun", "correct": false, "feedback": "Nej, han var en försvarare av slaveriet som vi såg i förra källan." }
+        ],
+        "template_output": "Fredrika diskuterar kriget i relation till president [VALT SVAR]."
+      },
+      "step2": {
+        "question": "Hur beskriver hon kriget med ett kraftfullt religiöst ordval?",
+        "type": "text_input",
+        "min_length": 5,
+        "required_keywords": ["blodsdop"],
+        "min_keywords_match": 1,
+        "example": "Hon kallar det för krigets 'blodsdop'.",
+        "template_output": "Hon ser kriget som ett [ELEVENS CITAT]."
+      }
+    }
+  },
+  
+  "level3": {
+    "title": "Nivå 3: Kontinuitet och Förändring",
+    "instruction": "Jämför Fredrika Bremers två brev (1850 och 1862).",
+    "source_comparison": {
+      "source_a": {
+        "title": "Bremer 1850 (Besöket i Chicago)",
+        "perspective": "Ser slaveriet som en 'skugga' men hoppas på fredlig utveckling."
+      },
+      "source_b": {
+        "title": "Bremer 1862 (Från Stockholm)",
+        "perspective": "Inser att krig och 'blodsdop' krävs för att slaveriet ska dö ut."
+      }
+    },
+    "task": {
+      "question": "Hur har Fredrikas syn på hur slaveriet ska försvinna förändrats mellan de två breven?",
+      "type": "free_text",
+      "min_words": 30,
+      "evaluation": {
+        "required_concepts": [
+          {
+            "concept_name": "Nödvändigt krig",
+            "keywords": ["krig", "blodsdop", "tvungen", "måste", "besegladt"],
+            "points": 1,
+            "feedback": "✅ Bra! Du ser att hon nu ser kriget som den enda vägen ut."
+          },
+          {
+            "concept_name": "Slaveriets slut",
+            "keywords": ["utdömmande", "försvinna", "besegladt", "utplåna"],
+            "points": 1,
+            "feedback": "✅ Korrekt jämförelse av hennes slutsatser."
+          }
+        ]
+      },
+      "model_answer": {
+        "text": "I det första brevet beskriver hon slaveriet som en mörk skugga i en i övrigt ljus framtid. I det andra brevet har hon insett att en fredlig lösning är omöjlig. Hon använder ordet 'blodsdop' för att visa att Amerika måste gå igenom ett renande krig för att slaveriet ska kunna utdömas för alltid."
+      }
+    }
+  }
+}

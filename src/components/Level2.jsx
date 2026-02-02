@@ -15,6 +15,11 @@ export default function Level2({ data, onComplete }) {
   const template = data.template;
   const currentStepData = template[`step${currentStep}`];
 
+  // Säkerhetskoll
+if (!currentStepData && !showFinalAnalysis) {
+  return <div>Laddar...</div>;
+}
+
   const handleStep1Change = (value) => {
     setAnswers({ ...answers, step1: value });
     const selected = currentStepData.options.find(opt => opt.text === value);
@@ -70,28 +75,61 @@ export default function Level2({ data, onComplete }) {
   const text = answers.step3.trim();
   const textLower = text.toLowerCase();
   
-  // Om texten är tillräckligt lång (50+ tecken) = GODKÄNT!
-  // Eleven har redan förklarat något, det räcker!
-  if (text.length >= 50) {
-    setStepFeedback({
-      ...stepFeedback,
-      step3: {
-        correct: true,
-        feedback: "Bra! Du förklarar vad orden avslöjar om verkligheten."
-      }
+  // Kolla om det finns required_concepts i JSON
+  const hasConcepts = currentStepData.required_concepts && 
+                     currentStepData.required_concepts.length > 0;
+  
+  if (hasConcepts) {
+    // Räkna bara de som har "required_keywords"
+    const requiredConcepts = currentStepData.required_concepts.filter(
+      concept => concept.required_keywords
+    );
+    
+    let matchedConcepts = 0;
+    
+    requiredConcepts.forEach(concept => {
+      const hasKeyword = concept.required_keywords.some(kw => 
+        textLower.includes(kw.toLowerCase())
+      );
+      if (hasKeyword) matchedConcepts++;
     });
-    return true;
-  }
+    
+    // Kolla om vi matchade tillräckligt många REQUIRED concepts
+    const isValid = matchedConcepts >= requiredConcepts.length && 
+               text.length >= currentStepData.min_length;
 
-  // Om för kort
-  setStepFeedback({
-    ...stepFeedback,
-    step3: {
-      correct: false,
-      feedback: "Förklara mer! Vad betyder det att Himmler använder dessa ord? Skriv minst 50 tecken."
+setStepFeedback({
+  ...stepFeedback,
+  step3: {
+    correct: isValid,
+    feedback: isValid 
+      ? (currentStepData.feedback?.success || "Bra! Du förklarar källans betydelse.")
+      : (currentStepData.feedback?.needs_improvement || "Du behöver utveckla ditt svar mer.")
+  }
+});
+    return isValid;
+  } else {
+    // Fallback: bara längdkontroll (som Himmler)
+    if (text.length >= 50) {
+      setStepFeedback({
+        ...stepFeedback,
+        step3: {
+          correct: true,
+          feedback: "Bra! Du förklarar vad orden avslöjar om verkligheten."
+        }
+      });
+      return true;
+    } else {
+      setStepFeedback({
+        ...stepFeedback,
+        step3: {
+          correct: false,
+          feedback: "Skriv minst 50 tecken."
+        }
+      });
+      return false;
     }
-  });
-  return false;
+  }
 };
 
   const validateStep4 = () => {

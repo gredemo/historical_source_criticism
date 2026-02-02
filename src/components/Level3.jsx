@@ -20,10 +20,10 @@ export default function Level3({ data, onComplete }) {
 
     // Check required concepts
     evaluation.required_concepts.forEach(concept => {
-      const hasKeyword = concept.keywords.some(kw => 
+      const hasKeyword = concept.keywords.some(kw =>
         textLower.includes(kw.toLowerCase())
       );
-      
+
       if (hasKeyword) {
         totalPoints += concept.points;
         foundConcepts.push({
@@ -35,8 +35,9 @@ export default function Level3({ data, onComplete }) {
 
     // Check anti-patterns
     const antiPatternWarnings = [];
-    evaluation.anti_patterns.forEach(pattern => {
-      const foundAntiPattern = pattern.phrases.find(phrase => 
+    if (evaluation.anti_patterns) { 
+     evaluation.anti_patterns.forEach(pattern => {
+      const foundAntiPattern = pattern.phrases.find(phrase =>
         textLower.includes(phrase.toLowerCase())
       );
       if (foundAntiPattern) {
@@ -46,6 +47,7 @@ export default function Level3({ data, onComplete }) {
         });
       }
     });
+  }
 
     const feedbackLevel = evaluation.feedback_levels[totalPoints.toString()];
 
@@ -81,17 +83,21 @@ export default function Level3({ data, onComplete }) {
         <p className="mt-2 text-amber-700">{data.instruction}</p>
       </div>
 
-      {/* Visa båda källorna */}
+      {/* Visa båda källorna DYNAMISKT */}
       <div className="space-y-4 mb-6">
         <div className="bg-amber-50 border border-amber-200 rounded-lg p-4">
-          <h4 className="text-sm font-bold text-amber-900 mb-2">📜 Himmler (SS-ledare) - Tal till SS-generaler, Förövare</h4>
-          <p className="text-xs text-gray-700 leading-relaxed">
-            "Detta är ett ärofullt blad i vår historia som aldrig skrivits... ha förblivit anständiga... Vi hade den moraliska rätten, vi hade plikten gentemot vårt folk att döda detta folk som ville döda oss. Jag har givit strikta order att denna förmögenhet ska tillfalla riket. Vi har inte behållit något för egen del. Enskilda som har felat straffas enligt en order som jag gav i början och som varnande: Var och en som tar så mycket som en mark är en död man. Ett antal SS-män – de är inte så många – har brutit mot denna order, och de kommer att dö utan förbarmande. Men vi har ingen rätt att berika oss själva med en enda päls, en enda klocka, en enda mark, en enda cigarett eller någonting annat."
+          <h4 className="text-sm font-bold text-amber-900 mb-2">
+            📜 {data.source_comparison.source_a.title} - {data.source_comparison.source_a.type}, {data.source_comparison.source_a.perspective}
+          </h4>
+          <p className="text-xs text-gray-700 leading-relaxed italic">
+            {data.source_comparison.source_a.text}
           </p>
         </div>
-        
+
         <div className="bg-blue-50 border border-blue-200 rounded-lg p-4">
-          <h4 className="text-sm font-bold text-blue-900 mb-2">📜 Eddy de Wind (överlevande) - Självbiografi, Offer/överlevande</h4>
+          <h4 className="text-sm font-bold text-blue-900 mb-2">
+            📜 {data.source_comparison.source_b.title} - {data.source_comparison.source_b.type}, {data.source_comparison.source_b.perspective}
+          </h4>
           <p className="text-xs text-gray-700 leading-relaxed">
             {data.source_comparison.source_b.text}
           </p>
@@ -101,7 +107,7 @@ export default function Level3({ data, onComplete }) {
       {/* Task */}
       <div className="bg-white border-2 border-amber-200 rounded-lg p-6">
         <h3 className="text-lg font-bold text-amber-900 mb-4">{data.task.question}</h3>
-        
+
         <textarea
           value={studentText}
           onChange={(e) => setStudentText(e.target.value)}
@@ -144,11 +150,10 @@ export default function Level3({ data, onComplete }) {
 
       {/* Feedback */}
       {feedback && (
-        <div className={`border-2 rounded-lg p-6 ${
-          feedback.isSuccess 
-            ? 'bg-green-50 border-green-300' 
+        <div className={`border-2 rounded-lg p-6 ${feedback.isSuccess
+            ? 'bg-green-50 border-green-300'
             : 'bg-orange-50 border-orange-300'
-        }`}>
+          }`}>
           <div className="flex items-center gap-2 mb-4">
             {feedback.isSuccess ? (
               <Check className="w-6 h-6 text-green-600" />
@@ -221,7 +226,7 @@ export default function Level3({ data, onComplete }) {
       {showModelAnswer && (
         <div className="bg-purple-50 border-2 border-purple-300 rounded-lg p-6">
           <h3 className="text-lg font-bold text-purple-900 mb-4">Exempel på C-nivå-svar:</h3>
-          
+
           <div className="bg-white rounded-lg p-5 mb-4">
             <p className="text-gray-800 leading-relaxed whitespace-pre-line">
               {data.task.model_answer.text}

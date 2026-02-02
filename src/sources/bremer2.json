@@ -37,69 +37,131 @@
   },
   
   "level2": {
-    "title": "Nivå 2: Historiska sammanhang",
-    "instruction": "Analysera Fredrikas syn på kriget och de inblandade parterna.",
-    "source_text": "Ditt yttrande öfver Amerikanska kriget, Unionen Lincoln, Seward och England gladde mig. [...] Slafveriets utdömmande från Norra Amerikas jord, genom detta krig och dess resultat är besegladt det tror jag visst.",
-    
-    "template": {
-      "step1": {
-        "question": "Vilken historisk person nämner Fredrika som är kopplad till Unionen?",
-        "type": "dropdown",
-        "options": [
-          { "text": "Washington", "correct": false, "feedback": "Nej, han tillhörde en tidigare era." },
-          { "text": "Lincoln", "correct": true, "feedback": "Rätt! Abraham Lincoln var president under inbördeskriget." },
-          { "text": "Calhoun", "correct": false, "feedback": "Nej, han var en försvarare av slaveriet som vi såg i förra källan." }
-        ],
-        "template_output": "Fredrika diskuterar kriget i relation till president [VALT SVAR]."
-      },
-      "step2": {
-        "question": "Hur beskriver hon kriget med ett kraftfullt religiöst ordval?",
-        "type": "text_input",
-        "min_length": 5,
-        "required_keywords": ["blodsdop"],
-        "min_keywords_match": 1,
-        "example": "Hon kallar det för krigets 'blodsdop'.",
-        "template_output": "Hon ser kriget som ett [ELEVENS CITAT]."
-      }
-    }
-  },
+  "title": "Nivå 2: Historiska sammanhang",
+  "instruction": "Analysera Fredrikas syn på kriget och de inblandade parterna.",
+  "source_text": "Ditt yttrande öfver Amerikanska kriget, Unionen Lincoln, Seward och England gladde mig. [...] Men säkert är det att Slaveriinstitutionen och de skiljaktiga interessen som den alstrat med thy åtföljande bitterhet m. m. äro grunden till kriget. [...] Mig bedröfvar bitterheten i kriget, och att Unionen skall tilllåta sig sådana handlingar som att förderfva Charlestowns hamn! [...] Att Amerika kommer att framgå renadt och förädladt ur detta krigets blodsdop och att Slafveriets utdömmande från Norra Amerikas jord, genom detta krig och dess resultat är besegladt det tror jag visst.",
   
-  "level3": {
-    "title": "Nivå 3: Kontinuitet och Förändring",
-    "instruction": "Jämför Fredrika Bremers två brev (1850 och 1862).",
-    "source_comparison": {
-      "source_a": {
-        "title": "Bremer 1850 (Besöket i Chicago)",
-        "perspective": "Ser slaveriet som en 'skugga' men hoppas på fredlig utveckling."
-      },
-      "source_b": {
-        "title": "Bremer 1862 (Från Stockholm)",
-        "perspective": "Inser att krig och 'blodsdop' krävs för att slaveriet ska dö ut."
+  "template": {
+    "step1": {
+      "question": "Vilken historisk person nämner Fredrika som är kopplad till Unionen?",
+      "type": "dropdown",
+      "options": [
+        { "text": "Washington", "correct": false, "feedback": "Nej, han tillhörde en tidigare era." },
+        { "text": "Lincoln", "correct": true, "feedback": "Rätt! Abraham Lincoln var president under inbördeskriget." },
+        { "text": "Calhoun", "correct": false, "feedback": "Nej, han var en försvarare av slaveriet som vi såg i förra källan." }
+      ],
+      "template_output": "Fredrika diskuterar kriget i relation till president [VALT SVAR]."
+    },
+    
+    "step2": {
+      "question": "Hur beskriver hon kriget med ett kraftfullt religiöst ordval?",
+      "type": "text_input",
+      "min_length": 5,
+      "required_keywords": ["blodsdop"],
+      "min_keywords_match": 1,
+      "example": "Hon kallar det för krigets 'blodsdop'.",
+      "template_output": "Hon ser kriget som ett [ELEVENS CITAT].",
+      "feedback": {
+        "has_keyword": "Perfekt! Du hittade det religiösa uttrycket.",
+        "too_vague": "Leta efter ett religiöst ord som beskriver kriget som en sorts ceremoni."
       }
     },
-    "task": {
-      "question": "Hur har Fredrikas syn på hur slaveriet ska försvinna förändrats mellan de två breven?",
-      "type": "free_text",
-      "min_words": 30,
-      "evaluation": {
-        "required_concepts": [
-          {
-            "concept_name": "Nödvändigt krig",
-            "keywords": ["krig", "blodsdop", "tvungen", "måste", "besegladt"],
-            "points": 1,
-            "feedback": "✅ Bra! Du ser att hon nu ser kriget som den enda vägen ut."
-          },
-          {
-            "concept_name": "Slaveriets slut",
-            "keywords": ["utdömmande", "försvinna", "besegladt", "utplåna"],
-            "points": 1,
-            "feedback": "✅ Korrekt jämförelse av hennes slutsatser."
-          }
-        ]
+    
+    "step3": {
+      "question": "Förklara med EGNA ORD vad Fredrika menar med att Amerika kommer framgå 'renadt och förädladt'. Skriv 2-3 meningar.",
+      "type": "text_input",
+      "min_length": 50,
+      "required_concepts": [
+        {
+          "required_keywords": ["slaveri", "slut", "försvinna", "utdömmande", "bort"],
+          "min_keywords_match": 1,
+          "feedback": "Bra! Du förstår att det handlar om slaveriets slut."
+        }
+      ],
+      "feedback": {
+        "success": "Utmärkt! Du förklarar vad kriget ska leda till.",
+        "needs_improvement": "Utveckla mer - vad ska försvinna från Amerika?"
       },
-      "model_answer": {
-        "text": "I det första brevet beskriver hon slaveriet som en mörk skugga i en i övrigt ljus framtid. I det andra brevet har hon insett att en fredlig lösning är omöjlig. Hon använder ordet 'blodsdop' för att visa att Amerika måste gå igenom ett renande krig för att slaveriet ska kunna utdömas för alltid."
+      "template_output": "Detta visar att [ELEVENS FÖRKLARING]."
+    },
+    
+    "step4": {
+      "question": "Ge ett KONKRET exempel från texten som visar Fredrikas oro över krigets grymhet.",
+      "type": "text_input",
+      "min_length": 15,
+      "required_keywords": ["Charlestowns", "hamn", "bedröfvar", "bitterhet"],
+      "min_keywords_match": 1,
+      "example": "Till exempel: 'att Unionen tillåter sig att förstöra Charlestowns hamn'",
+      "feedback": {
+        "has_example": "Perfekt! Du ger ett konkret exempel på krigshandlingarna.",
+        "no_example": "Leta efter vad Fredrika tycker är sorgligt med krigets metoder."
+      },
+      "template_output": "Till exempel nämns [ELEVENS EXEMPEL]."
+    },
+    
+    "final_assembly": {
+      "template": "I texten finns problemet [STEG1]. Detta ser jag i orden \"[STEG2]\". Detta visar att [STEG3]. Till exempel nämns [STEG4].",
+      "evaluation": {
+        "4_parts": "Utmärkt! Du har byggt en komplett analys med alla delar: person, religiöst språk, betydelse och konkret exempel."
       }
     }
   }
+},
+
+"level3": {
+  "title": "Nivå 3: Kontinuitet och Förändring",
+  "instruction": "Jämför Fredrika Bremers två brev (1850 och 1862).",
+  "source_comparison": {
+    "source_a": {
+      "title": "Bremer 1850 (Besöket i Chicago)",
+      "type": "Reseskildringar",
+      "perspective": "Ser slaveriet som en 'skugga' men hoppas på fredlig utveckling.",
+      "text": "Besöker Chicago och beskriver slaveriet som en mörk skugga över den annars ljusa framtiden."
+    },
+    "source_b": {
+      "title": "Bremer 1862 (Från Stockholm)",
+      "type": "Privat brev",
+      "perspective": "Inser att krig och 'blodsdop' krävs för att slaveriet ska dö ut.",
+      "text": "Att Amerika kommer att framgå renadt och förädladt ur detta krigets blodsdop och att Slafveriets utdömmande från Norra Amerikas jord är besegladt."
+    }
+  },
+  "task": {
+    "question": "Hur har Fredrikas syn på hur slaveriet ska försvinna förändrats mellan de två breven?",
+    "type": "free_text",
+    "min_words": 30,
+    "evaluation": {
+      "required_concepts": [
+        {
+          "concept_name": "Nödvändigt krig",
+          "keywords": ["krig", "blodsdop", "tvungen", "måste", "besegladt"],
+          "min_keywords_match": 1,
+          "points": 1,
+          "feedback": "✅ Bra! Du ser att hon nu ser kriget som den enda vägen ut."
+        },
+        {
+          "concept_name": "Slaveriets slut",
+          "keywords": ["utdömmande", "försvinna", "besegladt", "utplåna"],
+          "min_keywords_match": 1,
+          "points": 1,
+          "feedback": "✅ Korrekt jämförelse av hennes slutsatser."
+        }
+      ],
+      "min_concepts_match": 2,
+      "feedback_levels": {
+        "excellent": "Utmärkt! Du visar tydligt hur Fredrikas syn förändrats från hopp om fredlig lösning till insikten att krig är nödvändigt.",
+        "good": "Bra början! Utveckla mer om HUR hennes syn förändrats.",
+        "needs_improvement": "Tänk på: Vad trodde hon 1850? Vad tror hon 1862? Vad är skillnaden?"
+      }
+    },
+    "hints": [
+      "Tips 1: I det första brevet ser hon slaveriet som en 'skugga'. Vad använder hon för ord 1862?",
+      "Tips 2: Tänk på ordet 'blodsdop' - vad säger det om hur kriget måste se ut?",
+      "Tips 3: Vad betyder 'besegladt' - är slaveriets slut säkert eller osäkert 1862?"
+    ],
+    "model_answer": {
+      "text": "I det första brevet från 1850 beskriver Fredrika slaveriet som en mörk skugga men hon verkar hoppas på en fredlig förändring. Tolv år senare, 1862, har hennes syn förändrats radikalt. Hon använder nu det kraftfulla ordet 'blodsdop' vilket visar att hon förstår att Amerika måste gå igenom ett våldsamt och renande krig. Hon är också säker på att slaveriet kommer att 'utdömmas' - det är 'beseglat'. Kriget är inte längre en tragedi utan en nödvändig process.",
+      "analysis": "Detta svar visar förståelse för kontinuitet (slaveriet är fel) och förändring (från hopp om fred till insikt om krig)."
+    }
+  }
+}
 }

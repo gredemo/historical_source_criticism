@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Check, X, AlertCircle, Lightbulb } from 'lucide-react';
 
-export default function Level1({ data, progress, onComplete }) {
+function Level1({ data, progress, onComplete }) {
   const [currentStep, setCurrentStep] = useState(
     progress.level1_step1 === 'completed' ? 
       (progress.level1_step2 === 'completed' ? 3 : 2) : 1
@@ -58,48 +58,63 @@ export default function Level1({ data, progress, onComplete }) {
         missingFeedback: stepData.missing_feedback
       });
     } 
-    // För step 3 - Nu fungerar den för BÅDE Himmler och Amerika
-    else {
-      const isHimmler = stepData.correct_words.includes('ärofullt');
-      let adaptiveMessage = "";
+    // För step 3 - Fungerar för BÅDE Himmler OCH andra källor
+else {
+  const isHimmler = stepData.correct_words.includes('ärofullt');
+  let adaptiveMessage = "";
 
-      if (isHimmler) {
-        const defenseWords = ['ärofullt', 'anständiga', 'moraliska', 'rätten', 'plikten'];
-        const warningWords = ['straffas', 'död', 'brutit', 'förbarmande', 'berika', 'felat'];
-        
-        const hasDefense = foundCorrect.some(w => defenseWords.some(d => w.toLowerCase().includes(d.toLowerCase())));
-        const hasWarning = foundCorrect.some(w => warningWords.some(wr => w.toLowerCase().includes(wr.toLowerCase())));
-        
-        if (hasDefense && hasWarning) adaptiveMessage = stepData.adaptive_feedback.has_both_types;
-        else if (hasDefense) adaptiveMessage = stepData.adaptive_feedback.only_defense;
-        else if (hasWarning) adaptiveMessage = stepData.adaptive_feedback.only_warning;
-        else adaptiveMessage = stepData.adaptive_feedback.too_few;
-      } else {
-        adaptiveMessage = isSuccess 
-          ? "Utmärkt! Du har hittat de viktigaste nyckelorden i källan." 
-          : "Du behöver hitta några fler ord för att förstå källans kärna.";
-      }
-
-      const feedbackMessages = foundCorrect.map(word => {
-        const correctWord = correctWords.find(c => word.toLowerCase().includes(c.toLowerCase()));
-        return {
-          word,
-          message: stepData.feedback?.[correctWord] || 'Bra valt ord!',
-          correct: true
-        };
-      });
-      
-      setFeedback({
-        isSuccess,
-        foundCorrect: foundCorrect.length,
-        total: correctWords.length,
-        messages: feedbackMessages,
-        adaptiveMessage: adaptiveMessage
-      });
-    }
+  if (isHimmler) {
+    // Himmlers specifika logik
+    const defenseWords = ['ärofullt', 'anständiga', 'moraliska', 'rätten', 'plikten'];
+    const warningWords = ['straffas', 'död', 'brutit', 'förbarmande', 'berika', 'felat'];
     
-    setShowFeedback(true); // Denna rad gör att feedback-rutan faktiskt syns!
-  };
+    const hasDefense = foundCorrect.some(w => defenseWords.some(d => w.toLowerCase().includes(d.toLowerCase())));
+    const hasWarning = foundCorrect.some(w => warningWords.some(wr => w.toLowerCase().includes(wr.toLowerCase())));
+    
+    if (hasDefense && hasWarning) adaptiveMessage = stepData.adaptive_feedback.has_both_types;
+    else if (hasDefense) adaptiveMessage = stepData.adaptive_feedback.only_defense;
+    else if (hasWarning) adaptiveMessage = stepData.adaptive_feedback.only_warning;
+    else adaptiveMessage = stepData.adaptive_feedback.too_few;
+  } 
+  // 🆕 NY KOD: Stöd för andra källors adaptive_feedback
+  else if (stepData.adaptive_feedback) {
+    // Om källan HAR adaptive_feedback (som Ida), använd den
+    if (isSuccess) {
+      adaptiveMessage = stepData.adaptive_feedback.has_both_types || 
+                       "Utmärkt! Du har hittat de viktigaste nyckelorden.";
+    } else {
+      // Försök hitta mer specifik feedback baserat på vad som hittades
+      const allWords = stepData.correct_words;
+      const foundRatio = foundCorrect.length / allWords.length;
+      
+      if (foundRatio >= 0.5) {
+        adaptiveMessage = stepData.adaptive_feedback.only_work || 
+                         stepData.adaptive_feedback.only_social || 
+                         "Du är på rätt väg! Hitta några fler ord.";
+      } else {
+        adaptiveMessage = stepData.adaptive_feedback.too_few || 
+                         "Du behöver hitta fler ord för att förstå källans kärna.";
+      }
+    }
+  }
+  // Fallback om ingen adaptive_feedback finns
+  else {
+    adaptiveMessage = isSuccess 
+      ? "Utmärkt! Du har hittat de viktigaste nyckelorden i källan." 
+      : "Du behöver hitta några fler ord för att förstå källans kärna.";
+  }
+
+   // Sätt feedback för step 3
+  setFeedback({
+    isSuccess,
+    foundCorrect: foundCorrect.length,
+    total: correctWords.length,
+    adaptiveMessage: adaptiveMessage
+  });
+} 
+
+  setShowFeedback(true);
+};
 
   const nextStep = () => {
     const stepKey = `level1_step${currentStep}`;
@@ -314,5 +329,7 @@ export default function Level1({ data, progress, onComplete }) {
         )}
       </div>
     </div>
-  );
-}
+    );
+  }
+
+export default Level1;

@@ -4,15 +4,12 @@ import Level1 from "./components/Level1.jsx";
 import Level2 from "./components/Level2.jsx";
 import Level3 from "./components/Level3.jsx";
 
-// Import - dessa fungerar nu!
 import bremer1 from "./sources/bremer1.json";
 import ida1 from "./sources/ida1.json";
 import bremer2 from "./sources/bremer2.json";
-import whitePlundring from "./sources/white-plundring.json";  // ← NYTT
-import dagermanStraff from "./sources/dagerman-straff.json";
 
 function App() {
-  const sources = [bremer1, ida1, bremer2, whitePlundring, dagermanStraff].filter(s => s !== undefined);
+  const sources = [bremer1, ida1, bremer2].filter(s => s !== undefined);
   
   const [selectedSource, setSelectedSource] = useState(null);
   const [currentLevel, setCurrentLevel] = useState(1);

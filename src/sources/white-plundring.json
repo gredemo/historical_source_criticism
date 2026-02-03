@@ -1,0 +1,231 @@
+{
+  "id": "white_plundring_1945",
+  "title": "Osmar White - Segrarnas väg, 1945",
+  "type": "primary_source",
+  
+  "full_text": "Det enda sättet att lära de här fritzarna att krig inte lönar sig är att köra med dem på samma sätt som de kör med andra. Jag hörde denna tanke uttryckas gång på gång. Seger innebar underförstått rätten till byte. De segerrika styrkorna lade beslag på alla fiendens begärliga ägodelar som överhuvudtaget var möjliga att släpa med sig – sprit och cigarretter, kameror, kikare, hagelbössor och andra jaktgevär, ceremoniella svärd och dolkar, silverornament och matsilver och skinnkläder. Denna typ av småstölder kallades för 'att befria' eller 'att skaffa souvenirer'. Militärpolisen blundade, ända tills de mer rovgiriga befriarna, vanligtvis understöds- och transportpersonal, började stjäla dyrbara bilar, antika möbler, radioapparater, verktygsmaskiner och annan industriell utrustning, och hittade på fiffiga sätt att smuggla ut de stulna varorna till kusten varifrån småbåtar kunde färja över varorna till England. Först sedan plundring blivit en organiserad brottslig verksamhet då striderna upphörde gick militärregeringen in och upprätthöll lagen. Fram till dess tog soldaterna vad de ville ha och körde ofta med tyskarna när de gjorde det. Ändå såg jag få fall av avsiktlig eller perverterad brutalitet. Trupperna kände att de enbart skipade en kärv rättvisa, att det handlade om en moraliskt rättmätig vedergällning, mot en ras vars arméer hade plundrat Västeuropa i närmare fem år. Inte heller mildrade den tyska civilbefolkningens undergivenhet invasionsstyrkornas beteende, utan gjorde dem snarast mer föraktfulla och arga. Ett av de få tillfällen då jag såg amerikanska soldater med berått mod och i nyktert tillstånd skövla ett tyskt hus var i Erfurt. De som bodde där hade flytt och lämnat efter sig en lapp i köket där det stod: 'DET HÄR ÄR ETT HEM FÖR FOLK SOM NI – VAR SNÄLLA OCH SLÅ INTE SÖNDER DET.'",
+  
+  "level1": {
+    "instruction": "Osmar White beskriver hur allierade soldater plundrade i Tyskland 1945. Hitta orden som visar vad de tog och hur de rättfärdigade det.",
+    
+    "step1": {
+      "title": "Steg 1: Vad plundrades?",
+      "instruction": "Vilka saker tog soldaterna från tyskarna? Klicka på sakerna de stal.",
+      "hint": "Leta efter konkreta föremål som soldaterna tog med sig.",
+      "text_highlight": "De segerrika styrkorna lade beslag på alla fiendens begärliga ägodelar som överhuvudtaget var möjliga att släpa med sig – sprit och cigarretter, kameror, kikare, hagelbössor och andra jaktgevär, ceremoniella svärd och dolkar, silverornament och matsilver och skinnkläder.",
+      "correct_words": ["beslag", "sprit", "cigarretter", "kameror", "kikare", "svärd", "dolkar", "silverornament", "matsilver", "skinnkläder"],
+      "success_threshold": 5,
+      "feedback": {
+        "sprit": "Ja, alkohol var mycket eftertraktat.",
+        "cigarretter": "Cigarretter var värdefulla bytesvaror.",
+        "kameror": "Kameror var populära souvenirer.",
+        "svärd": "Ceremoniella vapen var prestigefyllda troféer.",
+        "silverornament": "Värdefulla föremål av silver stals ofta."
+      },
+      "missing_feedback": "Du missade flera viktiga föremål. Leta efter både vardagsvaror (sprit, cigarretter) och lyxvaror (silver, vapen)."
+    },
+    
+    "step2": {
+      "title": "Steg 2: Rättfärdigandet",
+      "instruction": "Hur rättfärdigade soldaterna plundringen? Hitta orden som visar deras motivering.",
+      "hint": "Leta efter ord som 'rättvisa', 'rättmätig' och 'vedergällning'.",
+      "text_highlight": "Trupperna kände att de enbart skipade en kärv rättvisa, att det handlade om en moraliskt rättmätig vedergällning, mot en ras vars arméer hade plundrat Västeuropa i närmare fem år.",
+      "correct_words": ["kärv", "rättvisa", "moraliskt", "rättmätig", "vedergällning", "plundrat", "Västeuropa", "fem"],
+      "success_threshold": 4,
+      "feedback": {
+        "rättvisa": "Ja, de såg det som rättvist.",
+        "vedergällning": "Perfekt! Detta är nyckelordet - hämnd för vad Tyskland gjort.",
+        "moraliskt": "De såg det som moraliskt försvarbart.",
+        "rättmätig": "De ansåg att de hade rätt att göra det.",
+        "plundrat": "Tyskland hade själva plundrat i fem år."
+      },
+      "missing_feedback": "Leta efter ord som visar att soldaterna tyckte de hade RÄTT att plundra. Varför kände de så?"
+    },
+    
+    "step3": {
+      "title": "Steg 3: Eufemismerna",
+      "instruction": "Vilka ord använde soldaterna istället för 'stjäla'? Hitta eufemismerna.",
+      "hint": "Eufemism = ett finare ord för något fult. Leta inom citattecken.",
+      "text_highlight": "Denna typ av småstölder kallades för 'att befria' eller 'att skaffa souvenirer'. Militärpolisen blundade, ända tills de mer rovgiriga befriarna började stjäla dyrbara bilar.",
+      "correct_words": ["småstölder", "befria", "souvenirer", "blundade", "rovgiriga"],
+      "success_threshold": 3,
+      "feedback": {
+        "befria": "Perfekt! 'Att befria' låter bättre än 'att stjäla'.",
+        "souvenirer": "Ja! 'Souvenirer' låter oskyldigt jämfört med stöld.",
+        "småstölder": "Bra! De kallade det 'småstölder' för att minimera allvaret.",
+        "blundade": "Militärpolisen såg bort - de accepterade det.",
+        "rovgiriga": "När det blev för mycket blev de 'rovgiriga'."
+      },
+      "missing_feedback": "Leta efter orden inom citattecken - vad KALLADE soldaterna sina handlingar?"
+    }
+  },
+  
+  "level2": {
+    "title": "Nivå 2: Analys av plundring och rättfärdigande",
+    "instruction": "Analysera hur soldaterna rättfärdigade plundringen och hur det utvecklades.",
+    "source_text": "Det enda sättet att lära de här fritzarna att krig inte lönar sig är att köra med dem på samma sätt som de kör med andra. Jag hörde denna tanke uttryckas gång på gång. Seger innebar underförstått rätten till byte. De segerrika styrkorna lade beslag på alla fiendens begärliga ägodelar som överhuvudtaget var möjliga att släpa med sig – sprit och cigarretter, kameror, kikare, hagelbössor och andra jaktgevär, ceremoniella svärd och dolkar, silverornament och matsilver och skinnkläder. Denna typ av småstölder kallades för 'att befria' eller 'att skaffa souvenirer'. Militärpolisen blundade, ända tills de mer rovgiriga befriarna, vanligtvis understöds- och transportpersonal, började stjäla dyrbara bilar, antika möbler, radioapparater, verktygsmaskiner och annan industriell utrustning, och hittade på fiffiga sätt att smuggla ut de stulna varorna till kusten varifrån småbåtar kunde färja över varorna till England. Först sedan plundring blivit en organiserad brottslig verksamhet då striderna upphörde gick militärregeringen in och upprätthöll lagen. Fram till dess tog soldaterna vad de ville ha och körde ofta med tyskarna när de gjorde det. Ändå såg jag få fall av avsiktlig eller perverterad brutalitet. Trupperna kände att de enbart skipade en kärv rättvisa, att det handlade om en moraliskt rättmätig vedergällning, mot en ras vars arméer hade plundrat Västeuropa i närmare fem år. Ett av de få tillfällen då jag såg amerikanska soldater med berått mod och i nyktert tillstånd skövla ett tyskt hus var i Erfurt. De som bodde där hade flytt och lämnat efter sig en lapp i köket där det stod: 'DET HÄR ÄR ETT HEM FÖR FOLK SOM NI – VAR SNÄLLA OCH SLÅ INTE SÖNDER DET.'",
+    
+    "template": {
+      "step1": {
+        "question": "Vad såg soldaterna som GRUNDEN för att de hade rätt att plundra?",
+        "type": "dropdown",
+        "options": [
+          { 
+            "text": "De behövde pengarna för sina familjer", 
+            "correct": false, 
+            "feedback": "Nej, det handlade inte om ekonomiskt behov. Läs om deras motivering." 
+          },
+          { 
+            "text": "Det var vedergällning för vad Tyskland gjort i Europa", 
+            "correct": true, 
+            "feedback": "Rätt! De såg det som rättmätig hämnd för fem års plundring i Europa. White skriver att det var 'vedergällning mot en ras vars arméer hade plundrat Västeuropa'." 
+          },
+          { 
+            "text": "De fick order från sina befälhavare", 
+            "correct": false, 
+            "feedback": "Nej, militärpolisen blundade men gav inga direkta order om plundring." 
+          }
+        ],
+        "template_output": "Soldaterna plundrade som [VALT SVAR]."
+      },
+      
+      "step2": {
+        "question": "Vad kallade soldaterna plundringen istället för att säga 'stjäla'? Citera från texten.",
+        "type": "text_input",
+        "min_length": 10,
+        "required_keywords": ["befria", "souvenirer"],
+        "min_keywords_match": 1,
+        "example": "De kallade det 'att befria' eller 'att skaffa souvenirer'.",
+        "feedback": {
+          "has_keyword": "Perfekt! Du citerar eufemismerna som soldaterna använde.",
+          "too_vague": "Leta efter vad soldaterna KALLADE sina handlingar - vilka mjukare ord använde de istället för 'stjäla'?"
+        },
+        "template_output": "Detta kallade de för [ELEVENS CITAT]."
+      },
+      
+      "step3": {
+        "question": "Förklara med EGNA ORD varför militärpolisen först blundade men sedan ingrep. Skriv 2-3 meningar.",
+        "type": "text_input",
+        "min_length": 50,
+        "required_concepts": [
+          {
+            "required_keywords": ["småstölder", "små", "organiserad", "brottslig", "verksamhet", "industriell", "smuggla"],
+            "min_keywords_match": 2,
+            "feedback": "Bra! Du förstår skillnaden mellan små stölder och organiserad brottslighet."
+          }
+        ],
+        "feedback": {
+          "success": "Utmärkt! Du förklarar utvecklingen från accepterad plundring till organiserad brottslighet.",
+          "needs_improvement": "Utveckla: Vad var skillnaden mellan vad soldaterna tog FÖRST (småsaker) och vad som hände SENARE (bilar, maskiner)? När blev det 'för mycket'?"
+        },
+        "template_output": "Detta visar att [ELEVENS FÖRKLARING]."
+      },
+      
+      "step4": {
+        "question": "Ge ett KONKRET exempel från texten som visar hur tyskarna försökte stoppa plundringen.",
+        "type": "text_input",
+        "min_length": 20,
+        "required_keywords": ["lapp", "köket", "hem", "snälla", "sönder", "Erfurt"],
+        "min_keywords_match": 2,
+        "example": "De lämnade en lapp i köket där det stod 'DET HÄR ÄR ETT HEM FÖR FOLK SOM NI – VAR SNÄLLA OCH SLÅ INTE SÖNDER DET'.",
+        "feedback": {
+          "has_example": "Perfekt! Du visar det konkreta exemplet med lappen i Erfurt.",
+          "no_example": "Leta efter vad tyskarna SKREV för att försöka skydda sina hem. Vilken stad nämns?"
+        },
+        "template_output": "Till exempel [ELEVENS EXEMPEL]."
+      },
+      
+      "final_assembly": {
+        "template": "Soldaterna plundrade som [STEG1]. Detta kallade de för [STEG2]. Detta visar att [STEG3]. Till exempel [STEG4].",
+        "evaluation": {
+          "4_parts": "Utmärkt! Du har byggt en komplett analys: identifierat rättfärdigandet, citerat eufemismerna, förklarat utvecklingen och gett konkret exempel på tysk reaktion."
+        }
+      }
+    }
+  },
+  
+  "level3": {
+    "title": "Nivå 3: Källjämförelse - Segrare vs Förlorare",
+    "instruction": "Jämför Osmar Whites och Stig Dagermans perspektiv på ockupationen av Tyskland 1945.",
+    
+    "source_comparison": {
+      "source_a": {
+        "title": "Osmar White - Segrarnas väg (1945)",
+        "type": "Journalistisk ögonvittnesskildring",
+        "perspective": "Allierad journalist observerar hur soldater plundrar och rättfärdigar det som 'vedergällning'.",
+        "text": "Trupperna kände att de enbart skipade en kärv rättvisa, att det handlade om en moraliskt rättmätig vedergällning, mot en ras vars arméer hade plundrat Västeuropa i närmare fem år."
+      },
+      "source_b": {
+        "title": "Stig Dagerman - Tyskt höstmöte (1946)",
+        "type": "Journalistisk intervju",
+        "perspective": "Svensk journalist dokumenterar hur tyska civila upplever ockupationen som 'straff' och att de 'sjunker'.",
+        "text": "Vi tyskar menar att det snart är på tiden att de allierade hör upp med att straffa oss. [...] Vi har en känsla av att sjunka och att vi ännu har långt kvar till botten."
+      }
+    },
+    
+    "task": {
+      "question": "Jämför hur soldaterna och de tyska civilbefolkningen ser på ockupationen. Använd strukturen nedan.",
+      "type": "free_text",
+      "min_words": 50,
+      
+      "template_guide": "Källa 1 (White) visar att [DIN TOLKNING].\nKälla 2 (Dagerman) visar att [DIN TOLKNING].\nDetta [bekräftar/motsäger/kompletterar] varandra.\nSkillnaden är att [FÖRKLARING].\nDet påverkar trovärdigheten genom att [FÖRKLARING].",
+      
+      "helper_text": "💡 Använd ord som: bekräftar, motsäger, kompletterar, medan, däremot, stärker, försvagar, trovärdighet",
+      
+      "placeholder": "Källa 1 (White) visar att soldaterna såg plundringen som...\nKälla 2 (Dagerman) visar att tyskarna upplevde det som...",
+      
+      "evaluation": {
+        "required_concepts": [
+          {
+            "concept_name": "Båda perspektiven identifierade",
+            "keywords": ["White", "soldater", "plundring", "vedergällning", "rättfärdigade", "Dagerman", "tyskar", "straff", "sjunka"],
+            "min_keywords_match": 4,
+            "points": 1,
+            "feedback": "✅ Bra! Du har identifierat båda perspektiven."
+          },
+          {
+            "concept_name": "Jämförelse genomförd",
+            "keywords": ["bekräftar", "motsäger", "kompletterar", "skillnad", "medan", "däremot", "istället", "men"],
+            "min_keywords_match": 1,
+            "points": 1,
+            "feedback": "✅ Utmärkt! Du jämför källorna."
+          },
+          {
+            "concept_name": "Förklaring av perspektivskillnad",
+            "keywords": ["segrare", "förlorare", "rättfärdigande", "upplevelse", "olika", "perspektiv", "synsätt"],
+            "min_keywords_match": 2,
+            "points": 1,
+            "feedback": "✅ Perfekt! Du förklarar varför perspektiven skiljer sig."
+          },
+          {
+            "concept_name": "Källkritisk reflektion",
+            "keywords": ["trovärdighet", "stärker", "försvagar", "nyanserar", "kompletterar", "pålitlig", "bias", "vinklad"],
+            "min_keywords_match": 1,
+            "points": 1,
+            "feedback": "✅ Excellent! Du reflekterar källkritiskt."
+          }
+        ],
+        
+        "min_concepts_match": 3,
+        
+        "feedback_levels": {
+          "excellent": "Utmärkt analys! Du visar tydligt hur segrare och förlorare ser samma händelser helt olika, och du reflekterar över hur detta påverkar källornas trovärdighet. Du använder strukturerad jämförelse.",
+          "good": "Bra! Du jämför källorna. För att nå högsta nivå: Var mer specifik om HUR perspektiven skiljer sig och VARFÖR det påverkar trovärdigheten.",
+          "needs_improvement": "Använd mallen! Beskriv tydligt: Vad visar White? Vad visar Dagerman? Motsäger eller kompletterar de varandra? Varför är skillnaden viktig?"
+        }
+      },
+      
+      "hints": [
+        "Tips 1: White beskriver soldaternas handlingar och deras rättfärdigande. Dagerman beskriver hur tyskar UPPLEVER samma sak. Hur skiljer sig dessa perspektiv?",
+        "Tips 2: Soldaterna kallar det 'vedergällning' och 'rättmätig'. Tyskarna kallar det 'straff'. Vad säger dessa ordval om perspektiven?",
+        "Tips 3: Båda är journalister, ingen är deltagare. Men White sympatiserar med segrarna, Dagerman intervjuar förlorarna. Hur påverkar det trovärdigheten?"
+      ],
+      
+      "model_answer": {
+        "text": "Källa 1 (White) visar att allierade soldater såg plundringen som 'moraliskt rättmätig vedergällning' för vad Tyskland gjort i Europa. Källa 2 (Dagerman) visar att tyska civila upplevde samma handlingar som 'straff' och kände att de 'sjönk' utan hopp om förbättring.\n\nDessa perspektiv motsäger inte varandra faktiskt, utan kompletterar varandra. Skillnaden är att White beskriver segrarnas rättfärdigande medan Dagerman visar förlorarnas upplevelse av samma händelser.\n\nDetta stärker trovärdigheten i båda källorna eftersom de bekräftar att plundring verkligen skedde, men visar hur dramatiskt olika samma händelse upplevdes beroende på om man var segrare eller förlorare. Båda journalisterna är trovärdiga ögonvittnen, men de dokumenterar olika sidor av samma verklighet.",
+        
+        "analysis": "Detta svar visar C-nivå eftersom det: ✅ Identifierar båda perspektiven, ✅ Jämför och förklarar skillnaden, ✅ Använder strukturerad mall, ✅ Reflekterar källkritiskt över trovärdighet och perspektiv."
+      }
+    }
+  }
+}

@@ -104,9 +104,32 @@ export default function Level3({ data, onComplete }) {
         </div>
       </div>
 
-      {/* Task */}
       <div className="bg-white border-2 border-amber-200 rounded-lg p-6">
-        <h3 className="text-lg font-bold text-amber-900 mb-4">{data.task.question}</h3>
+  <h3 className="text-lg font-bold text-amber-900 mb-4">{data.task.question}</h3>
+  
+  {/* Template guide - visar strukturmall */}
+  {data.task.template_guide && (
+    <div className="bg-purple-50 border-2 border-purple-300 rounded-lg p-4 mb-4">
+      <p className="text-sm font-bold text-purple-900 mb-2">📝 Använd denna mall:</p>
+      <p className="text-sm text-purple-800 font-mono whitespace-pre-line">
+        {data.task.template_guide}
+      </p>
+    </div>
+  )}
+  
+  {/* Helper text - påminner om nyckelord */}
+  {data.task.helper_text && (
+    <div className="bg-blue-50 border border-blue-200 rounded-lg p-3 mb-4">
+      <p className="text-sm text-blue-900">{data.task.helper_text}</p>
+    </div>
+  )}
+  
+  <textarea
+    value={studentText}
+    onChange={(e) => setStudentText(e.target.value)}
+    placeholder={data.task.placeholder || "Skriv din jämförande analys här... Var SPECIFIK och ge KONKRETA exempel!"}
+    className="w-full px-4 py-3 border-2 border-amber-200 rounded-lg focus:border-amber-500 focus:outline-none min-h-[200px] text-lg"
+  />
 
         <textarea
           value={studentText}

@@ -1,0 +1,232 @@
+{
+  "id": "dagerman_straff_1946",
+  "title": "Stig Dagerman - Tyskt höstmöte, 1946",
+  "type": "primary_source",
+  
+  "full_text": "Vi kommer ut på ett stort ruintorg där en hög, ensam hisstrumma har glömts kvar av bomberna. Några ruinarbetare rullar långsamt en liten vagn med skrot och sten över platsen, och när de närmar sig gatan stiger en kvinna med en röd flagga alldeles meningslöst ut i gatan och hejdar trafiken som inte finns. – Ser ni, herr D., säger den frostskadade kvinnan i mitt sällskap och tar mig i armen, vi tyskar menar att det snart är på tiden att de allierade hör upp med att straffa oss. För vad man än kan säga om oss tyskar, vad våra soldater än har gjort i främmande länder, inte har vi förtjänat det straff som nu övergår oss. – Straff, undrar jag, varför menar ni att det är straff att ni har det som ni har det? – Jo, därför att det har blivit sämre i stället för bättre, svarar fräulein S. Vi har en känsla av att sjunka och att vi ännu har långt kvar till botten. Och så berättar hon den populära och dess värre alltför väl bestyrkta historien om den engelske kaptenen som besvarade en förfrågan om varför inte engelsmännen låter bygga upp Hamburgs järnvägsstationer med orden: Varför skulle vi hjälpa er tyskar att komma på fötter på tre år när det lika bra kan dröja trettio.",
+  
+  "level1": {
+    "instruction": "Stig Dagerman intervjuar en tysk kvinna om hur hon upplever ockupationen. Hitta orden som visar hennes känslor och situationen.",
+    
+    "step1": {
+      "title": "Steg 1: Ruinlandskapet",
+      "instruction": "Hur beskrivs det förstörda Tyskland? Klicka på orden som visar förödelsen.",
+      "hint": "Leta efter ord som 'ruiner', 'skrot', 'bomber' och vad som 'glömts kvar'.",
+      "text_highlight": "Vi kommer ut på ett stort ruintorg där en hög, ensam hisstrumma har glömts kvar av bomberna. Några ruinarbetare rullar långsamt en liten vagn med skrot och sten över platsen.",
+      "correct_words": ["ruintorg", "hisstrumma", "glömts", "bomberna", "ruinarbetare", "skrot", "sten"],
+      "success_threshold": 4,
+      "feedback": {
+        "ruintorg": "Ja, hela torget är förstört.",
+        "hisstrumma": "En ensam hisstrumma - resten av byggnaden är borta.",
+        "bomberna": "Bomberna har förstört staden.",
+        "skrot": "Bara skrot återstår av byggnader.",
+        "ruinarbetare": "Folk arbetar med att röja upp ruinerna."
+      },
+      "missing_feedback": "Leta efter ord som beskriver förstörelsen - vad finns kvar efter bombningen?"
+    },
+    
+    "step2": {
+      "title": "Steg 2: Känslan av straff",
+      "instruction": "Hur beskriver den tyska kvinnan sin situation? Klicka på de viktigaste orden.",
+      "hint": "Leta efter 'straff', 'förtjänat', 'övergår' och liknande ord.",
+      "text_highlight": "Vi tyskar menar att det snart är på tiden att de allierade hör upp med att straffa oss. För vad man än kan säga om oss tyskar, vad våra soldater än har gjort i främmande länder, inte har vi förtjänat det straff som nu övergår oss.",
+      "correct_words": ["straffa", "soldater", "främmande", "förtjänat", "straff", "övergår"],
+      "success_threshold": 4,
+      "feedback": {
+        "straffa": "Perfekt! Hon upplever det som straff.",
+        "straff": "Nyckelordet - hon ser det som bestraffning.",
+        "förtjänat": "Hon menar att de inte förtjänar detta.",
+        "övergår": "Straffet 'övergår' dem - de drabbas av det.",
+        "soldater": "Hon erkänner att tyska soldater gjort fel.",
+        "främmande": "I andra länder - hon vet vad Tyskland gjort."
+      },
+      "missing_feedback": "Leta efter ord som visar att hon upplever situationen som bestraffning."
+    },
+    
+    "step3": {
+      "title": "Steg 3: Hopplösheten",
+      "instruction": "Vilka ord visar kvinnans hopplöshet och känsla av att situationen förvärras? Klicka på dem.",
+      "hint": "Leta efter 'sjunka', 'botten', 'sämre' och vad engelsmännen säger.",
+      "text_highlight": "Jo, därför att det har blivit sämre i stället för bättre, svarar fräulein S. Vi har en känsla av att sjunka och att vi ännu har långt kvar till botten. Och så berättar hon historien om den engelske kaptenen som sade: Varför skulle vi hjälpa er tyskar att komma på fötter på tre år när det lika bra kan dröja trettio.",
+      "correct_words": ["sämre", "sjunka", "botten", "långt", "hjälpa", "tre", "trettio"],
+      "success_threshold": 4,
+      "feedback": {
+        "sämre": "Det blir värre, inte bättre.",
+        "sjunka": "Nyckelord! De känner att de sjunker.",
+        "botten": "De har inte nått botten än - det kan bli ännu värre.",
+        "hjälpa": "Engelsmännen vill inte hjälpa dem.",
+        "trettio": "Det kan ta 30 år istället för 3 - ingen brådska."
+      },
+      "missing_feedback": "Leta efter ord som visar att situationen blir värre och att det inte finns hopp om snabb förbättring."
+    }
+  },
+  
+  "level2": {
+    "title": "Nivå 2: Analys av tysk upplevelse och hopplöshet",
+    "instruction": "Analysera hur den tyska kvinnan upplever och förklarar sin situation.",
+    "source_text": "Vi kommer ut på ett stort ruintorg där en hög, ensam hisstrumma har glömts kvar av bomberna. Några ruinarbetare rullar långsamt en liten vagn med skrot och sten över platsen, och när de närmar sig gatan stiger en kvinna med en röd flagga alldeles meningslöst ut i gatan och hejdar trafiken som inte finns. – Ser ni, herr D., säger den frostskadade kvinnan i mitt sällskap och tar mig i armen, vi tyskar menar att det snart är på tiden att de allierade hör upp med att straffa oss. För vad man än kan säga om oss tyskar, vad våra soldater än har gjort i främmande länder, inte har vi förtjänat det straff som nu övergår oss. – Straff, undrar jag, varför menar ni att det är straff att ni har det som ni har det? – Jo, därför att det har blivit sämre i stället för bättre, svarar fräulein S. Vi har en känsla av att sjunka och att vi ännu har långt kvar till botten. Och så berättar hon den populära och dess värre alltför väl bestyrkta historien om den engelske kaptenen som besvarade en förfrågan om varför inte engelsmännen låter bygga upp Hamburgs järnvägsstationer med orden: Varför skulle vi hjälpa er tyskar att komma på fötter på tre år när det lika bra kan dröja trettio.",
+    
+    "template": {
+      "step1": {
+        "question": "Hur ser den tyska kvinnan på sin situation?",
+        "type": "dropdown",
+        "options": [
+          { 
+            "text": "Som en naturlig konsekvens av kriget", 
+            "correct": false, 
+            "feedback": "Nej, hon ser det inte som naturligt. Hon använder ett annat ord - läs igen." 
+          },
+          { 
+            "text": "Som ett straff från de allierade", 
+            "correct": true, 
+            "feedback": "Rätt! Hon säger uttryckligen att 'det snart är på tiden att de allierade hör upp med att straffa oss' och talar om 'det straff som nu övergår oss'." 
+          },
+          { 
+            "text": "Som en tillfällig svårighet som snart förbättras", 
+            "correct": false, 
+            "feedback": "Tvärtom! Hon säger att det 'har blivit sämre i stället för bättre' och att de 'sjunker'." 
+          }
+        ],
+        "template_output": "Den tyska kvinnan ser situationen [VALT SVAR]."
+      },
+      
+      "step2": {
+        "question": "Vilket kraftfullt bildspråk använder kvinnan för att beskriva sin känsla? Citera från texten.",
+        "type": "text_input",
+        "min_length": 10,
+        "required_keywords": ["sjunka", "botten"],
+        "min_keywords_match": 1,
+        "example": "Hon säger att de har 'en känsla av att sjunka' och att de 'ännu har långt kvar till botten'.",
+        "feedback": {
+          "has_keyword": "Perfekt! Du citerar bildspråket om att sjunka.",
+          "too_vague": "Leta efter metaforen om att röra sig nedåt - vad säger hon om att 'sjunka'?"
+        },
+        "template_output": "Hon beskriver det som [ELEVENS CITAT]."
+      },
+      
+      "step3": {
+        "question": "Förklara med EGNA ORD vad den engelske kaptenens uttalande visar om attityden gentemot Tyskland. Skriv 2-3 meningar.",
+        "type": "text_input",
+        "min_length": 50,
+        "required_concepts": [
+          {
+            "required_keywords": ["hjälpa", "inte", "långsamt", "straffas", "hindra", "vänta", "avsiktligt"],
+            "min_keywords_match": 2,
+            "feedback": "Bra! Du förstår att engelsmännen medvetet dröjer med återuppbyggnaden."
+          }
+        ],
+        "feedback": {
+          "success": "Utmärkt! Du förklarar hur engelsmännen medvetet bromsar återuppbyggnaden som en form av fortsatt bestraffning.",
+          "needs_improvement": "Utveckla: Varför säger kaptenen 30 år istället för 3 år? Vad visar det om attityden?"
+        },
+        "template_output": "Detta visar att [ELEVENS FÖRKLARING]."
+      },
+      
+      "step4": {
+        "question": "Ge ett KONKRET exempel från texten som visar absurditeten i efterkrigstidens Tyskland.",
+        "type": "text_input",
+        "min_length": 20,
+        "required_keywords": ["kvinna", "flagga", "trafiken", "finns", "meningslöst", "hejdar"],
+        "min_keywords_match": 2,
+        "example": "En kvinna står 'alldeles meningslöst' och hejdar 'trafiken som inte finns' med en röd flagga.",
+        "feedback": {
+          "has_example": "Perfekt! Du visar det absurda exemplet med trafikkvinnorna.",
+          "no_example": "Leta efter scenen på torget - vad gör kvinnan med den röda flaggan? Varför är det meningslöst?"
+        },
+        "template_output": "Till exempel [ELEVENS EXEMPEL]."
+      },
+      
+      "final_assembly": {
+        "template": "Den tyska kvinnan ser situationen [STEG1]. Hon beskriver det som [STEG2]. Detta visar att [STEG3]. Till exempel [STEG4].",
+        "evaluation": {
+          "4_parts": "Utmärkt! Du har byggt en komplett analys: identifierat hur tyskar upplever ockupationen som straff, citerat bildspråket om hopplösheten, förklarat den allierade attityden och gett konkret exempel på absurditeten."
+        }
+      }
+    }
+  },
+  
+  "level3": {
+    "title": "Nivå 3: Källjämförelse - Segrare vs Förlorare",
+    "instruction": "Jämför Osmar Whites och Stig Dagermans perspektiv på ockupationen av Tyskland 1945-1946.",
+    
+    "source_comparison": {
+      "source_a": {
+        "title": "Osmar White - Segrarnas väg (1945)",
+        "type": "Journalistisk ögonvittnesskildring",
+        "perspective": "Allierad journalist observerar hur soldater plundrar och rättfärdigar det som 'vedergällning'.",
+        "text": "Trupperna kände att de enbart skipade en kärv rättvisa, att det handlade om en moraliskt rättmätig vedergällning, mot en ras vars arméer hade plundrat Västeuropa i närmare fem år."
+      },
+      "source_b": {
+        "title": "Stig Dagerman - Tyskt höstmöte (1946)",
+        "type": "Journalistisk intervju",
+        "perspective": "Svensk journalist dokumenterar hur tyska civila upplever ockupationen som 'straff' och att de 'sjunker'.",
+        "text": "Vi tyskar menar att det snart är på tiden att de allierade hör upp med att straffa oss. [...] Vi har en känsla av att sjunka och att vi ännu har långt kvar till botten."
+      }
+    },
+    
+    "task": {
+      "question": "Jämför hur soldaterna och de tyska civilbefolkningen ser på ockupationen. Använd strukturen nedan.",
+      "type": "free_text",
+      "min_words": 50,
+      
+      "template_guide": "Källa 1 (White) visar att [DIN TOLKNING].\nKälla 2 (Dagerman) visar att [DIN TOLKNING].\nDetta [bekräftar/motsäger/kompletterar] varandra.\nSkillnaden är att [FÖRKLARING].\nDet påverkar trovärdigheten genom att [FÖRKLARING].",
+      
+      "helper_text": "💡 Använd ord som: bekräftar, motsäger, kompletterar, medan, däremot, stärker, försvagar, trovärdighet",
+      
+      "placeholder": "Källa 1 (White) visar att soldaterna såg plundringen som...\nKälla 2 (Dagerman) visar att tyskarna upplevde det som...",
+      
+      "evaluation": {
+        "required_concepts": [
+          {
+            "concept_name": "Båda perspektiven identifierade",
+            "keywords": ["White", "soldater", "plundring", "vedergällning", "rättfärdigade", "Dagerman", "tyskar", "straff", "sjunka"],
+            "min_keywords_match": 4,
+            "points": 1,
+            "feedback": "✅ Bra! Du har identifierat båda perspektiven."
+          },
+          {
+            "concept_name": "Jämförelse genomförd",
+            "keywords": ["bekräftar", "motsäger", "kompletterar", "skillnad", "medan", "däremot", "istället", "men"],
+            "min_keywords_match": 1,
+            "points": 1,
+            "feedback": "✅ Utmärkt! Du jämför källorna."
+          },
+          {
+            "concept_name": "Förklaring av perspektivskillnad",
+            "keywords": ["segrare", "förlorare", "rättfärdigande", "upplevelse", "olika", "perspektiv", "synsätt"],
+            "min_keywords_match": 2,
+            "points": 1,
+            "feedback": "✅ Perfekt! Du förklarar varför perspektiven skiljer sig."
+          },
+          {
+            "concept_name": "Källkritisk reflektion",
+            "keywords": ["trovärdighet", "stärker", "försvagar", "nyanserar", "kompletterar", "pålitlig", "bias", "vinklad"],
+            "min_keywords_match": 1,
+            "points": 1,
+            "feedback": "✅ Excellent! Du reflekterar källkritiskt."
+          }
+        ],
+        
+        "min_concepts_match": 3,
+        
+        "feedback_levels": {
+          "excellent": "Utmärkt analys! Du visar tydligt hur segrare och förlorare ser samma händelser helt olika, och du reflekterar över hur detta påverkar källornas trovärdighet. Du använder strukturerad jämförelse.",
+          "good": "Bra! Du jämför källorna. För att nå högsta nivå: Var mer specifik om HUR perspektiven skiljer sig och VARFÖR det påverkar trovärdigheten.",
+          "needs_improvement": "Använd mallen! Beskriv tydligt: Vad visar White? Vad visar Dagerman? Motsäger eller kompletterar de varandra? Varför är skillnaden viktig?"
+        }
+      },
+      
+      "hints": [
+        "Tips 1: White beskriver soldaternas handlingar och deras rättfärdigande. Dagerman beskriver hur tyskar UPPLEVER samma sak. Hur skiljer sig dessa perspektiv?",
+        "Tips 2: Soldaterna kallar det 'vedergällning' och 'rättmätig'. Tyskarna kallar det 'straff'. Vad säger dessa ordval om perspektiven?",
+        "Tips 3: Båda är journalister, ingen är deltagare. Men White sympatiserar med segrarna, Dagerman intervjuar förlorarna. Hur påverkar det trovärdigheten?"
+      ],
+      
+      "model_answer": {
+        "text": "Källa 1 (White) visar att allierade soldater såg plundringen som 'moraliskt rättmätig vedergällning' för vad Tyskland gjort i Europa. Källa 2 (Dagerman) visar att tyska civila upplevde samma handlingar som 'straff' och kände att de 'sjönk' utan hopp om förbättring.\n\nDessa perspektiv motsäger inte varandra faktiskt, utan kompletterar varandra. Skillnaden är att White beskriver segrarnas rättfärdigande medan Dagerman visar förlorarnas upplevelse av samma händelser.\n\nDetta stärker trovärdigheten i båda källorna eftersom de bekräftar att hård behandling verkligen skedde, men visar hur dramatiskt olika samma händelse upplevdes beroende på om man var segrare eller förlorare. Båda journalisterna är trovärdiga ögonvittnen, men de dokumenterar olika sidor av samma verklighet.",
+        
+        "analysis": "Detta svar visar C-nivå eftersom det: ✅ Identifierar båda perspektiven, ✅ Jämför och förklarar skillnaden, ✅ Använder strukturerad mall, ✅ Reflekterar källkritiskt över trovärdighet och perspektiv."
+      }
+    }
+  }
+}

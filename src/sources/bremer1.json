@@ -1,8 +1,7 @@
 {
   "id": "bremer_vs_calhoun_bilingual_1850",
-  "title": "Perspektiv på slaveriet: Bremer vs Calhoun (Tvåspråkig)",
+  "title": "Perspektiv på slaveriet: Bremer vs Calhoun (1850)",
   "type": "comparison_study",
-  
   "full_text": "Fredrika Bremers brev beskriver slaveriet som en 'mörk skymmande skugga' och betonar människovärde och frihet. John C. Calhoun argumenterar istället för att systemet är ett 'positivt gott' [a positive good] som ger trygghet.",
 
   "level1": {
@@ -12,78 +11,192 @@
       "instruction": "Klicka på de ord som beskriver vad Bremer hoppas att den nya världen ska erbjuda alla människor.",
       "text_highlight": "dess förnämsta tanka och föremål är: en rättvisare jämnare fördelning emellan människorna av livets lotter vare sig för själen eller kroppen, ett beredande av likhet i tillfälle för alla till utveckling och ernående av livets högsta goda, av människovärde och människosällhet.",
       "correct_words": ["rättvisare", "jämnare", "likhet", "utveckling", "människovärde", "människosällhet"],
-      "success_threshold": 3
+      "success_threshold": 3,
+      "feedback": {
+        "människovärde": "Bra! Detta är kärnan i Bremers humanistiska syn.",
+        "likhet": "Helt rätt, hon betonar allas lika rätt till utveckling.",
+        "rättvisare": "Ja, hon ser en potential för rättvisa i den nya världen."
+      }
     },
     "step2": {
       "title": "Steg 2: Skuggan i södern",
       "instruction": "Hitta de ord Bremer använder för att beskriva slaveriet och livet i sydstaterna.",
       "text_highlight": "I södern finner man Slaveriet, som en mörk, skymmande skugga. Här är ett vekare, slappare liv i allt.",
       "correct_words": ["Slaveriet", "mörk", "skymmande", "skugga", "slappare", "vekare"],
-      "success_threshold": 3
+      "success_threshold": 3,
+      "feedback": {
+        "skugga": "En berömd metafor! Hon ser slaveriet som något som förmörkar framtiden.",
+        "slappare": "Ja, hon kontrasterar söderns livsstil mot nordsidan.",
+        "mörk": "Detta ord förstärker hennes negativa bild av systemet."
+      }
+    },
+    "step3": {
+      "title": "Steg 3: Sammanfattningen",
+      "instruction": "Vilket är det sista ordet som sammanfattar hennes hopp trots skuggan?",
+      "text_highlight": "Men mitt i detta mörker ser hon ändå hoppet om frihet.",
+      "correct_words": ["frihet"],
+      "success_threshold": 1,
+      "feedback": {
+        "frihet": "Exakt. Friheten är det stora målet för Bremer."
+      }
     }
   },
 
   "level2": {
-    "title": "Nivå 2: Förstå argumentationen (Original & Översättning)",
-    "instruction": "Läs citatet från John C. Calhoun (1837) där originalet står inom klamrar []. Svara sedan på frågorna.",
-    "source_text": "Jag hävdar att det existerande förhållandet mellan de två raserna i södern, istället för ett ont, är ett gott – ett positivt gott [a positive good]. Se på den sjuke, den föräldralöse och den gamle slaven i händerna på en human herre [a kind and superintending master]. Jämför hans trygghet med den fattige arbetaren i Europas fabriker.",
-    "template": {
-      "step1": {
-        "question": "Vad är Calhouns huvudargument för slaveriet?",
-        "type": "dropdown",
-        "options": [
-          { "text": "Att det är ett nödvändigt ont", "correct": false, "feedback": "Nej, han säger uttryckligen att det är ett 'positivt gott' [positive good]." },
-          { "text": "Att det är ett 'positivt gott' [positive good] som ger trygghet", "correct": true, "feedback": "Rätt! Han använder det starka uttrycket 'positive good' för att försvara systemet." },
-          { "text": "Att slaveriet är sämre än fabrikerna i Europa", "correct": false, "feedback": "Nej, han påstår tvärtom att slaveriet ger mer trygghet än fabrikerna." }
-        ],
-        "template_output": "Calhoun hävdar att slaveriet är [VALT SVAR]."
-      },
-      "step2": {
-        "question": "Vilka ord använder Calhoun för att beskriva slavägaren som god?",
-        "type": "text_input",
-        "min_length": 5,
-        "required_keywords": ["human", "herre", "master"],
-        "min_keywords_match": 1,
-        "example": "Till exempel 'en human herre' [a kind and superintending master]",
-        "feedback": {
-          "has_keyword": "Bra! Han använder ordet 'human' (eller 'kind' i originalet) för att dölja systemets brutalitet.",
-          "too_vague": "Leta efter hur han beskriver mannen som äger slaven."
-        },
-        "template_output": "Han använder orden [ELEVENS CITAT]."
-      }
-    }
-  },
-
-  "level3": {
-    "title": "Nivå 3: Källjämförelse och Tendens",
-    "instruction": "Analysera källornas tendens genom att titta på deras ordval i både svenska och engelska.",
-    "source_comparison": {
-      "source_a": {
-        "title": "Fredrika Bremer",
-        "perspective": "Svensk resenär. Ser slaveriet som en 'mörk skugga'."
-      },
-      "source_b": {
-        "title": "John C. Calhoun",
-        "perspective": "Sydstatspolitiker. Ser det som 'a positive good' (ett positivt gott)."
-      }
+  "title": "Nivå 2: Förstå argumentationen",
+  "source_title": "John C. Calhouns försvarstal",
+  "instruction": "Läs citatet från John C. Calhoun (1837) och svara på frågorna.",
+  "source_text": "Jag hävdar att det existerande förhållandet mellan de två raserna i södern, istället för ett ont, är ett gott – ett positivt gott [a positive good]. Se på den sjuke, den föräldralöse och den gamle slaven i händerna på en human herre [a kind and superintending master]. Jämför hans trygghet med den fattige arbetaren i Europas fabriker.",
+  
+  "template": {
+    "step1": {
+      "question": "Vad är Calhouns huvudargument för slaveriet?",
+      "type": "dropdown",
+      "options": [
+        { "text": "Att det är ett nödvändigt ont", "correct": false, "feedback": "Nej, han säger uttryckligen att det är ett 'positivt gott'." },
+        { "text": "Att det är ett 'positivt gott' [positive good] som ger trygghet", "correct": true, "feedback": "Rätt! Han använder 'positive good' för att försvara systemet moraliskt." },
+        { "text": "Att slaveriet är sämre än fabrikerna i Europa", "correct": false, "feedback": "Nej, han påstår tvärtom att slaveriet ger mer trygghet." }
+      ],
+      "template_output": "Calhoun hävdar att slaveriet är [VALT SVAR]."
     },
-    "task": {
-      "question": "Hur förändras din förståelse av källan när du ser originalets uttryck 'positive good'? Förklara källornas TENDENS.",
-      "type": "free_text",
-      "min_words": 30,
-      "evaluation": {
-        "required_concepts": [
-          {
-            "concept_name": "Tendens",
-            "keywords": ["tendens", "syfte", "försvara", "kritisera", "positive good", "skugga"],
-            "points": 1,
-            "feedback": "✅ Utmärkt! Du kopplar ihop begreppet tendens med de specifika citaten."
-          }
-        ]
+    
+    "step2": {
+      "question": "Vilket ord använder han för att få herren (ägaren) att framstå som god?",
+      "type": "text_input",
+      "min_length": 5,
+      "required_keywords": ["human", "kind"],
+      "min_keywords_match": 1,
+      "example": "en human herre",
+      "feedback": {
+        "has_keyword": "Bra! Han använder 'human' för att försköna bilden av slaveriet.",
+        "too_vague": "Leta efter ordet som beskriver 'herren'."
       },
-      "model_answer": {
-        "text": "Genom att Calhoun kallar slaveriet 'a positive good' visar han en extremt stark försvarande tendens. Han vill inte bara behålla systemet, utan påstå att det är moraliskt rätt. Detta står i total kontrast till Bremers beskrivning av det som en 'skugga', vilket visar hennes kritiska tendens och fokus på frihet."
+      "template_output": "Han beskriver ägaren som [ELEVENS CITAT]."
+    },
+    
+    "step3": {
+      "question": "Förklara med EGNA ORD varför Calhoun jämför slaveriet med europeiska fabriksarbetare. Skriv 2-3 meningar.",
+      "type": "text_input",
+      "min_length": 50,
+      "required_concepts": [
+        {
+          "required_keywords": ["trygghet", "fattig", "arbetare", "Europa", "jämföra", "bättre"],
+          "min_keywords_match": 2,
+          "feedback": "Bra! Du förstår hans retoriska strategi."
+        }
+      ],
+      "feedback": {
+        "success": "Utmärkt! Du förklarar hur han försöker visa att slavar har det bättre än fria arbetare.",
+        "needs_improvement": "Utveckla: VARFÖR nämner han europeiska arbetare? Vad försöker han visa?"
+      },
+      "template_output": "Detta visar att [ELEVENS FÖRKLARING]."
+    },
+    
+    "step4": {
+      "question": "Ge ett KONKRET exempel från texten som visar vem Calhoun säger har det bra som slav.",
+      "type": "text_input",
+      "min_length": 15,
+      "required_keywords": ["sjuke", "föräldralöse", "gamle", "slaven"],
+      "min_keywords_match": 1,
+      "example": "Den sjuke, den föräldralöse och den gamle slaven.",
+      "feedback": {
+        "has_example": "Perfekt! Du visar vilka grupper han nämner.",
+        "no_example": "Leta efter vilka olika typer av slavar han nämner - sjuk, gammal...?"
+      },
+      "template_output": "Till exempel nämns [ELEVENS EXEMPEL]."
+    },
+    
+    "final_assembly": {
+      "template": "Calhoun hävdar att slaveriet är [STEG1]. Han beskriver ägaren som [STEG2]. Detta visar att [STEG3]. Till exempel nämns [STEG4].",
+      "evaluation": {
+        "4_parts": "Utmärkt! Du har analyserat Calhouns argument, ordval, retoriska strategi och konkreta exempel."
       }
     }
   }
+},
+
+"level3": {
+  "title": "Nivå 3: Källjämförelse och Tendens",
+  "instruction": "Analysera källornas tendens och syfte genom att jämföra Bremers och Calhouns perspektiv.",
+  
+  "source_comparison": {
+    "source_a": {
+      "title": "Fredrika Bremer - Brev från Chicago (1850)",
+      "type": "Personligt brev / Reseskildringar",
+      "perspective": "Svensk resenär. Ser slaveriet som en 'mörk skymmande skugga' över den ljusa framtiden.",
+      "text": "I södern finner man Slaveriet, som en mörk, skymmande skugga. Här är ett vekare, slappare liv i allt."
+    },
+    "source_b": {
+      "title": "John C. Calhoun - Tal i senaten (1837)",
+      "type": "Politiskt tal",
+      "perspective": "Sydstatspolitiker och slaveriförsvarare. Kallar slaveriet 'a positive good' - ett positivt gott.",
+      "text": "Jag hävdar att det existerande förhållandet mellan de två raserna i södern, istället för ett ont, är ett gott – ett positivt gott [a positive good]."
+    }
+  },
+  
+  "task": {
+    "question": "Jämför källornas TENDENS genom att analysera deras ordval. Använd strukturen nedan.",
+    "type": "free_text",
+    "min_words": 40,
+    
+    "template_guide": "Källa 1 (Bremer) visar att [DIN TOLKNING].\nKälla 2 (Calhoun) visar att [DIN TOLKNING].\nDeras tendenser [motsäger/kompletterar] varandra.\nSkillnaden beror på att [FÖRKLARING].\nDetta påverkar trovärdigheten genom att [FÖRKLARING].",
+    
+    "helper_text": "💡 Använd ord som: tendens, syfte, försvara, kritisera, positive good, skugga, bias, vinklad",
+    
+    "placeholder": "Källa 1 (Bremer) visar en kritisk tendens genom ordet 'skugga'...\nKälla 2 (Calhoun) visar en försvarande tendens genom 'positive good'...",
+    
+    "evaluation": {
+      "required_concepts": [
+        {
+          "concept_name": "Identifierat tendenser",
+          "keywords": ["tendens", "syfte", "försvara", "kritisera", "positive good", "skugga", "mörk"],
+          "min_keywords_match": 3,
+          "points": 1,
+          "feedback": "✅ Bra! Du har identifierat båda källornas tendenser."
+        },
+        {
+          "concept_name": "Förklarat ordval",
+          "keywords": ["ordval", "metafor", "skugga", "positivt gott", "human", "trygghet"],
+          "min_keywords_match": 2,
+          "points": 1,
+          "feedback": "✅ Utmärkt! Du analyserar hur ordvalen avslöjar tendens."
+        },
+        {
+          "concept_name": "Kopplat till kontext",
+          "keywords": ["sydstatspolitiker", "resenär", "försvarare", "neutral", "intresse", "position"],
+          "min_keywords_match": 2,
+          "points": 1,
+          "feedback": "✅ Perfekt! Du förstår varför de har olika perspektiv."
+        },
+        {
+          "concept_name": "Källkritisk reflektion",
+          "keywords": ["trovärdighet", "bias", "vinklad", "objektiv", "subjektiv", "pålitlig"],
+          "min_keywords_match": 1,
+          "points": 1,
+          "feedback": "✅ Excellent! Du reflekterar källkritiskt över trovärdighet."
+        }
+      ],
+      
+      "min_concepts_match": 3,
+      
+      "feedback_levels": {
+        "excellent": "Utmärkt analys! Du visar tydligt hur Bremers kritiska tendens (skugga, mörk) står i stark kontrast till Calhouns försvarande tendens (positive good, human herre). Du förklarar detta genom deras olika positioner och reflekterar över hur detta påverkar trovärdigheten.",
+        "good": "Bra! Du jämför tendenserna. För att nå högsta nivå: Var mer specifik om HUR ordvalen avslöjar tendens och VARFÖR deras positioner ger dem olika perspektiv.",
+        "needs_improvement": "Använd mallen! Beskriv tydligt: Vilken tendens har Bremer? Vilken har Calhoun? Hur ser du det i ordvalen? Varför skiljer de sig åt?"
+      }
+    },
+    
+    "hints": [
+      "Tips 1: Bremer använder ordet 'skugga' - vad säger det om hennes syn på slaveriet? Calhoun säger 'positive good' - vad visar det?",
+      "Tips 2: Tänk på VEM de är. Bremer är svensk resenär utan ekonomiskt intresse. Calhoun är sydstatspolitiker som försvarar systemet. Hur påverkar det deras tendens?",
+      "Tips 3: Båda källorna har stark tendens men på motsatta sätt. Hur påverkar det deras trovärdighet? Är en mer pålitlig än den andra?"
+    ],
+    
+    "model_answer": {
+      "text": "Källa 1 (Bremer) visar en starkt kritisk tendens genom att kalla slaveriet en 'mörk, skymmande skugga'. Detta ordval är en kraftfull negativ metafor.\n\nKälla 2 (Calhoun) visar däremot en extremt försvarande tendens genom att kalla det 'a positive good' - ett positivt gott. Han använder ord som 'human herre' och 'trygghet' för att försköna systemet.\n\nDeras tendenser motsäger varandra totalt. Skillnaden beror på att Bremer är en utomstående svensk resenär utan ekonomiskt intresse, medan Calhoun är sydstatspolitiker som aktivt försvarar ett system han har politiskt och ekonomiskt intresse av.\n\nDetta påverkar trovärdigheten genom att Bremers kritik kan ses som mer objektiv eftersom hon inte har något att vinna på sin ståndpunkt, medan Calhouns försvar är starkt färgat av hans position som slaveriförsvarare. Båda källorna har dock värde - Bremer visar ett kritiskt perspektiv, Calhoun visar hur slaveriet försvarades.",
+      
+      "analysis": "Detta svar visar C-nivå eftersom det: ✅ Identifierar båda tendenserna, ✅ Analyserar ordval specifikt, ✅ Förklarar kontexten (position), ✅ Reflekterar källkritiskt över trovärdighet och bias."
+    }
+  }
+}
 }

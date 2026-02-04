@@ -14,7 +14,6 @@ function App() {
   const [selectedSource, setSelectedSource] = useState(null);
   const [currentLevel, setCurrentLevel] = useState(1);
 
-
   // Laddar framsteg från webbläsaren
   const [progress, setProgress] = useState(() => {
     const saved = localStorage.getItem('kallanalys_progress');
@@ -58,24 +57,24 @@ function App() {
   // VY 1: MENYN
   if (!selectedSource) {
     return (
-      <div className="min-h-screen bg-amber-50 flex flex-col items-center p-12">
-        <h1 className="text-4xl font-bold text-amber-900 mb-12">Källanalys-träning</h1>
-        <div className="grid gap-6 w-full max-w-2xl">
+      <div className="page-container">
+  <h1 className="page-title">Källanalys-träning</h1>
+  <div className="source-grid">
           {sources.map((source) => (
             <button
               key={source.id}
               onClick={() => {
                 setSelectedSource(source);
-                setCurrentLevel(1); // Starta alltid på nivå 1 för en ny källa
+                setCurrentLevel(1);
               }}
-              className="p-8 bg-white border-2 border-amber-200 rounded-2xl hover:border-amber-500 hover:shadow-xl transition-all text-left group"
+              className="p-8 bg-white border-2 border-emerald-200 rounded-2xl hover:border-emerald-500 hover:shadow-xl transition-all text-left group"
             >
-              <h2 className="text-2xl font-bold text-amber-900 group-hover:text-amber-600">{source.title}</h2>
-              <p className="text-amber-700 mt-2 italic">Klicka för att påbörja analysen</p>
+              <h2 className="text-2xl font-bold text-emerald-900 group-hover:text-emerald-600">{source.title}</h2>
+              <p className="text-emerald-700 mt-2 italic">Klicka för att påbörja analysen</p>
             </button>
           ))}
         </div>
-        <button onClick={resetProgress} className="mt-12 text-sm text-amber-600 hover:underline">
+        <button onClick={resetProgress} className="mt-12 text-sm text-emerald-600 hover:underline">
           Nollställ alla framsteg
         </button>
       </div>
@@ -84,22 +83,22 @@ function App() {
 
   // VY 2: ÖVNINGEN
   return (
-    <div className="min-h-screen bg-white">
-      {/* Mini-header inuti övningen */}
-      <div className="bg-amber-900 text-white p-4 flex justify-between items-center shadow-md">
-        <span className="font-medium opacity-80">Aktuell källa: {selectedSource.title}</span>
-        <button 
-          onClick={() => setSelectedSource(null)} 
-          className="bg-amber-800 hover:bg-amber-700 px-4 py-1 rounded-lg text-sm transition-colors"
-        >
-          Avbryt / Till menyn
-        </button>
-      </div>
+    <div className="page-container">
+  {/* Mini-header inuti övningen */}
+  <div className="exercise-header">
+    <span>Aktuell källa: {selectedSource.title}</span>
+    <button 
+      onClick={() => setSelectedSource(null)} 
+      className="header-button"
+    >
+      Avbryt / Till menyn
+    </button>
+  </div>
 
-      <ProgressTracker progress={progress} currentLevel={currentLevel} />
+  <ProgressTracker progress={progress} currentLevel={currentLevel} />
 
-      <main className="max-w-5xl mx-auto p-8">
-        <div className="bg-white rounded-2xl shadow-2xl border border-amber-100 p-8">
+  <main className="exercise-content">
+    <div className="exercise-box">
           {currentLevel === 1 && (
             <Level1 
               data={selectedSource.level1} 

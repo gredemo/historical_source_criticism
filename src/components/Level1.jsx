@@ -132,23 +132,22 @@ else {
   };
 
   const renderClickableText = () => {
-    const words = stepData.text_highlight.split(/(\s+)/);
-    return words.map((word, index) => {
-      const cleanWord = word.trim();
-      if (!cleanWord) return <span key={index}>{word}</span>;
-      
-      const isSelected = selectedWords.includes(cleanWord);
-      return (
+  const words = stepData.text_highlight.split(' ');
+  return words.map((word, index) => {
+    const isSelected = selectedWords.includes(word);
+    return (
+      <React.Fragment key={index}>
         <span
-  key={index}
-  onClick={() => handleWordClick(cleanWord)}
-  className={`clickable-word ${isSelected ? 'selected' : ''}`}
->
-  {word}
-</span>
-      );
-    });
-  };
+          onClick={() => handleWordClick(word)}
+          className={`clickable-word ${isSelected ? 'selected' : ''}`}
+        >
+          {word}
+        </span>
+        {index < words.length - 1 && ' '}
+      </React.Fragment>
+    );
+  });
+};
 
   return (
     <div className="space-y-6">
@@ -171,18 +170,21 @@ else {
         </p>
       </div>
 
-      {/* Text */}
-      <div className="bg-amber-50 border border-amber-200 rounded-lg p-6">
-        <p className="text-lg leading-relaxed text-gray-800">
-          {renderClickableText()}
-        </p>
-      </div>
+      {/* Källtext */}
+<div>
+  <span className="source-text-label">📄 KÄLLTEXT: {stepData.title}</span>
+  <div className="source-text-box">
+    <p>
+      {renderClickableText()}
+    </p>
+  </div>
+</div>
 
       {/* Selected words */}
       {selectedWords.length > 0 && (
         <div className="bg-white border border-amber-200 rounded-lg p-4">
           <p className="text-sm font-medium text-amber-900 mb-2">Dina valda ord ({selectedWords.length}):</p>
-          <div className="flex flex-wrap gap-2">
+          <div style={{display: 'flex', flexWrap: 'wrap', gap: '8px'}}>
             {selectedWords.map((word, index) => (
               <span 
                 key={index}

@@ -5,13 +5,12 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: linear-gradient(135deg, #EFF6FF 0%, #E0E7FF 100%);
+  background: linear-gradient(135deg, #f0fdf4 0%, #dcfce7 100%);
   min-height: 100vh;
 }
 
-/* Headings */
 h1, h2, h3, h4 {
-  color: #78350F;
+  color: #065f46;
   margin: 0;
 }
 
@@ -20,7 +19,6 @@ h2 { font-size: 1.5rem; font-weight: 700; }
 h3 { font-size: 1.25rem; font-weight: 700; }
 h4 { font-size: 1rem; font-weight: 600; }
 
-/* Buttons */
 button {
   padding: 12px 24px;
   border: none;
@@ -42,17 +40,15 @@ button:not(:disabled):hover {
   box-shadow: 0 4px 12px rgba(0,0,0,0.15);
 }
 
-/* Primary button (amber/orange) */
 .btn-primary {
-  background: #F59E0B;
+  background: #10b981;
   color: white;
 }
 
 .btn-primary:hover:not(:disabled) {
-  background: #D97706;
+  background: #059669;
 }
 
-/* Success button (green) */
 .btn-success {
   background: #10B981;
   color: white;
@@ -62,138 +58,14 @@ button:not(:disabled):hover {
   background: #059669;
 }
 
-/* Warning button (orange/red) */
-.btn-warning {
-  background: #F97316;
-  color: white;
-}
-
-.btn-warning:hover:not(:disabled) {
-  background: #EA580C;
-}
-
-/* Secondary button (blue) */
-.btn-secondary {
-  background: #3B82F6;
-  color: white;
-}
-
-.btn-secondary:hover:not(:disabled) {
-  background: #2563EB;
-}
-
-/* Input fields */
-input[type="text"],
-input[type="email"],
-input[type="password"],
-textarea,
-select {
-  width: 100%;
-  padding: 12px 16px;
-  border: 2px solid #FDE68A;
-  border-radius: 8px;
-  font-size: 1rem;
-  transition: border-color 0.2s;
-}
-
-input:focus,
-textarea:focus,
-select:focus {
-  outline: none;
-  border-color: #F59E0B;
-  box-shadow: 0 0 0 3px rgba(245, 158, 11, 0.1);
-}
-
-textarea {
-  min-height: 150px;
-  resize: vertical;
-  font-family: inherit;
-}
-
-/* Cards/Boxes */
-.card {
-  background: white;
-  border: 2px solid #FED7AA;
-  border-radius: 12px;
-  padding: 24px;
-  margin-bottom: 16px;
-}
-
-.card-blue {
-  background: #EFF6FF;
-  border-color: #BFDBFE;
-}
-
-.card-green {
-  background: #F0FDF4;
-  border-color: #BBF7D0;
-}
-
-.card-yellow {
-  background: #FFFBEB;
-  border-color: #FDE68A;
-}
-
-.card-orange {
-  background: #FFF7ED;
-  border-color: #FED7AA;
-}
-
-/* Text colors */
-.text-amber { color: #78350F; }
-.text-blue { color: #1E40AF; }
-.text-green { color: #065F46; }
-.text-red { color: #991B1B; }
-.text-gray { color: #4B5563; }
-
-/* Background colors */
-.bg-amber { background: #FEF3C7; }
-.bg-blue { background: #DBEAFE; }
-.bg-green { background: #D1FAE5; }
-.bg-yellow { background: #FEF9C3; }
-.bg-orange { background: #FFEDD5; }
-
-/* Spacing utilities */
-.mt-2 { margin-top: 8px; }
-.mt-4 { margin-top: 16px; }
-.mb-2 { margin-bottom: 8px; }
-.mb-4 { margin-bottom: 16px; }
-.p-4 { padding: 16px; }
-.p-6 { padding: 24px; }
-
-/* Flexbox utilities */
-.flex { display: flex; }
-.flex-col { flex-direction: column; }
-.items-center { align-items: center; }
-.justify-between { justify-content: space-between; }
-.gap-2 { gap: 8px; }
-.gap-4 { gap: 16px; }
-
-/* Text utilities */
-.font-bold { font-weight: 700; }
-.font-semibold { font-weight: 600; }
-.text-sm { font-size: 0.875rem; }
-.text-xs { font-size: 0.75rem; }
-.italic { font-style: italic; }
-
-/* Border radius */
-.rounded { border-radius: 8px; }
-.rounded-lg { border-radius: 12px; }
-.rounded-full { border-radius: 9999px; }
-
-/* Shadows */
-.shadow { box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
-.shadow-lg { box-shadow: 0 10px 25px rgba(0,0,0,0.1); }
-
-/* Word highlighting (for Level 1) */
 .word-selected {
-  background: #FDE047;
+  background: #d1fae5;
+  color: #065f46;
   font-weight: 600;
   padding: 2px 4px;
   border-radius: 4px;
 }
 
-/* Klickbara ord i Nivå 1 */
 .clickable-word {
   cursor: pointer;
   padding: 2px 4px;
@@ -202,19 +74,16 @@ textarea {
 }
 
 .clickable-word:hover {
-  background: #FEF9C3;
+  background: #d1fae5;
 }
 
 .clickable-word.selected {
-  background: #FDE047 !important;
+  background: #d1fae5 !important;
+  color: #065f46;
   font-weight: 600;
-}
-.word-hoverable:hover {
-  background: #FEF9C3;
-  cursor: pointer;
+  margin-right: 4px;
 }
 
-/* Progress indicators */
 .progress-circle {
   width: 32px;
   height: 32px;
@@ -233,21 +102,163 @@ textarea {
 
 .progress-circle.unlocked {
   background: white;
-  border-color: #F59E0B;
-  color: #F59E0B;
+  border-color: #10b981;
+  color: #10b981;
 }
 
-/* Responsive */
-@media (max-width: 768px) {
-  body {
-    font-size: 14px;
-  }
-  
-  h1 { font-size: 1.5rem; }
-  h2 { font-size: 1.25rem; }
-  
-  button {
-    padding: 10px 20px;
-    font-size: 0.9rem;
-  }
+.source-card {
+  background: white;
+  border: 3px solid #10b981;
+  border-radius: 16px;
+  padding: 32px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(16, 185, 129, 0.1);
+  cursor: pointer;
+}
+
+.source-card:hover {
+  border-color: #059669;
+  transform: translateY(-4px);
+  box-shadow: 0 12px 24px rgba(16, 185, 129, 0.2);
+}
+
+.source-card h2 {
+  color: #065f46;
+  margin-bottom: 12px;
+}
+
+.source-card p {
+  color: #047857;
+}
+
+/* === LAYOUT KLASSER === */
+
+/* Container för centrerat innehåll */
+.page-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 48px;
+}
+
+/* Huvudrubrik */
+.page-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #065f46;
+  margin-bottom: 48px;
+  text-align: center;
+}
+
+/* Grid för källkort */
+.source-grid {
+  display: grid;
+  gap: 24px;
+  width: 100%;
+  max-width: 800px;
+}
+
+/* Header i övningsvyn */
+.exercise-header {
+  background: #047857;
+  color: white;
+  padding: 16px 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.exercise-header span {
+  font-weight: 500;
+  opacity: 0.9;
+}
+
+/* Knapp i header */
+.header-button {
+  background: #059669;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-size: 0.875rem;
+  transition: background 0.2s;
+}
+
+.header-button:hover {
+  background: #10b981;
+}
+
+/* Content area */
+.exercise-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 32px;
+  width: 100%;
+}
+
+/* White box för övningar */
+.exercise-box {
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+  border: 2px solid #d1fae5;
+  padding: 32px;
+}
+/* Progress tracker horisontell layout */
+.progress-tracker {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  padding: 24px;
+  flex-wrap: wrap;
+}
+
+.progress-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.progress-item span {
+  font-size: 0.875rem;
+  color: #065f46;
+  font-weight: 500;
+}
+
+
+/* Reset-knapp */
+.reset-button {
+  margin-top: 48px;
+  font-size: 0.875rem;
+  color: #059669;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Källtextruta - tydligt markerad */
+.source-text-box {
+  background: #fff;
+  border: 3px solid #10b981;
+  border-radius: 12px;
+  padding: 24px;
+  margin: 24px 0;
+  box-shadow: 0 4px 12px rgba(16, 185, 129, 0.15);
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+.source-text-label {
+  display: inline-block;
+  background: #10b981;
+  color: white;
+  padding: 6px 16px;
+  border-radius: 8px;
+  font-weight: 600;
+  margin-bottom: 16px;
+  font-size: 0.875rem;
+}
+.reset-button:hover {
+  text-decoration: underline;
 }

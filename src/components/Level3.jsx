@@ -20,11 +20,11 @@ export default function Level3({ data, onComplete }) {
 
     // Check required concepts
     evaluation.required_concepts.forEach(concept => {
-      const hasKeyword = concept.keywords.some(kw =>
+      const matchedKeywords = concept.keywords.filter(kw =>
         textLower.includes(kw.toLowerCase())
       );
 
-      if (hasKeyword) {
+      if (matchedKeywords.length >= (concept.min_keywords_match || 1)) {
         totalPoints += concept.points;
         foundConcepts.push({
           name: concept.concept_name,
@@ -49,7 +49,7 @@ export default function Level3({ data, onComplete }) {
     });
   }
 
-    const feedbackLevel = evaluation.feedback_levels[totalPoints.toString()];
+    const feedbackLevel = evaluation.feedback_levels[totalPoints.toString()] || evaluation.feedback_levels.needs_improvement;
 
     setFeedback({
       points: totalPoints,
@@ -57,7 +57,7 @@ export default function Level3({ data, onComplete }) {
       foundConcepts,
       antiPatternWarnings,
       feedbackLevel,
-      isSuccess: totalPoints >= 3
+      isSuccess: totalPoints >= (evaluation.min_concepts_match || 3)
     });
 
     setAttempts(attempts + 1);
@@ -75,6 +75,18 @@ export default function Level3({ data, onComplete }) {
     setShowHints(false);
   };
 
+  // Dynamisk källhantering - stödjer 2+ källor
+  const sources = Object.entries(data.source_comparison || {})
+    .sort(([keyA], [keyB]) => keyA.localeCompare(keyB)); // Sortera: source_a, source_b, source_c
+
+  // Färger för olika källor (cyklar om det finns fler än 4)
+  const sourceColors = [
+    { bg: 'bg-amber-50', border: 'border-amber-200', title: 'text-amber-900' },
+    { bg: 'bg-blue-50', border: 'border-blue-200', title: 'text-blue-900' },
+    { bg: 'bg-purple-50', border: 'border-purple-200', title: 'text-purple-900' },
+    { bg: 'bg-green-50', border: 'border-green-200', title: 'text-green-900' }
+  ];
+
   return (
     <div className="space-y-6">
       {/* Header */}
@@ -83,58 +95,65 @@ export default function Level3({ data, onComplete }) {
         <p className="mt-2 text-amber-700">{data.instruction}</p>
       </div>
 
-      {/* Visa båda källorna DYNAMISKT */}
+      {/* Dynamisk visning av alla källor */}
       <div className="space-y-4 mb-6">
-        <div className="bg-amber-50 border border-amber-200 rounded-lg p-4">
-          <h4 className="text-sm font-bold text-amber-900 mb-2">
-            📜 {data.source_comparison.source_a.title} - {data.source_comparison.source_a.type}, {data.source_comparison.source_a.perspective}
-          </h4>
-          <p className="text-xs text-gray-700 leading-relaxed italic">
-            {data.source_comparison.source_a.text}
-          </p>
-        </div>
-
-        <div className="bg-blue-50 border border-blue-200 rounded-lg p-4">
-          <h4 className="text-sm font-bold text-blue-900 mb-2">
-            📜 {data.source_comparison.source_b.title} - {data.source_comparison.source_b.type}, {data.source_comparison.source_b.perspective}
-          </h4>
-          <p className="text-xs text-gray-700 leading-relaxed">
-            {data.source_comparison.source_b.text}
-          </p>
-        </div>
+        {sources.map(([key, source], index) => {
+          const colors = sourceColors[index % sourceColors.length];
+          
+          return (
+            <div key={key} className={`${colors.bg} border ${colors.border} rounded-lg p-4`}>
+              <div className="flex items-start justify-between mb-2">
+                <div className="flex-1">
+                  <h4 className={`text-sm font-bold ${colors.title} mb-1`}>
+                    {source.year && <span className="text-lg mr-2">📅 {source.year}</span>}
+                    {source.title}
+                  </h4>
+                  <p className="text-xs text-gray-600 italic">
+                    {source.type} • {source.perspective}
+                  </p>
+                </div>
+              </div>
+              
+              <p className="text-xs text-gray-700 leading-relaxed mt-3 whitespace-pre-line">
+                {source.text}
+              </p>
+              
+              {source.summary && (
+                <div className={`mt-3 p-2 bg-white rounded border-l-4 ${colors.border}`}>
+                  <p className="text-xs font-medium text-gray-800">
+                    {source.summary}
+                  </p>
+                </div>
+              )}
+            </div>
+          );
+        })}
       </div>
 
       <div className="bg-white border-2 border-amber-200 rounded-lg p-6">
-  <h3 className="text-lg font-bold text-amber-900 mb-4">{data.task.question}</h3>
-  
-  {/* Template guide - visar strukturmall */}
-  {data.task.template_guide && (
-    <div className="bg-purple-50 border-2 border-purple-300 rounded-lg p-4 mb-4">
-      <p className="text-sm font-bold text-purple-900 mb-2">📝 Använd denna mall:</p>
-      <p className="text-sm text-purple-800 font-mono whitespace-pre-line">
-        {data.task.template_guide}
-      </p>
-    </div>
-  )}
-  
-  {/* Helper text - påminner om nyckelord */}
-  {data.task.helper_text && (
-    <div className="bg-blue-50 border border-blue-200 rounded-lg p-3 mb-4">
-      <p className="text-sm text-blue-900">{data.task.helper_text}</p>
-    </div>
-  )}
-  
-  <textarea
-    value={studentText}
-    onChange={(e) => setStudentText(e.target.value)}
-    placeholder={data.task.placeholder || "Skriv din jämförande analys här... Var SPECIFIK och ge KONKRETA exempel!"}
-    className="w-full px-4 py-3 border-2 border-amber-200 rounded-lg focus:border-amber-500 focus:outline-none min-h-[200px] text-lg"
-  />
-
+        <h3 className="text-lg font-bold text-amber-900 mb-4">{data.task.question}</h3>
+        
+        {/* Template guide - visar strukturmall */}
+        {data.task.template_guide && (
+          <div className="bg-purple-50 border-2 border-purple-300 rounded-lg p-4 mb-4">
+            <p className="text-sm font-bold text-purple-900 mb-2">📝 Använd denna mall:</p>
+            <p className="text-sm text-purple-800 font-mono whitespace-pre-line">
+              {data.task.template_guide}
+            </p>
+          </div>
+        )}
+        
+        {/* Helper text - påminner om nyckelord */}
+        {data.task.helper_text && (
+          <div className="bg-blue-50 border border-blue-200 rounded-lg p-3 mb-4">
+            <p className="text-sm text-blue-900">{data.task.helper_text}</p>
+          </div>
+        )}
+        
         <textarea
           value={studentText}
           onChange={(e) => setStudentText(e.target.value)}
-          placeholder="Skriv din jämförande analys här... Var SPECIFIK och ge KONKRETA exempel!"
+          placeholder={data.task.placeholder || "Skriv din jämförande analys här... Var SPECIFIK och ge KONKRETA exempel!"}
           className="w-full px-4 py-3 border-2 border-amber-200 rounded-lg focus:border-amber-500 focus:outline-none min-h-[200px] text-lg"
         />
 
@@ -222,7 +241,7 @@ export default function Level3({ data, onComplete }) {
             <p className="text-gray-800">{feedback.feedbackLevel}</p>
           </div>
 
-          {/* Missing concepts - FÖRBÄTTRAD VERSION */}
+          {/* Missing concepts */}
           {!feedback.isSuccess && (
             <div className="bg-white rounded p-4">
               <p className="font-medium text-orange-900 mb-2">För att nå C-nivå, lägg till:</p>
@@ -248,7 +267,7 @@ export default function Level3({ data, onComplete }) {
       {/* Model answer */}
       {showModelAnswer && (
         <div className="bg-purple-50 border-2 border-purple-300 rounded-lg p-6">
-          <h3 className="text-lg font-bold text-purple-900 mb-4">Exempel på C-nivå-svar:</h3>
+          <h3 className="text-lg font-bold text-purple-900 mb-4">Exempel på A-nivå-svar:</h3>
 
           <div className="bg-white rounded-lg p-5 mb-4">
             <p className="text-gray-800 leading-relaxed whitespace-pre-line">

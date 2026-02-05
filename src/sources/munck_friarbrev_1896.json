@@ -1,0 +1,274 @@
+{
+  "id": "munck_friarbrev_1896",
+  "title": "Albert Munck af Rosenschöld - Friarbrev till fru von Sydow, 1896",
+  "type": "primary_source",
+  
+  "full_text": "Fru von Sydow\nDet har säkert icke undgått fru von Sydow, att jag visat Elisabeth mera uppmärksamhet än som äfven en långvarig bekantskap kan förklara. Jag är djupt fästad vid henne och min högsta önskan här på jorden är att få henne till hustru. Jag har talat med henne derom och då jag nu vet att äfven hon älskar mig, inser jag omöjligheten af att kunna sammanträffa med henne utan såsom hennes trolofvade, fastän jag nog inser att osäkerheten beträffande min framtid gjort det önskvärdt att en förklaring oss emellan ännu någon tid fått anstå. Redan förut är jag af tacksamhet och tillgifvenhet fästad vid Elisabeths familj och kunde jag nu få den lyckan att blifva medlem af densamma, skall jag med Elisabeths hjelp försöka att göra mig värdig en sådan heder. Jag vore tacksam, om fru von Sydow med några ord ville svara mig, om vi få lof att öppet inför verlden erkänna, att vi hålla af hvarandra.\nMed vördnad och tillgifvenhet\nA Munck af Rosenschöld\nCarlshamn den 15 december 1896.\nKÄLLA: Munck af Rosenschölds släktarkiv 1F:9/4989, Malmö stadsarkiv",
+  
+  "level1": {
+    "instruction": "Albert Munck af Rosenschöld skriver till Elisabeths mamma för att be om tillstånd att gifta sig. Hitta orden som visar 1800-talets sociala koder och maktstrukturer.",
+    
+    "step1": {
+      "title": "Steg 1: Vem har makten?",
+      "instruction": "Vem ber Albert om lov? Vem fattar beslutet? Klicka på orden som visar detta.",
+      "hint": "Leta efter vem han skriver till, vem han ber om 'lof', och vad han vill få 'svara'.",
+      "text_highlight": "Fru von Sydow\nDet har säkert icke undgått fru von Sydow, att jag visat Elisabeth mera uppmärksamhet än som äfven en långvarig bekantskap kan förklara. [...] Jag vore tacksam, om fru von Sydow med några ord ville svara mig, om vi få lof att öppet inför verlden erkänna, att vi hålla af hvarandra.",
+      "correct_words": ["Fru von Sydow", "svara", "lof", "verlden", "erkänna"],
+      "success_threshold": 3,
+      "feedback": {
+        "Fru von Sydow": "Rätt! Han skriver till MAMMAN, inte till Elisabeth själv.",
+        "svara": "Ja! Det är mamman som ska ge sitt svar.",
+        "lof": "Nyckelord! De behöver 'lov' [= tillstånd] från mamman.",
+        "verlden": "Världen - de behöver tillstånd att visa sitt förhållande offentligt.",
+        "erkänna": "De kan inte öppet erkänna sin kärlek utan mammans godkännande."
+      },
+      "missing_feedback": "Läs igen: Vem skriver han till? Vem ska 'svara'? Vad behöver de 'lof' [= tillstånd] till?"
+    },
+    
+    "step2": {
+      "title": "Steg 2: Osäkerhet och ekonomi",
+      "instruction": "Albert erkänner att något hindrar dem från att gifta sig direkt. Vad är problemet? Klicka på orden.",
+      "hint": "Leta efter 'osäkerheten', 'framtid', 'anstå' och liknande ord.",
+      "text_highlight": "Jag har talat med henne derom och då jag nu vet att äfven hon älskar mig, inser jag omöjligheten af att kunna sammanträffa med henne utan såsom hennes trolofvade, fastän jag nog inser att osäkerheten beträffande min framtid gjort det önskvärdt att en förklaring oss emellan ännu någon tid fått anstå.",
+      "correct_words": ["omöjligheten", "osäkerheten", "framtid", "önskvärdt", "anstå"],
+      "success_threshold": 3,
+      "feedback": {
+        "omöjligheten": "Bra! Han inser att det är omöjligt att träffas utan trolovning.",
+        "osäkerheten": "Perfekt! Hans framtid är osäker.",
+        "framtid": "Hans ekonomiska framtid är problemet.",
+        "önskvärdt": "Han erkänner att det vore bättre att vänta.",
+        "anstå": "Trolovningen borde 'anstå' [= skjutas upp] pga ekonomin."
+      },
+      "missing_feedback": "Vad säger han om sin 'framtid'? Varför är det 'osäkert'? Vad borde 'anstå' [= skjutas upp]?"
+    },
+    
+    "step3": {
+      "title": "Steg 3: Ödmjukhet och sociala koder",
+      "instruction": "Albert visar extrem ödmjukhet och respekt. Vilka ord använder han? Klicka på dem.",
+      "hint": "Leta efter 'vördnad', 'heder', 'värdig', 'tacksam', 'tillgifvenhet'.",
+      "text_highlight": "Redan förut är jag af tacksamhet och tillgifvenhet fästad vid Elisabeths familj och kunde jag nu få den lyckan att blifva medlem af densamma, skall jag med Elisabeths hjelp försöka att göra mig värdig en sådan heder. [...] Med vördnad och tillgifvenhet\nA Munck af Rosenschöld",
+      "correct_words": ["tacksamhet", "tillgifvenhet", "lyckan", "värdig", "heder", "vördnad"],
+      "success_threshold": 4,
+      "feedback": {
+        "tacksamhet": "Han visar tacksamhet mot familjen.",
+        "tillgifvenhet": "Han är 'tillgiven' familjen.",
+        "lyckan": "Det skulle vara en 'lycka' att få bli del av familjen.",
+        "värdig": "Han ska försöka 'göra sig värdig' [= bevisa att han förtjänar det].",
+        "heder": "Att gifta sig med Elisabeth är en 'heder' [= stor ära].",
+        "vördnad": "Han avslutar med 'vördnad' - djup respekt."
+      },
+      "missing_feedback": "Leta efter ord som visar att han är ödmjuk och respektfull - hur beskriver han att bli del av familjen?"
+    }
+  },
+  
+  "level2": {
+    "title": "Nivå 2: Analys av genusrelationer och sociala strukturer 1896",
+    "instruction": "Analysera maktförhållanden och sociala koder i friarbrevet.",
+    "source_text": "Fru von Sydow\nDet har säkert icke undgått fru von Sydow, att jag visat Elisabeth mera uppmärksamhet än som äfven en långvarig bekantskap kan förklara. Jag är djupt fästad vid henne och min högsta önskan här på jorden är att få henne till hustru. Jag har talat med henne derom och då jag nu vet att äfven hon älskar mig, inser jag omöjligheten af att kunna sammanträffa med henne utan såsom hennes trolofvade, fastän jag nog inser att osäkerheten beträffande min framtid gjort det önskvärdt att en förklaring oss emellan ännu någon tid fått anstå. Redan förut är jag af tacksamhet och tillgifvenhet fästad vid Elisabeths familj och kunde jag nu få den lyckan att blifva medlem af densamma, skall jag med Elisabeths hjelp försöka att göra mig värdig en sådan heder. Jag vore tacksam, om fru von Sydow med några ord ville svara mig, om vi få lof att öppet inför verlden erkänna, att vi hålla af hvarandra.\nMed vördnad och tillgifvenhet\nA Munck af Rosenschöld\nCarlshamn den 15 december 1896.",
+    
+    "template": {
+      "step1": {
+        "question": "Varför skriver Albert till Elisabeths mamma istället för direkt till Elisabeth?",
+        "type": "dropdown",
+        "options": [
+          { 
+            "text": "För att Elisabeth inte kan läsa", 
+            "correct": false, 
+            "feedback": "Nej, han skriver faktiskt att han redan 'talat med henne' och att 'äfven hon älskar mig'. Hon kan både läsa och har redan sagt ja!" 
+          },
+          { 
+            "text": "För att mamman hade juridisk och social makt över dotterns giftermål", 
+            "correct": true, 
+            "feedback": "Rätt! I 1800-talets överklass krävdes föräldrarnas godkännande. Kvinnor hade begränsad juridisk rättskapacitet - de behövde målsmans tillstånd för att gifta sig." 
+          },
+          { 
+            "text": "För att Elisabeth inte ville gifta sig", 
+            "correct": false, 
+            "feedback": "Nej, han skriver att 'äfven hon älskar mig'. Problemet är inte Elisabeths vilja, utan sociala och ekonomiska koder." 
+          }
+        ],
+        "template_output": "Albert skriver till mamman eftersom [VALT SVAR]."
+      },
+      
+      "step2": {
+        "question": "Vilket ekonomiskt problem nämner Albert? Citera med EGNA ORD vad han säger om sin 'framtid'.",
+        "type": "text_input",
+        "min_length": 20,
+        "required_keywords": ["osäker", "framtid", "ekonomi", "vänta", "anstå", "hindrar"],
+        "min_keywords_match": 2,
+        "example": "Han erkänner att 'osäkerheten beträffande min framtid' gör att trolovningen borde 'anstå' (skjutas upp), dvs. hans ekonomi är inte säker ännu.",
+        "feedback": {
+          "has_keyword": "Bra! Du förstår att hans osäkra ekonomiska framtid är hindret.",
+          "too_vague": "Leta efter vad han säger om 'osäkerheten beträffande min framtid' - vad betyder det?"
+        },
+        "template_output": "Hans ekonomiska problem är att [ELEVENS FÖRKLARING]."
+      },
+      
+      "step3": {
+        "question": "Trots att Albert och Elisabeth redan älskar varandra, vad kan de INTE göra utan mammans tillstånd? Förklara med 2-3 meningar.",
+        "type": "text_input",
+        "min_length": 40,
+        "required_concepts": [
+          {
+            "required_keywords": ["träffas", "öppet", "erkänna", "världen", "offentligt", "sammanträffa", "lof"],
+            "min_keywords_match": 2,
+            "feedback": "Perfekt! Du förstår att de inte kan visa sitt förhållande offentligt."
+          }
+        ],
+        "feedback": {
+          "success": "Utmärkt! Du visar att även om kärleken är ömsesidig, krävs socialt och juridiskt godkännande för att de ska kunna träffas offentligt.",
+          "needs_improvement": "Vad säger han om 'omöjligheten' och att få 'lof att öppet inför verlden erkänna'? Vad betyder det?"
+        },
+        "template_output": "Utan mammans tillstånd kan de inte [ELEVENS FÖRKLARING]."
+      },
+      
+      "step4": {
+        "question": "Ge ETT exempel på ödmjukt/underdånigt språkbruk som Albert använder när han talar om familjen.",
+        "type": "text_input",
+        "min_length": 15,
+        "required_keywords": ["lyckan", "heder", "värdig", "vördnad", "tacksamhet", "tillgifvenhet"],
+        "min_keywords_match": 1,
+        "example": "Han kallar det för 'den lyckan att blifva medlem' av familjen och att han ska 'göra mig värdig en sådan heder'.",
+        "feedback": {
+          "has_example": "Perfekt! Du visar hur extremt ödmjuk han är.",
+          "no_example": "Leta efter ord som 'lyckan', 'värdig', 'heder', 'vördnad' - hur beskriver han att få bli del av familjen?"
+        },
+        "template_output": "Till exempel [ELEVENS EXEMPEL]."
+      },
+      
+      "final_assembly": {
+        "template": "Albert skriver till mamman eftersom [STEG1]. Hans ekonomiska problem är att [STEG2]. Utan mammans tillstånd kan de inte [STEG3]. Till exempel [STEG4].",
+        "evaluation": {
+          "4_parts": "Utmärkt! Du har byggt en komplett analys: förklarat maktstrukturen, identifierat det ekonomiska hindret, visat vad de inte får göra utan tillstånd, och gett exempel på det ödmjuka språkbruket."
+        }
+      }
+    }
+  },
+  
+  "level3": {
+    "title": "Nivå 3: Källjämförelse - Lag vs Verklighet 1734-1896",
+    "instruction": "Jämför hur lagen förändrades 1872, men praktiken fortsatte ändå 1896. Använd alla tre källorna i din analys.",
+    
+    "source_comparison": {
+      "source_a": {
+        "title": "Giftermålsbalken 2§",
+        "type": "Juridisk primärkälla",
+        "year": 1734,
+        "perspective": "Svensk lag som definierade faderns och moderns roll som 'giftoman' (förmyndare vid giftermål)",
+        "text": "Fader är sine dotters giftoman [= förmyndare vid giftermål], och moder må ther til råd gifwa [= modern får ge råd]. Är fader död; tå [= då] är moder med skyldasta fränders [= närmaste släktingars] råd. Lefwer ej fader, eller moder; ware tå then [= då ska den vara], som fader munteliga [= muntligt], eller skrifteliga [= skriftligt], eller moder med nästa fränders råd, til giftoman nämndt hafwer [= utsett till förmyndare].",
+        "summary": "📌 Sammanfattning: Fadren hade juridisk makt över döttrars giftermål. Om han var död, tog modern över tillsammans med släktingar. Dottern kunde INTE gifta sig utan tillstånd."
+      },
+      
+      "source_b": {
+        "title": "Lagändring - Upphävande av giftomannarätten",
+        "type": "Juridisk primärkälla",
+        "year": 1872,
+        "perspective": "Riksdagsbeslut som upphäver faderns rätt att hindra myndiga döttrars giftermål",
+        "text": "Med ändring af hvad i lag finnes stadgadt [= vad som står i lagen] angående giftomans inseende öfver mö [= förmyndares tillsyn över ogift kvinna] samt om faders och moders rätt att hindra dotters giftermål och att göra henne arflös [= ta bort arvsrätt], förordnas som följer [= bestäms följande]:\n1 §. Mö, som myndig är, stånde ej under giftoman [= Ogift kvinna som är myndig står inte under förmyndare].",
+        "summary": "📌 Sammanfattning: Från 1872 kunde myndiga kvinnor gifta sig UTAN föräldrarnas tillstånd. Lagen ändrades och kvinnor blev juridiskt fria att välja själva!"
+      },
+      
+      "source_c": {
+        "title": "Munck af Rosenschöld - Friarbrev",
+        "type": "Privat brev / Primärkälla",
+        "year": 1896,
+        "perspective": "24 år EFTER lagändringen ber en man fortfarande modern om tillstånd till giftermål, trots att Elisabeth juridiskt kunde bestämma själv",
+        "text": "Det har säkert icke [= inte] undgått fru von Sydow, att jag visat Elisabeth mera uppmärksamhet än som äfven [= även] en långvarig bekantskap kan förklara. [...] Jag vore tacksam, om fru von Sydow med några ord ville svara mig, om vi få lof [= tillstånd] att öppet inför verlden [= världen] erkänna, att vi hålla af hvarandra [= älskar varandra].",
+        "summary": "📌 Sammanfattning: 24 år EFTER lagändringen ber Munck fortfarande mamman om tillstånd - trots att Elisabeth juridiskt kunde säga ja själv! Praktiken fortsatte trots lagändringen."
+      }
+    },
+    
+    "task": {
+      "question": "Varför ber Munck mamman om lov 1896, när lagen sedan 1872 sa att Elisabeth kunde bestämma själv? Förklara gapet mellan lag och verklighet.",
+      "type": "free_text",
+      "min_words": 80,
+      
+      "template_guide": "1734 års lag sa att [DIN TOLKNING AV KÄLLA A].\n1872 ändrades lagen så att [DIN TOLKNING AV KÄLLA B].\nMEN 1896, 24 år senare, [DIN TOLKNING AV KÄLLA C].\nDetta visar att [FÖRKLARING AV GAPET MELLAN LAG OCH PRAKTIK].",
+      
+      "helper_text": "💡 Använd ord som: juridisk, praktik, tradition, överklass, heder, anseende, sociala normer, långsammare, förändring",
+      
+      "placeholder": "1734 års lag sa att fadren var 'giftoman' och dottern kunde inte gifta sig utan tillstånd...\n1872 upphävdes detta, så myndiga kvinnor blev juridiskt fria...\nMEN 1896 ber Munck ändå mamman om lov...\nDetta visar att...",
+      
+      "evaluation": {
+        "required_concepts": [
+          {
+            "concept_name": "Identifierar 1734 års system",
+            "keywords": ["giftoman", "fader", "förmyndare", "tillstånd", "under", "makt", "1734"],
+            "min_keywords_match": 2,
+            "points": 1,
+            "feedback": "✅ Bra! Du identifierar det gamla systemet från 1734."
+          },
+          {
+            "concept_name": "Förstår lagändringen 1872",
+            "keywords": ["1872", "upphävdes", "ändrades", "myndiga", "fria", "inte längre", "rätt"],
+            "min_keywords_match": 2,
+            "points": 1,
+            "feedback": "✅ Utmärkt! Du förstår att lagen ändrades 1872."
+          },
+          {
+            "concept_name": "Ser motsägelsen 1896",
+            "keywords": ["ändå", "trots", "fortfarande", "mamman", "24 år", "1896", "praktiken"],
+            "min_keywords_match": 2,
+            "points": 1,
+            "feedback": "✅ Perfekt! Du ser att Munck beter sig som om gamla lagen fortfarande gäller."
+          },
+          {
+            "concept_name": "Förklarar gapet lag vs verklighet",
+            "keywords": ["tradition", "normer", "överklass", "långsamt", "socialt", "heder", "anseende", "sed", "praktik"],
+            "min_keywords_match": 2,
+            "points": 1,
+            "feedback": "✅ Excellent! Du förklarar VARFÖR det finns ett gap mellan lag och verklighet."
+          }
+        ],
+        
+        "min_concepts_match": 3,
+        
+        "feedback_levels": {
+          "1": "Du har börjat bra! För att nå C-nivå: Använd mallen och beskriv alla tre tidpunkterna (1734, 1872, 1896). Förklara varför Munck ber om lov trots att lagen ändrades.",
+          "2": "Bra start! Du har identifierat några delar. För C-nivå: Förklara tydligare VARFÖR det finns ett gap mellan lagändringen 1872 och praktiken 1896. Vad spelade större roll än lagen?",
+          "3": "Mycket bra! Du ser tidslinjen och gapet. För A-nivå: Utveckla mer specifikt om VARFÖR överklassen höll hårdare på traditionerna (heder, anseende, sociala koder).",
+          "4": "Utmärkt källkritisk analys! Du visar tydligt hur juridiska förändringar (1872) inte automatiskt förändrade sociala praktiker i överklassen. Du använder tidslinje och identifierar 24-årsgapet mellan lag och praktik. Detta är A-nivå källkritik!"
+        }
+      },
+      
+      "hints": [
+        "Tips 1: TIDSLINJE är nyckeln! 1734 → Giftoman krävs enligt lag. 1872 → Giftoman avskaffas juridiskt. 1896 → Munck ber ändå om lov. Vad händer på de 24 åren mellan 1872 och 1896? Varför fortsätter praktiken?",
+        "Tips 2: Tänk på VARFÖR Munck ändå ber mamman, trots att det inte längre krävs enligt lag: Rädsla för skandal? Överklassens traditioner? Respekt för familjen? Han nämner ju 'heder' och 'verlden' (världen) - vad säger det?",
+        "Tips 3: Källkritisk insikt - detta visar att LAG och VERKLIGHET inte är samma sak. Juridiska rättigheter ≠ Faktisk frihet. Särskilt i överklassen där 'sed' och 'anseende' var viktigare än vad lagen sa. Sociala normer förändras långsammare än lagar!"
+      ],
+      
+      "model_answer": {
+        "text": "1734 års lag sa att fadren var döttrars 'giftoman' (förmyndare) och att modern fick ge råd - alltså hade föräldrarna juridisk makt över döttrars giftermål. Dottern kunde inte gifta sig utan faderns tillstånd.\n\n1872 ändrades lagen så att 'Mö, som myndig är, stånde ej under giftoman' - juridiskt kunde alltså Elisabeth bestämma själv om sitt giftermål från och med 1872. Hon behövde inte längre mammans tillstånd enligt lagen.\n\nMEN 1896, hela 24 år senare, ber Munck ändå fru von Sydow om 'lof att öppet inför verlden erkänna' sin kärlek till Elisabeth. Han skriver till mamman, inte till Elisabeth själv - precis som om 1734 års lag fortfarande gällde.\n\nDetta visar att juridiska lagändringar inte automatiskt förändrar sociala praktiker, särskilt inte i överklassen där 'heder' och 'anseende' var avgörande. Trots att Elisabeth juridiskt hade rätt att säga ja själv, skulle det anses opassande och skandalöst att gifta sig utan moderns välsignelse. Lagen hade förändrats, men traditionerna och de sociala normerna levde kvar. I överklass-Sverige 1896 var det viktigare att följa seden än att följa lagen.",
+        
+        "analysis": "Detta svar visar A-nivå eftersom det: ✅ Använder alla tre källor i kronologisk ordning, ✅ Identifierar 24-årsgapet mellan lag (1872) och praktik (1896), ✅ Förklarar VARFÖR gapet finns (tradition, heder, överklass, sociala normer viktigare än lag), ✅ Drar källkritisk slutsats om skillnaden mellan juridik och verklighet, ✅ Använder korrekt terminologi (juridisk, praktik, sed, normer)."
+      }
+    }
+  },
+  
+  "metadata": {
+    "historical_context": "1896 var Sverige fortfarande djupt patriarkalt. Kvinnor fick inte rösta (det kom 1921), gifta kvinnor blev myndiga först 1921, och fram till 1874 fick inte kvinnor ens studera vid universitet. Friarbrevsritualerna var särskilt strikta i överklassen där 'heder' och 'anseende' var avgörande.",
+    
+    "source_credibility": {
+      "strengths": [
+        "Primärkälla - autentiskt dokument från 1896",
+        "Privat brev - inte skrivet för publicering, därför ärligt",
+        "Bevarad i officiellt släktarkiv - verifierad äkthet",
+        "Visar verkliga sociala koder, inte bara teoretisk lag"
+      ],
+      "limitations": [
+        "Endast mannens perspektiv - Elisabeths röst hörs inte",
+        "Överklassperspektiv - visar inte arbetarklassens förhållanden",
+        "Formellt språk - kan dölja verkliga känslor bakom artighet"
+      ]
+    },
+    
+    "pedagogical_focus": [
+      "Genushistoria - maktstrukturer mellan könen",
+      "Källkritik - primärkällors värde och begränsningar",
+      "Historisk kontext - 1800-talets sociala koder",
+      "Juridisk historia - kvinnors rättsliga ställning",
+      "Klassperspektiv - överklassens ritualer",
+      "Lag vs verklighet - juridisk förändring vs social praktik"
+    ]
+  }
+}

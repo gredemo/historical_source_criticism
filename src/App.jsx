@@ -7,9 +7,10 @@ import Level3 from "./components/Level3.jsx";
 import bremer1 from "./sources/bremer1.json";
 import ida1 from "./sources/ida1.json";
 import bremer2 from "./sources/bremer2.json";
+import munck_friarbrev_1896 from "./sources/munck_friarbrev_1896.json";  // ← NY RAD
 
 function App() {
-  const sources = [bremer1, ida1, bremer2].filter(s => s !== undefined);
+  const sources = [bremer1, ida1, bremer2, munck_friarbrev_1896].filter(s => s !== undefined);  // ← UPPDATERAD
   
   const [selectedSource, setSelectedSource] = useState(null);
   const [currentLevel, setCurrentLevel] = useState(1);
@@ -58,8 +59,26 @@ function App() {
   if (!selectedSource) {
     return (
       <div className="page-container">
-  <h1 className="page-title">Källanalys-träning</h1>
+        <div className="mb-6">
+  <h1 className="page-title">Träna källanalys</h1>
+  <img 
+    src="/stenshuvud.jpg" 
+    alt="Källkritik illustration" 
+    style={{ 
+      width: '100%',
+      height: '200px',
+      maxWidth: '900px',
+      margin: '0 auto',
+      display: 'block',
+      objectFit: 'cover',
+      borderRadius: '12px',
+      boxShadow: '0 4px 6px rgba(0,0,0,0.1)'
+    }}
+  />
+</div>
+
   <div className="source-grid">
+
           {sources.map((source) => (
             <button
               key={source.id}

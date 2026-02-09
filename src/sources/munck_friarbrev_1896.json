@@ -105,22 +105,20 @@
       },
       
       "step3": {
-        "question": "Trots att Albert och Elisabeth redan älskar varandra, vad kan de INTE göra utan mammans tillstånd? Förklara med 2-3 meningar.",
-        "type": "text_input",
-        "min_length": 40,
-        "required_concepts": [
-          {
-            "required_keywords": ["träffas", "öppet", "erkänna", "världen", "offentligt", "sammanträffa", "lof"],
-            "min_keywords_match": 2,
-            "feedback": "Perfekt! Du förstår att de inte kan visa sitt förhållande offentligt."
-          }
-        ],
-        "feedback": {
-          "success": "Utmärkt! Du visar att även om kärleken är ömsesidig, krävs socialt och juridiskt godkännande för att de ska kunna träffas offentligt.",
-          "needs_improvement": "Vad säger han om 'omöjligheten' och att få 'lof att öppet inför verlden erkänna'? Vad betyder det?"
-        },
-        "template_output": "Utan mammans tillstånd kan de inte [ELEVENS FÖRKLARING]."
-      },
+  "question": "Albert och Elisabeth älskar redan varandra. Men vad kan de INTE göra utan mammans tillstånd? Använd citatet 'lof att öppet inför verlden erkänna'.",
+  "type": "text_input",
+  "min_length": 30,
+  "placeholder": "Utan mammans tillstånd kan de inte...",
+  "template_guide": "Använd denna mening:\nUtan mammans tillstånd kan de inte [FÖRKLARA VAD].",
+  "required_keywords": ["öppet", "visa", "erkänna", "världen", "offentligt", "lof", "tillstånd"],
+  "min_keywords_match": 2,
+  "example": "Exempel: Utan mammans tillstånd kan de inte visa sin kärlek öppet eller träffas som ett officiellt par.",
+  "feedback": {
+    "has_keyword": "Perfekt! Du förstår att de inte kan visa sitt förhållande offentligt.",
+    "too_vague": "Läs citatet igen: 'lof att öppet inför verlden erkänna'. Vad betyder 'öppet inför verlden'? Vad kan de inte göra utan tillstånd?"
+  },
+  "template_output": "Utan mammans tillstånd kan de inte [ELEVENS FÖRKLARING]."
+},
       
       "step4": {
         "question": "Ge ETT exempel på ödmjukt/underdånigt språkbruk som Albert använder när han talar om familjen.",

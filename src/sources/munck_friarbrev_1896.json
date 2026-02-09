@@ -112,7 +112,6 @@
   "template_guide": "Använd denna mening:\nUtan mammans tillstånd kan de inte [FÖRKLARA VAD].",
   "required_keywords": ["öppet", "visa", "erkänna", "världen", "offentligt", "lof", "tillstånd"],
   "min_keywords_match": 2,
-  "example": "Exempel: Utan mammans tillstånd kan de inte visa sin kärlek öppet eller träffas som ett officiellt par.",
   "feedback": {
     "has_keyword": "Perfekt! Du förstår att de inte kan visa sitt förhållande offentligt.",
     "too_vague": "Läs citatet igen: 'lof att öppet inför verlden erkänna'. Vad betyder 'öppet inför verlden'? Vad kan de inte göra utan tillstånd?"

@@ -166,7 +166,7 @@ else {
       {/* Visual hint */}
       <div className="bg-yellow-50 border-l-4 border-yellow-400 p-4">
         <p className="text-sm text-yellow-900">
-          <strong>💡 Så här gör du:</strong> Klicka på ord i texten nedan. Orden du klickar på blir gula. När du hittat minst {stepData.success_threshold} ord, klicka "Kolla mina val".
+          <strong>💡 Så här gör du:</strong> Klicka på ord i texten nedan. Orden du klickar på blir gröna. När du hittat minst {stepData.success_threshold} ord, klicka "Kolla mina val".
         </p>
       </div>
 
@@ -188,7 +188,7 @@ else {
             {selectedWords.map((word, index) => (
               <span 
                 key={index}
-                className="px-3 py-1 bg-yellow-200 text-amber-900 rounded-full text-sm font-medium"
+                className="px-3 py-1 bg-green-200 text-amber-900 rounded-full text-sm font-medium"
               >
                 {word}
               </span>

@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Check, X, AlertCircle, Lightbulb, BookOpen } from 'lucide-react';
+import { trackLevelStarted, trackLevelCompleted } from '../analytics';
 
 export default function Level3({ data, onComplete }) {
   const [studentText, setStudentText] = useState('');
@@ -330,7 +331,10 @@ export default function Level3({ data, onComplete }) {
 
         {feedback && feedback.isSuccess && (
           <button
-            onClick={onComplete}
+            onClick={() => {
+              trackLevelCompleted(3, null, attempts, true);
+              onComplete();
+            }}
             className="px-6 py-3 bg-green-600 text-white rounded-lg hover:bg-green-700 transition-colors font-medium"
           >
             ✓ Klart! Du har klarat alla nivåer

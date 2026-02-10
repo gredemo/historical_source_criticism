@@ -374,7 +374,10 @@ setStepFeedback({
 
           {/* Continue button */}
           <button
-            onClick={onComplete}
+            onClick={() => {
+              trackLevelStarted(3);
+              onComplete();
+            }}
             className="px-6 py-3 bg-green-600 text-white rounded-lg hover:bg-green-700 transition-colors font-medium flex items-center gap-2"
           >
             Gå till Nivå 3: Källjämförelse

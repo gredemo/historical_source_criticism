@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Check, X, AlertCircle, Lightbulb } from 'lucide-react';
+import { trackLevelStarted, trackLevelCompleted } from '../analytics';
 
 function Level1({ data, progress, onComplete }) {
   const [currentStep, setCurrentStep] = useState(
@@ -118,10 +119,12 @@ else {
 
   const nextStep = () => {
     const stepKey = `level1_step${currentStep}`;
+    trackLevelCompleted(1, currentStep, attempts, true);
     onComplete(stepKey);
     
     if (currentStep < 3) {
       setCurrentStep(currentStep + 1);
+      trackLevelStarted(1, currentStep + 1);
     }
     
     setSelectedWords([]);

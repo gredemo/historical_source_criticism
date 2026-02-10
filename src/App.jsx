@@ -3,6 +3,7 @@ import ProgressTracker from "./components/ProgressTracker.jsx";
 import Level1 from "./components/Level1.jsx";
 import Level2 from "./components/Level2.jsx";
 import Level3 from "./components/Level3.jsx";
+import { trackSourceSelected, trackLevelStarted } from './analytics';
 
 import bremer1 from "./sources/bremer1.json";
 import ida1 from "./sources/ida1.json";
@@ -83,9 +84,11 @@ function App() {
             <button
               key={source.id}
               onClick={() => {
-                setSelectedSource(source);
-                setCurrentLevel(1);
-              }}
+  setSelectedSource(source);
+  setCurrentLevel(1);
+  trackSourceSelected(source.title);
+  trackLevelStarted(1, 1);
+}}
               className="p-8 bg-white border-2 border-emerald-200 rounded-2xl hover:border-emerald-500 hover:shadow-xl transition-all text-left group"
             >
               <h2 className="text-2xl font-bold text-emerald-900 group-hover:text-emerald-600">{source.title}</h2>

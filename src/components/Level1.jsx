@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Check, X, AlertCircle, Lightbulb } from 'lucide-react';
-import { trackLevelStarted, trackLevelCompleted } from '../analytics';
+import { trackLevelStarted, trackLevelCompleted, trackWordSelection } from '../analytics';
+
 
 function Level1({ data, progress, onComplete }) {
   const [currentStep, setCurrentStep] = useState(
@@ -113,6 +114,15 @@ else {
     adaptiveMessage: adaptiveMessage
   });
 } 
+// Spara ordval till analytics
+    trackWordSelection(
+      stepData.title,
+      `step${currentStep}`,
+      selectedWords,
+      stepData.correct_words,
+      isSuccess,
+      attempts
+    );
 
   setShowFeedback(true);
 };

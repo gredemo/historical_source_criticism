@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Check, AlertCircle, ArrowRight } from 'lucide-react';
+import { trackLevelStarted, trackLevelCompleted } from '../analytics';
 
 export default function Level2({ data, onComplete }) {
   const [currentStep, setCurrentStep] = useState(1);

@@ -4,6 +4,7 @@ import Level1 from "./components/Level1.jsx";
 import Level2 from "./components/Level2.jsx";
 import Level3 from "./components/Level3.jsx";
 import { trackSourceSelected, trackLevelStarted } from './analytics';
+import Dashboard from './components/Dashboard.jsx';
 
 import bremer1 from "./sources/bremer1.json";
 import ida1 from "./sources/ida1.json";
@@ -56,6 +57,20 @@ function App() {
     }
   };
 
+  if (selectedSource === '__dashboard__') {
+    return (
+      <div>
+        <button 
+          onClick={() => setSelectedSource(null)}
+          style={{ position: 'fixed', top: '1rem', right: '1rem', zIndex: 50, padding: '8px 16px', background: '#1f2937', color: 'white', borderRadius: '8px', cursor: 'pointer' }}
+        >
+          ← Tillbaka
+        </button>
+        <Dashboard />
+      </div>
+    );
+  }
+  
   // VY 1: MENYN
   if (!selectedSource) {
     return (
@@ -96,7 +111,13 @@ function App() {
             </button>
           ))}
         </div>
-        <button onClick={resetProgress} className="mt-12 text-sm text-emerald-600 hover:underline">
+        <button 
+          onClick={() => setSelectedSource('__dashboard__')} 
+          className="mt-8 px-6 py-3 bg-gray-800 text-white rounded-lg hover:bg-gray-900 transition-colors font-medium"
+        >
+          📊 Visa Analytics
+        </button>
+        <button onClick={resetProgress} className="mt-4 text-sm text-emerald-600 hover:underline">
           Nollställ alla framsteg
         </button>
       </div>

@@ -29,6 +29,14 @@ function App() {
     };
   });
 
+  const [showDashboard, setShowDashboard] = useState(false);
+
+  useEffect(() => {
+    if (window.location.search.includes('admin')) {
+      setShowDashboard(true);
+    }
+  }, []);
+
   // Sparar framsteg när de ändras
   useEffect(() => {
     localStorage.setItem('kallanalys_progress', JSON.stringify(progress));
@@ -70,7 +78,7 @@ function App() {
       </div>
     );
   }
-  
+
   // VY 1: MENYN
   if (!selectedSource) {
     return (
@@ -111,12 +119,14 @@ function App() {
             </button>
           ))}
         </div>
-        <button 
-          onClick={() => setSelectedSource('__dashboard__')} 
-          className="mt-8 px-6 py-3 bg-gray-800 text-white rounded-lg hover:bg-gray-900 transition-colors font-medium"
-        >
-          📊 Visa Analytics
-        </button>
+        {showDashboard && (
+  <button 
+    onClick={() => setSelectedSource('__dashboard__')} 
+    className="mt-8 px-6 py-3 bg-gray-800 text-white rounded-lg hover:bg-gray-900 transition-colors font-medium"
+  >
+    📊 Visa Analytics
+  </button>
+)}
         <button onClick={resetProgress} className="mt-4 text-sm text-emerald-600 hover:underline">
           Nollställ alla framsteg
         </button>

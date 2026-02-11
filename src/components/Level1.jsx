@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { Check, X, AlertCircle, Lightbulb } from 'lucide-react';
 import { trackLevelStarted, trackLevelCompleted, trackWordSelection } from '../analytics';
 
-
 function Level1({ data, progress, onComplete }) {
   const [currentStep, setCurrentStep] = useState(
     progress.level1_step1 === 'completed' ? 
@@ -114,7 +113,8 @@ else {
     adaptiveMessage: adaptiveMessage
   });
 } 
-// Spara ordval till analytics
+
+    // Spara ordval till analytics
     trackWordSelection(
       stepData.title,
       `step${currentStep}`,
@@ -124,7 +124,7 @@ else {
       attempts
     );
 
-  setShowFeedback(true);
+    setShowFeedback(true);
 };
 
   const nextStep = () => {
@@ -166,8 +166,8 @@ else {
     <div className="space-y-6">
       {/* Title */}
       <div>
-        <h2 className="text-2xl font-bold text-amber-900">{stepData.title}</h2>
-        <p className="mt-2 text-amber-700">{stepData.instruction}</p>
+        <h2 className="text-2xl font-bold text-slate-800">{stepData.title}</h2>
+        <p className="mt-2 text-slate-600">{stepData.instruction}</p>
         {stepData.hint && (
           <div className="mt-3 flex items-start gap-2 bg-blue-50 border border-blue-200 rounded-lg p-3">
             <AlertCircle className="w-5 h-5 text-blue-600 flex-shrink-0 mt-0.5" />
@@ -177,9 +177,9 @@ else {
       </div>
 
       {/* Visual hint */}
-      <div className="bg-yellow-50 border-l-4 border-yellow-400 p-4">
-        <p className="text-sm text-yellow-900">
-          <strong>💡 Så här gör du:</strong> Klicka på ord i texten nedan. Orden du klickar på blir gröna. När du hittat minst {stepData.success_threshold} ord, klicka "Kolla mina val".
+      <div className="bg-[#fefce8] border-l-4 border-[#eab308] p-4">
+        <p className="text-sm text-slate-800">
+          <strong>💡 Så här gör du:</strong> Klicka på ord i texten nedan. Orden du klickar på markeras. När du hittat minst {stepData.success_threshold} ord, klicka "Kolla mina val".
         </p>
       </div>
 
@@ -195,13 +195,13 @@ else {
 
       {/* Selected words */}
       {selectedWords.length > 0 && (
-        <div className="bg-white border border-amber-200 rounded-lg p-4">
-          <p className="text-sm font-medium text-amber-900 mb-2">Dina valda ord ({selectedWords.length}):</p>
+        <div className="bg-white border border-[#e5e0d5] rounded-lg p-4">
+          <p className="text-sm font-medium text-slate-800 mb-2">Dina valda ord ({selectedWords.length}):</p>
           <div style={{display: 'flex', flexWrap: 'wrap', gap: '8px'}}>
             {selectedWords.map((word, index) => (
               <span 
                 key={index}
-                className="px-3 py-1 bg-green-200 text-amber-900 rounded-full text-sm font-medium"
+                className="px-3 py-1 bg-[#fde68a] text-slate-800 rounded-full text-sm font-medium"
               >
                 {word}
               </span>
@@ -214,12 +214,12 @@ else {
       {showFeedback && feedback && (
         <div className={`border-2 rounded-lg p-6 ${
           feedback.isSuccess 
-            ? 'bg-green-50 border-green-300' 
+            ? 'bg-[#fefce8] border-[#eab308]' 
             : 'bg-orange-50 border-orange-300'
         }`}>
           <div className="flex items-center gap-2 mb-4">
             {feedback.isSuccess ? (
-              <Check className="w-6 h-6 text-green-600" />
+              <Check className="w-6 h-6 text-[#eab308]" />
             ) : (
               <X className="w-6 h-6 text-orange-600" />
             )}
@@ -235,9 +235,9 @@ else {
             <div className="space-y-2 mb-4">
               {feedback.messages.map((msg, index) => (
                 <div key={index} className="flex items-start gap-2 bg-white rounded p-3">
-                  <Check className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
+                  <Check className="w-5 h-5 text-[#1a1a2e] flex-shrink-0 mt-0.5" />
                   <div>
-                    <p className="font-semibold text-green-900">"{msg.word}"</p>
+                    <p className="font-semibold text-slate-800">"{msg.word}"</p>
                     <p className="text-sm text-gray-700">{msg.message}</p>
                   </div>
                 </div>
@@ -301,7 +301,7 @@ else {
               return (
                 <span
                   key={index}
-                  className={isCorrect ? 'bg-green-300 font-bold px-1 rounded' : ''}
+                  className={isCorrect ? 'bg-[#fde68a] font-bold px-1 rounded' : ''}
                 >
                   {word}
                 </span>
@@ -316,7 +316,7 @@ else {
         <button
           onClick={checkAnswer}
           disabled={selectedWords.length === 0}
-          className="px-6 py-3 bg-amber-600 text-white rounded-lg hover:bg-amber-700 transition-colors disabled:bg-gray-300 disabled:cursor-not-allowed font-medium"
+          className="px-6 py-3 bg-[#1a1a2e] text-[#eab308] rounded-lg hover:bg-[#16213e] transition-colors disabled:bg-gray-300 disabled:cursor-not-allowed font-medium"
         >
           Kolla mina val
         </button>
@@ -324,7 +324,7 @@ else {
         {showFeedback && feedback?.isSuccess && (
           <button
             onClick={nextStep}
-            className="px-6 py-3 bg-green-600 text-white rounded-lg hover:bg-green-700 transition-colors font-medium"
+            className="px-6 py-3 bg-[#1a1a2e] text-white rounded-lg hover:bg-[#16213e] transition-colors font-medium"
           >
             {currentStep < 3 ? 'Nästa steg →' : 'Gå till Nivå 2 →'}
           </button>
@@ -337,7 +337,7 @@ else {
               setSelectedWords([]);
               setShowAnswers(false);
             }}
-            className="px-6 py-3 bg-orange-600 text-white rounded-lg hover:bg-orange-700 transition-colors font-medium"
+            className="px-6 py-3 bg-[#92400e] text-white rounded-lg hover:bg-[#78350f] transition-colors font-medium"
           >
             Försök igen
           </button>

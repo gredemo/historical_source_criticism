@@ -66,7 +66,7 @@ if (!currentStepData && !showFinalAnalysis) {
   } else {
     setStepFeedback({
       type: 'warning',
-      message: currentStepData.feedback?.too_vague || 'Lägg till mer specifika ord från Himmlers text.'
+      message: currentStepData.feedback?.too_vague || 'Lägg till mer specifika ord från texten.'
     });
     return false;
   }
@@ -110,7 +110,7 @@ setStepFeedback({
 });
     return isValid;
   } else {
-    // Fallback: bara längdkontroll (som Himmler)
+    // Fallback: bara längdkontroll
     if (text.length >= 50) {
       setStepFeedback({
         ...stepFeedback,
@@ -171,6 +171,7 @@ setStepFeedback({
       if (currentStep < 4) {
         setCurrentStep(currentStep + 1);
       } else {
+        trackLevelCompleted(2, null, null, true);
         setShowFinalAnalysis(true);
       }
     }
@@ -192,8 +193,8 @@ setStepFeedback({
     <div className="space-y-6">
       {/* Header */}
       <div>
-        <h2 className="text-2xl font-bold text-amber-900">{data.title}</h2>
-        <p className="mt-2 text-amber-700">{data.instruction}</p>
+        <h2 className="text-2xl font-bold text-slate-800">{data.title}</h2>
+        <p className="mt-2 text-slate-600">{data.instruction}</p>
       </div>
 
       {/* Progress indicator */}
@@ -203,9 +204,9 @@ setStepFeedback({
             key={step}
             className={`flex-1 h-2 rounded-full transition-all ${
               step < currentStep 
-                ? 'bg-green-500' 
+                ? 'bg-[#1a1a2e]' 
                 : step === currentStep 
-                ? 'bg-amber-500' 
+                ? 'bg-[#eab308]' 
                 : 'bg-gray-200'
             }`}
           />
@@ -215,15 +216,15 @@ setStepFeedback({
       {!showFinalAnalysis ? (
         <>
 {/* Visa texten för ALLA steg i Nivå 2 */}
-<div className="bg-amber-50 border border-amber-200 rounded-lg p-4 mb-6">
-  <h4 className="text-sm font-bold text-amber-900 mb-2">📜 {data.source_title || "Källtext"}:</h4>
+<div className="bg-[#fdfbf7] border border-[#e5e0d5] rounded-lg p-4 mb-6">
+  <h4 className="text-sm font-bold text-slate-800 mb-2">📜 {data.source_title || "Källtext"}:</h4>
   <p className="text-sm text-gray-700 leading-relaxed italic">
     {data.source_text}
   </p>
 </div>
           {/* Current Step */}
-          <div className="bg-white border-2 border-amber-200 rounded-lg p-6">
-            <h3 className="text-lg font-bold text-amber-900 mb-4">
+          <div className="bg-white border-2 border-[#e5e0d5] rounded-lg p-6">
+            <h3 className="text-lg font-bold text-slate-800 mb-4">
               Steg {currentStep} av 4: {currentStepData.question}
             </h3>
 
@@ -233,7 +234,7 @@ setStepFeedback({
                 <select
                   value={answers.step1}
                   onChange={(e) => handleStep1Change(e.target.value)}
-                  className="w-full px-4 py-3 border-2 border-amber-200 rounded-lg focus:border-amber-500 focus:outline-none text-lg"
+                  className="w-full px-4 py-3 border-2 border-[#e5e0d5] rounded-lg focus:border-[#1a1a2e] focus:outline-none text-lg"
                 >
                   <option value="">Välj ett alternativ...</option>
                   {currentStepData.options.map((option, index) => (
@@ -246,7 +247,7 @@ setStepFeedback({
                 {stepFeedback.step1 && (
                   <div className={`p-4 rounded-lg ${
                     stepFeedback.step1.correct 
-                      ? 'bg-green-50 border border-green-300' 
+                      ? 'bg-[#fefce8] border border-[#eab308]' 
                       : 'bg-red-50 border border-red-300'
                   }`}>
                     <p className="text-sm">{stepFeedback.step1.feedback}</p>
@@ -254,8 +255,8 @@ setStepFeedback({
                 )}
 
                 {answers.step1 && (
-                  <div className="bg-amber-50 border border-amber-200 rounded-lg p-4">
-                    <p className="text-sm font-medium text-amber-900 mb-1">Din text hittills:</p>
+                  <div className="bg-[#fdfbf7] border border-[#e5e0d5] rounded-lg p-4">
+                    <p className="text-sm font-medium text-slate-800 mb-1">Din text hittills:</p>
                     <p className="text-gray-800">{currentStepData.template_output.replace('[VALT SVAR]', answers.step1)}</p>
                   </div>
                 )}
@@ -275,7 +276,7 @@ setStepFeedback({
                   value={answers[`step${currentStep}`]}
                   onChange={(e) => handleTextInput(`step${currentStep}`, e.target.value)}
                   placeholder={`Skriv minst ${currentStepData.min_length} tecken...`}
-                  className="w-full px-4 py-3 border-2 border-amber-200 rounded-lg focus:border-amber-500 focus:outline-none min-h-[120px] text-lg"
+                  className="w-full px-4 py-3 border-2 border-[#e5e0d5] rounded-lg focus:border-[#1a1a2e] focus:outline-none min-h-[120px] text-lg"
                 />
 
                 <p className="text-sm text-gray-600">
@@ -285,7 +286,7 @@ setStepFeedback({
                 {stepFeedback[`step${currentStep}`] && (
                   <div className={`p-4 rounded-lg ${
                     stepFeedback[`step${currentStep}`].correct 
-                      ? 'bg-green-50 border border-green-300' 
+                      ? 'bg-[#fefce8] border border-[#eab308]' 
                       : 'bg-orange-50 border border-orange-300'
                   }`}>
                     <p className="text-sm">{stepFeedback[`step${currentStep}`].feedback}</p>
@@ -297,8 +298,8 @@ setStepFeedback({
 
           {/* Preview of full text */}
           {currentStep > 1 && (
-            <div className="bg-amber-50 border border-amber-200 rounded-lg p-6">
-              <h4 className="text-sm font-bold text-amber-900 mb-3">Din analys hittills:</h4>
+            <div className="bg-[#fdfbf7] border border-[#e5e0d5] rounded-lg p-6">
+              <h4 className="text-sm font-bold text-slate-800 mb-3">Din analys hittills:</h4>
               <div className="space-y-2 text-gray-800">
                 {currentStep >= 1 && answers.step1 && (
                   <p>I texten finns problemet <strong>{answers.step1}</strong>.</p>
@@ -323,7 +324,7 @@ setStepFeedback({
               currentStep === 1 ? !answers.step1 : 
               answers[`step${currentStep}`].length < currentStepData.min_length
             }
-            className="px-6 py-3 bg-amber-600 text-white rounded-lg hover:bg-amber-700 transition-colors disabled:bg-gray-300 disabled:cursor-not-allowed font-medium flex items-center gap-2"
+            className="px-6 py-3 bg-[#1a1a2e] text-[#eab308] rounded-lg hover:bg-[#16213e] transition-colors disabled:bg-gray-300 disabled:cursor-not-allowed font-medium flex items-center gap-2"
           >
             {currentStep < 4 ? 'Nästa steg' : 'Se min kompletta analys'}
             <ArrowRight className="w-5 h-5" />
@@ -332,10 +333,10 @@ setStepFeedback({
       ) : (
         <>
           {/* Final Analysis */}
-          <div className="bg-green-50 border-2 border-green-300 rounded-lg p-6">
+          <div className="bg-[#fefce8] border-2 border-[#eab308] rounded-lg p-6">
             <div className="flex items-center gap-2 mb-4">
-              <Check className="w-6 h-6 text-green-600" />
-              <h3 className="text-xl font-bold text-green-900">Din kompletta analys</h3>
+              <Check className="w-6 h-6 text-[#eab308]" />
+              <h3 className="text-xl font-bold text-slate-800">Din kompletta analys</h3>
             </div>
 
             <div className="bg-white rounded-lg p-6 mb-4">
@@ -345,28 +346,28 @@ setStepFeedback({
             </div>
 
             <div className="bg-white rounded-lg p-6">
-              <h4 className="font-bold text-green-900 mb-3">Bedömning:</h4>
+              <h4 className="font-bold text-slate-800 mb-3">Bedömning:</h4>
               <div className="space-y-2">
                 <div className="flex items-center gap-2">
-                  <Check className="w-5 h-5 text-green-600" />
+                  <Check className="w-5 h-5 text-[#1a1a2e]" />
                   <span className="text-sm">✓ Du identifierade ett SPECIFIKT problem (inte "vissa problem")</span>
                 </div>
                 <div className="flex items-center gap-2">
-                  <Check className="w-5 h-5 text-green-600" />
+                  <Check className="w-5 h-5 text-[#1a1a2e]" />
                   <span className="text-sm">✓ Du CITERADE konkreta ord från texten</span>
                 </div>
                 <div className="flex items-center gap-2">
-                  <Check className="w-5 h-5 text-green-600" />
+                  <Check className="w-5 h-5 text-[#1a1a2e]" />
                   <span className="text-sm">✓ Du FÖRKLARADE vad orden betyder</span>
                 </div>
                 <div className="flex items-center gap-2">
-                  <Check className="w-5 h-5 text-green-600" />
+                  <Check className="w-5 h-5 text-[#1a1a2e]" />
                   <span className="text-sm">✓ Du gav ett KONKRET exempel</span>
                 </div>
               </div>
 
-              <div className="mt-4 p-4 bg-green-100 rounded-lg">
-                <p className="text-sm font-medium text-green-900">
+              <div className="mt-4 p-4 bg-[#fefce8] rounded-lg">
+                <p className="text-sm font-medium text-slate-800">
                   {template.final_assembly.evaluation["4_parts"]}
                 </p>
               </div>
@@ -379,7 +380,7 @@ setStepFeedback({
               trackLevelStarted(3);
               onComplete();
             }}
-            className="px-6 py-3 bg-green-600 text-white rounded-lg hover:bg-green-700 transition-colors font-medium flex items-center gap-2"
+            className="px-6 py-3 bg-[#1a1a2e] text-white rounded-lg hover:bg-[#16213e] transition-colors font-medium flex items-center gap-2"
           >
             Gå till Nivå 3: Källjämförelse
             <ArrowRight className="w-5 h-5" />

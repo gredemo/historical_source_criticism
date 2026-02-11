@@ -5,6 +5,7 @@ import Level2 from "./components/Level2.jsx";
 import Level3 from "./components/Level3.jsx";
 import { trackSourceSelected, trackLevelStarted } from './analytics';
 import Dashboard from './components/Dashboard.jsx';
+import LandingPage from './components/LandingPage.jsx';
 
 import bremer1 from "./sources/bremer1.json";
 import ida1 from "./sources/ida1.json";
@@ -82,55 +83,18 @@ function App() {
   // VY 1: MENYN
   if (!selectedSource) {
     return (
-      <div className="page-container">
-        <div className="mb-6">
-  <h1 className="page-title">Träna källanalys</h1>
-  <img 
-    src="/stenshuvud.jpg" 
-    alt="Källkritik illustration" 
-    style={{ 
-      width: '100%',
-      height: '200px',
-      maxWidth: '900px',
-      margin: '0 auto',
-      display: 'block',
-      objectFit: 'cover',
-      borderRadius: '12px',
-      boxShadow: '0 4px 6px rgba(0,0,0,0.1)'
-    }}
-  />
-</div>
-
-  <div className="source-grid">
-
-          {sources.map((source) => (
-            <button
-              key={source.id}
-              onClick={() => {
-  setSelectedSource(source);
-  setCurrentLevel(1);
-  trackSourceSelected(source.title);
-  trackLevelStarted(1, 1);
-}}
-              className="p-8 bg-white border-2 border-emerald-200 rounded-2xl hover:border-emerald-500 hover:shadow-xl transition-all text-left group"
-            >
-              <h2 className="text-2xl font-bold text-emerald-900 group-hover:text-emerald-600">{source.title}</h2>
-              <p className="text-emerald-700 mt-2 italic">Klicka för att påbörja analysen</p>
-            </button>
-          ))}
-        </div>
-        {showDashboard && (
-  <button 
-    onClick={() => setSelectedSource('__dashboard__')} 
-    className="mt-8 px-6 py-3 bg-gray-800 text-white rounded-lg hover:bg-gray-900 transition-colors font-medium"
-  >
-    📊 Visa Analytics
-  </button>
-)}
-        <button onClick={resetProgress} className="mt-4 text-sm text-emerald-600 hover:underline">
-          Nollställ alla framsteg
-        </button>
-      </div>
+      <LandingPage
+        sources={sources}
+        onSelectSource={(source) => {
+          setSelectedSource(source);
+          setCurrentLevel(1);
+          trackSourceSelected(source.title);
+          trackLevelStarted(1, 1);
+        }}
+        onShowDashboard={() => setSelectedSource('__dashboard__')}
+        showDashboard={showDashboard}
+        onResetProgress={resetProgress}
+      />
     );
   }
 

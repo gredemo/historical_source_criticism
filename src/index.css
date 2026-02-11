@@ -1,16 +1,14 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, Georgia, serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: linear-gradient(135deg, #f0fdf4 0%, #dcfce7 100%);
+  background: #fdfbf7;
   min-height: 100vh;
 }
 
 h1, h2, h3, h4 {
-  color: #065f46;
+  color: #1a1a2e;
   margin: 0;
 }
 
@@ -41,26 +39,26 @@ button:not(:disabled):hover {
 }
 
 .btn-primary {
-  background: #10b981;
-  color: white;
+  background: #1a1a2e;
+  color: #eab308;
 }
 
 .btn-primary:hover:not(:disabled) {
-  background: #059669;
+  background: #16213e;
 }
 
 .btn-success {
-  background: #10B981;
-  color: white;
+  background: #1a1a2e;
+  color: #eab308;
 }
 
 .btn-success:hover:not(:disabled) {
-  background: #059669;
+  background: #16213e;
 }
 
 .word-selected {
-  background: #d1fae5;
-  color: #065f46;
+  background: #fef3c7;
+  color: #92400e;
   font-weight: 600;
   padding: 2px 4px;
   border-radius: 4px;
@@ -74,12 +72,12 @@ button:not(:disabled):hover {
 }
 
 .clickable-word:hover {
-  background: #d1fae5;
+  background: #fef3c7;
 }
 
 .clickable-word.selected {
-  background: #d1fae5 !important;
-  color: #065f46;
+  background: #fde68a !important;
+  color: #92400e;
   font-weight: 600;
   margin-right: 4px;
 }
@@ -95,45 +93,44 @@ button:not(:disabled):hover {
 }
 
 .progress-circle.completed {
-  background: #10B981;
-  border-color: #10B981;
-  color: white;
+  background: #1a1a2e;
+  border-color: #1a1a2e;
+  color: #eab308;
 }
 
 .progress-circle.unlocked {
   background: white;
-  border-color: #10b981;
-  color: #10b981;
+  border-color: #eab308;
+  color: #eab308;
 }
 
 .source-card {
   background: white;
-  border: 3px solid #10b981;
+  border: 3px solid #1a1a2e;
   border-radius: 16px;
   padding: 32px;
   transition: all 0.3s ease;
-  box-shadow: 0 4px 12px rgba(16, 185, 129, 0.1);
+  box-shadow: 0 4px 12px rgba(26, 26, 46, 0.1);
   cursor: pointer;
 }
 
 .source-card:hover {
-  border-color: #059669;
+  border-color: #0f3460;
   transform: translateY(-4px);
-  box-shadow: 0 12px 24px rgba(16, 185, 129, 0.2);
+  box-shadow: 0 12px 24px rgba(26, 26, 46, 0.2);
 }
 
 .source-card h2 {
-  color: #065f46;
+  color: #1a1a2e;
   margin-bottom: 12px;
 }
 
 .source-card p {
-  color: #047857;
+  color: #16213e;
 }
 
 /* === LAYOUT KLASSER === */
 
-/* Container för centrerat innehåll */
 .page-container {
   min-height: 100vh;
   display: flex;
@@ -142,16 +139,14 @@ button:not(:disabled):hover {
   padding: 48px;
 }
 
-/* Huvudrubrik */
 .page-title {
   font-size: 2.5rem;
   font-weight: bold;
-  color: #065f46;
+  color: #1a1a2e;
   margin-bottom: 48px;
   text-align: center;
 }
 
-/* Grid för källkort */
 .source-grid {
   display: grid;
   gap: 24px;
@@ -161,8 +156,8 @@ button:not(:disabled):hover {
 
 /* Header i övningsvyn */
 .exercise-header {
-  background: #047857;
-  color: white;
+  background: #1a1a2e;
+  color: #fdfbf7;
   padding: 16px 32px;
   display: flex;
   justify-content: space-between;
@@ -175,17 +170,17 @@ button:not(:disabled):hover {
   opacity: 0.9;
 }
 
-/* Knapp i header */
 .header-button {
-  background: #059669;
+  background: #16213e;
   padding: 8px 16px;
   border-radius: 8px;
   font-size: 0.875rem;
+  color: #fdfbf7;
   transition: background 0.2s;
 }
 
 .header-button:hover {
-  background: #10b981;
+  background: #0f3460;
 }
 
 /* Content area */
@@ -196,15 +191,15 @@ button:not(:disabled):hover {
   width: 100%;
 }
 
-/* White box för övningar */
 .exercise-box {
   background: white;
   border-radius: 16px;
-  box-shadow: 0 10px 40px rgba(0,0,0,0.1);
-  border: 2px solid #d1fae5;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.08);
+  border: 2px solid #e5e0d5;
   padding: 32px;
 }
-/* Progress tracker horisontell layout */
+
+/* Progress tracker */
 .progress-tracker {
   display: flex;
   justify-content: center;
@@ -223,42 +218,42 @@ button:not(:disabled):hover {
 
 .progress-item span {
   font-size: 0.875rem;
-  color: #065f46;
+  color: #1a1a2e;
   font-weight: 500;
 }
-
 
 /* Reset-knapp */
 .reset-button {
   margin-top: 48px;
   font-size: 0.875rem;
-  color: #059669;
+  color: #888;
   text-decoration: none;
   cursor: pointer;
 }
 
-/* Källtextruta - tydligt markerad */
+/* Källtextruta */
 .source-text-box {
   background: #fff;
-  border: 3px solid #10b981;
+  border: 3px solid #1a1a2e;
   border-radius: 12px;
   padding: 24px;
   margin: 24px 0;
-  box-shadow: 0 4px 12px rgba(16, 185, 129, 0.15);
+  box-shadow: 0 4px 12px rgba(26, 26, 46, 0.1);
   font-size: 1.1rem;
   line-height: 1.8;
 }
 
 .source-text-label {
   display: inline-block;
-  background: #10b981;
-  color: white;
+  background: #1a1a2e;
+  color: #eab308;
   padding: 6px 16px;
   border-radius: 8px;
   font-weight: 600;
   margin-bottom: 16px;
   font-size: 0.875rem;
 }
+
 .reset-button:hover {
   text-decoration: underline;
 }

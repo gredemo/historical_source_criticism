@@ -78,22 +78,22 @@ export default function Level3({ data, onComplete }) {
 
   // Dynamisk källhantering - stödjer 2+ källor
   const sources = Object.entries(data.source_comparison || {})
-    .sort(([keyA], [keyB]) => keyA.localeCompare(keyB)); // Sortera: source_a, source_b, source_c
+    .sort(([keyA], [keyB]) => keyA.localeCompare(keyB));
 
-  // Färger för olika källor (cyklar om det finns fler än 4)
+  // Färger för olika källor
   const sourceColors = [
-    { bg: 'bg-amber-50', border: 'border-amber-200', title: 'text-amber-900' },
+    { bg: 'bg-[#fdfbf7]', border: 'border-[#e5e0d5]', title: 'text-slate-800' },
     { bg: 'bg-blue-50', border: 'border-blue-200', title: 'text-blue-900' },
     { bg: 'bg-purple-50', border: 'border-purple-200', title: 'text-purple-900' },
-    { bg: 'bg-green-50', border: 'border-green-200', title: 'text-green-900' }
+    { bg: 'bg-[#fefce8]', border: 'border-[#eab308]', title: 'text-slate-800' }
   ];
 
   return (
     <div className="space-y-6">
       {/* Header */}
       <div>
-        <h2 className="text-2xl font-bold text-amber-900">{data.title}</h2>
-        <p className="mt-2 text-amber-700">{data.instruction}</p>
+        <h2 className="text-2xl font-bold text-slate-800">{data.title}</h2>
+        <p className="mt-2 text-slate-600">{data.instruction}</p>
       </div>
 
       {/* Dynamisk visning av alla källor */}
@@ -131,10 +131,10 @@ export default function Level3({ data, onComplete }) {
         })}
       </div>
 
-      <div className="bg-white border-2 border-amber-200 rounded-lg p-6">
-        <h3 className="text-lg font-bold text-amber-900 mb-4">{data.task.question}</h3>
+      <div className="bg-white border-2 border-[#e5e0d5] rounded-lg p-6">
+        <h3 className="text-lg font-bold text-slate-800 mb-4">{data.task.question}</h3>
         
-        {/* Template guide - visar strukturmall */}
+        {/* Template guide */}
         {data.task.template_guide && (
           <div className="bg-purple-50 border-2 border-purple-300 rounded-lg p-4 mb-4">
             <p className="text-sm font-bold text-purple-900 mb-2">📝 Använd denna mall:</p>
@@ -144,7 +144,7 @@ export default function Level3({ data, onComplete }) {
           </div>
         )}
         
-        {/* Helper text - påminner om nyckelord */}
+        {/* Helper text */}
         {data.task.helper_text && (
           <div className="bg-blue-50 border border-blue-200 rounded-lg p-3 mb-4">
             <p className="text-sm text-blue-900">{data.task.helper_text}</p>
@@ -155,7 +155,7 @@ export default function Level3({ data, onComplete }) {
           value={studentText}
           onChange={(e) => setStudentText(e.target.value)}
           placeholder={data.task.placeholder || "Skriv din jämförande analys här... Var SPECIFIK och ge KONKRETA exempel!"}
-          className="w-full px-4 py-3 border-2 border-amber-200 rounded-lg focus:border-amber-500 focus:outline-none min-h-[200px] text-lg"
+          className="w-full px-4 py-3 border-2 border-[#e5e0d5] rounded-lg focus:border-[#1a1a2e] focus:outline-none min-h-[200px] text-lg"
         />
 
         <div className="flex items-center justify-between mt-3">
@@ -194,12 +194,12 @@ export default function Level3({ data, onComplete }) {
       {/* Feedback */}
       {feedback && (
         <div className={`border-2 rounded-lg p-6 ${feedback.isSuccess
-            ? 'bg-green-50 border-green-300'
+            ? 'bg-[#fefce8] border-[#eab308]'
             : 'bg-orange-50 border-orange-300'
           }`}>
           <div className="flex items-center gap-2 mb-4">
             {feedback.isSuccess ? (
-              <Check className="w-6 h-6 text-green-600" />
+              <Check className="w-6 h-6 text-[#eab308]" />
             ) : (
               <X className="w-6 h-6 text-orange-600" />
             )}
@@ -213,7 +213,7 @@ export default function Level3({ data, onComplete }) {
             <div className="space-y-2 mb-4">
               {feedback.foundConcepts.map((concept, index) => (
                 <div key={index} className="flex items-start gap-2 bg-white rounded p-3">
-                  <Check className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
+                  <Check className="w-5 h-5 text-[#1a1a2e] flex-shrink-0 mt-0.5" />
                   <p className="text-sm text-gray-800">{concept.feedback}</p>
                 </div>
               ))}
@@ -290,7 +290,7 @@ export default function Level3({ data, onComplete }) {
         <button
           onClick={evaluateText}
           disabled={wordCount < minWords}
-          className="px-6 py-3 bg-amber-600 text-white rounded-lg hover:bg-amber-700 transition-colors disabled:bg-gray-300 disabled:cursor-not-allowed font-medium"
+          className="px-6 py-3 bg-[#1a1a2e] text-[#eab308] rounded-lg hover:bg-[#16213e] transition-colors disabled:bg-gray-300 disabled:cursor-not-allowed font-medium"
         >
           Få feedback
         </button>
@@ -335,7 +335,7 @@ export default function Level3({ data, onComplete }) {
               trackLevelCompleted(3, null, attempts, true);
               onComplete();
             }}
-            className="px-6 py-3 bg-green-600 text-white rounded-lg hover:bg-green-700 transition-colors font-medium"
+            className="px-6 py-3 bg-[#1a1a2e] text-white rounded-lg hover:bg-[#16213e] transition-colors font-medium"
           >
             ✓ Klart! Du har klarat alla nivåer
           </button>

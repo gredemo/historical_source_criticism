@@ -257,3 +257,7 @@ button:not(:disabled):hover {
 .reset-button:hover {
   text-decoration: underline;
 }
+
+textarea, select, input {
+  color: #1f2937;
+}

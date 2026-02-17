@@ -5,7 +5,7 @@ const themes = [
   {
     name: 'Amerikabrev',
     icon: '✉️',
-    sourceIds: ['bremer_vs_calhoun_bilingual_1850', 'ida_lindgren_kansas_1871', 'bremer_boklin_1862', 'munck_friarbrev_1896'],
+    sourceIds: ['ida_lindgren_kansas_1871', 'per_nilsson_brev', 'bremer_vs_calhoun_bilingual_1850', 'bremer_boklin_1862', 'munck_friarbrev_1896'],
   },
   {
     name: 'Andra världskriget',

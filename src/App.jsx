@@ -7,13 +7,14 @@ import { trackSourceSelected, trackLevelStarted } from './analytics';
 import Dashboard from './components/Dashboard.jsx';
 import LandingPage from './components/LandingPage.jsx';
 
-import bremer1 from "./sources/bremer1.json";
 import ida1 from "./sources/ida1.json";
+import per_nilsson from "./sources/per_nilsson_brev.json";
+import bremer1 from "./sources/bremer1.json";
 import bremer2 from "./sources/bremer2.json";
-import munck_friarbrev_1896 from "./sources/munck_friarbrev_1896.json";  // ← NY RAD
+import munck_friarbrev_1896 from "./sources/munck_friarbrev_1896.json";
 
 function App() {
-  const sources = [bremer1, ida1, bremer2, munck_friarbrev_1896].filter(s => s !== undefined);  // ← UPPDATERAD
+  const sources = [ida1, per_nilsson, bremer1, bremer2, munck_friarbrev_1896, ].filter(s => s !== undefined);
   
   const [selectedSource, setSelectedSource] = useState(null);
   const [currentLevel, setCurrentLevel] = useState(1);

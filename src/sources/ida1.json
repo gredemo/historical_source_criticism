@@ -103,6 +103,7 @@
         "template_output": "Enligt Ida leder den 'fria jorden' till att tjänarna [VALT SVAR]."
       },
       "step2": {
+        "intro_from_previous": "I steg 1 svarade du att Ida menar att tjänarna [STEG1]. Var i texten hittar du detta?",
         "question": "Citera de EXAKTA ord Ida använder om vad tjänarna vill bli.",
         "type": "text_input",
         "min_length": 10,
@@ -122,54 +123,59 @@
         "template_output": "Hon skriver att de [ELEVENS CITAT]."
       },
       "step3": {
-        "question": "Förklara med EGNA ORD vad detta berättar om amerikanskt samhälle. Skriv 2-3 meningar.",
-        "help_text": "Tänk: Varför blir tjänarna annorlunda? Vad finns det i Amerika som Sverige inte har?",
-        "type": "text_input",
-        "min_length": 50,
-        "required_concepts": [
-          {
-            "required_keywords": [
-              "frihet",
-              "jämlikhet",
-              "likhet",
-              "lika",
-              "demokrati",
-              "rättigheter",
-              "fri",
-              "fria"
-            ],
-            "min_keywords_match": 1,
-            "feedback": "Bra! Du förstår att Amerika har mer frihet och jämlikhet."
-          },
-          {
-            "keywords": [
-              "tjänare",
-              "herrar",
-              "damer",
-              "status",
-              "klass",
-              "klasskillnad"
-            ],
-            "feedback": "Utmärkt! Du ser hur klassamhället förändras."
-          }
-        ],
-        "feedback": {
-          "success": "Bra! Du förklarar vad detta betyder för det amerikanska samhället.",
-          "needs_improvement": "Du behöver nämna fler viktiga begrepp. Skriv mer om frihet och klassförändringar."
-        },
-        "anti_patterns": [
-          {
-            "phrases": [
-              "vissa skillnader",
-              "lite annorlunda",
-              "något förändras"
-            ],
-            "warning": "⚠️ Var mer SPECIFIK! VAD förändras? VARFÖR? Använd konkreta ord."
-          }
-        ],
-        "template_output": "Detta visar att [ELEVENS FÖRKLARING]."
-      },
+  "question": "Förklara med EGNA ORD vad detta berättar om amerikanskt samhälle. Skriv 2-3 meningar.",
+  "intro_from_previous": "Du har hittat citatet: \"[STEG2]\". Vad berättar detta om det amerikanska samhället?",
+  "help_text": "Tänk: Varför blir tjänarna annorlunda? Vad finns det i Amerika som Sverige inte har?",
+  "type": "text_input",
+  "min_length": 50,
+  "template_guide": "Inled ditt svar med följande formulering:\nI brevet beskrivs att tjänarna fick en annorlunda inställning till livet i USA. De upplevde att de hade [t.ex. fler rättigheter, annan status, var friare]. Det går att tolka det som att i USA fanns det [rättigheter, frihet, mindre klasskillnader] som de inte hade i Sverige.",
+  "highlighted_words": ["klasskillnad", "rättigheter"],
+  "required_concepts": [
+    {
+      "required_keywords": [
+        "frihet",
+        "jämlikhet",
+        "likhet",
+        "lika",
+        "demokrati",
+        "rättigheter",
+        "fri",
+        "fria",
+        "klasskillnad",
+        "klasskillnader"
+      ],
+      "min_keywords_match": 1,
+      "feedback": "Bra! Du förstår att Amerika har mer frihet och jämlikhet."
+    },
+    {
+      "keywords": [
+        "tjänare",
+        "herrar",
+        "damer",
+        "status",
+        "klass"
+      ],
+      "feedback": "Utmärkt! Du ser hur klassamhället förändras."
+    }
+  ],
+  "feedback": {
+    "success": "Bra! Du förklarar vad detta betyder för det amerikanska samhället.",
+    "needs_improvement": "Du behöver nämna fler viktiga begrepp. Skriv mer om frihet och klassförändringar."
+  },
+  "anti_patterns": [
+    {
+      "phrases": [
+        "vissa skillnader",
+        "lite annorlunda",
+        "något förändras"
+      ],
+      "warning": "⚠️ Var mer SPECIFIK! VAD förändras? VARFÖR? Använd konkreta ord."
+    }
+  ],
+  "template_output": "Detta visar att [ELEVENS FÖRKLARING]."
+},
       "step4": {
+        "intro_from_previous": "Du har förklarat att [STEG3]. Kan du ge ett konkret exempel från texten som visar detta?",
         "question": "Ge ett KONKRET exempel från texten som visar Idas eget hårda arbete.",
         "type": "text_input",
         "min_length": 15,

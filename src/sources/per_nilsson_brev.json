@@ -1,0 +1,251 @@
+{
+  "id": "per_nilsson_brev",
+  "title": "Per Nilsson – Brev från Holmes City, Minnesota (1879–1901)",
+  "type": "primary_source",
+  "category": "Amerikabrev",
+  "source_reference": "Historien om gårdarna mellan Granbäcksbron och Granåbron, Kulturföreningen Brandbolsgårdar",
+  "metadata": {
+    "author": "Per Nilsson, Rörkullen/Lekvattnet, bosatt i Holmes City, Minnesota",
+    "recipient": "Johannes Nilsson i Kärr",
+    "period": "1879–1901",
+    "context": "Brev mellan två gamla vänner som beskriver livet för svenska emigranter i Minnesota. Breven följer familjen Westberg över två decennier."
+  },
+
+  "full_text": "1897: Maria Westberg är för det mesta hos sina barn i St Paul, hon får vara bland dem som en stor fru. Hennes barn är på ärans trappa här i St Paul. Levin och Lovisa driver en stor handel. Erik och även Johan har varit provryttare här i många år med en stor lön. Erik driver även han en stor handel och Johan är provryttare och har en hundra å femtio dollar i månaden. Så de agerar stor härskap alla. Maria och Westberg tackar för hälsningar. Hon är här nu hos sin man i Holmes City och ibland hos sina barn i St Paul. Hon har det bra, hon är som en gammal fru. Men hennes äldsta styfdotter, dotter till Olof Westberg, har nyligen blifvit svagsint. Du vet, hon är af skogsfolket.",
+
+  "level1": {
+    "instruction": "Per Nilsson skriver till sin vän Johannes i Sverige om hur det går för familjen Westberg i Amerika. Läs texten noggrant och hitta de viktigaste orden.",
+
+    "step1": {
+      "title": "Steg 1: Framgång och rikedom",
+      "instruction": "Per beskriver hur bra det går för familjen i Amerika. Klicka på ord som visar framgång, pengar och status.",
+      "hint": "Sök efter ord som har med pengar, ägodelar och status att göra.",
+      "text_highlight": "Maria Westberg är för det mesta hos sina barn i St Paul, hon får vara bland dem som en stor fru. Hennes barn är på ärans trappa här i St Paul. Levin och Lovisa driver en stor handel. Erik och även Johan har varit provryttare här i många år med en stor lön. Erik driver även han en stor handel och Johan är provryttare och har en hundra å femtio dollar i månaden. Så de agerar stor härskap alla.",
+      "correct_words": ["ärans", "trappa", "handel", "lön", "hundra", "femtio", "dollar", "härskap", "fru"],
+      "feedback": {
+        "ärans": "Bra! 'Ärans trappa' visar att barnen har hög status.",
+        "trappa": "Bra! 'Ärans trappa' visar att barnen har hög status.",
+        "handel": "Bra! Handel visar ekonomisk framgång.",
+        "lön": "Bra! Lön visar att de tjänar bra.",
+        "hundra": "Bra! Specifika summor visar rikedom.",
+        "femtio": "Bra! Specifika summor visar rikedom.",
+        "dollar": "Bra! Specifika summor visar rikedom.",
+        "härskap": "Bra! 'Härskap' visar hög social status.",
+        "fru": "Bra! 'Stor fru' visar Marias höga ställning."
+      },
+      "success_threshold": 4
+    },
+
+    "step2": {
+      "title": "Steg 2: Det som avviker",
+      "instruction": "Mitt i framgångsberättelsen nämner Per något som bryter mönstret. Klicka på orden som sticker ut.",
+      "hint": "Sök efter ord som bryter mönstret – något som inte handlar om framgång.",
+      "text_highlight": "Men hennes äldsta styfdotter, dotter till Olof Westberg, har nyligen blifvit svagsint. Du vet, hon är af skogsfolket.",
+      "correct_words": ["styfdotter", "svagsint", "skogsfolket"],
+      "feedback": {
+        "styfdotter": "Bra! Per poängterar att Anna inte är Marias eget barn.",
+        "svagsint": "Bra! Detta bryter mot framgångsbilden.",
+        "skogsfolket": "Bra! Per förklarar Annas tillstånd genom hennes börd."
+      },
+      "success_threshold": 2
+    },
+
+    "step3": {
+      "title": "Steg 3: Hur beskrivs Maria?",
+      "instruction": "Per beskriver Maria på ett speciellt sätt. Klicka på orden som visar hur han framställer henne.",
+      "hint": "Sök efter ord som beskriver hur Maria lever och hur hon uppfattas.",
+      "text_highlight": "Maria och Westberg tackar för hälsningar. Hon är här nu hos sin man i Holmes City och ibland hos sina barn i St Paul. Hon har det bra, hon är som en gammal fru.",
+      "correct_words": ["gammal", "fru", "bra"],
+      "feedback": {
+        "gammal": "Bra! 'Gammal fru' visar att Maria har uppnått en respekterad ställning.",
+        "fru": "Bra! Att kallas 'fru' visar status – hon som var fattighjon i Sverige.",
+        "bra": "Bra! Per betonar att Maria har det bra."
+      },
+      "success_threshold": 2
+    }
+  },
+
+  "level2": {
+    "title": "Nivå 2: Historiska sammanhang",
+    "instruction": "Nu får du se ytterligare ett brev som ger bakgrunden till Marias historia. Analysera hur hennes liv förändrats och vad vi kan – och inte kan – veta utifrån breven.",
+    "source_text": "1897: Maria Westberg är för det mesta hos sina barn i St Paul, hon får vara bland dem som en stor fru. Hennes barn är på ärans trappa här i St Paul. Levin och Lovisa driver en stor handel. Erik och även Johan har varit provryttare här i många år med en stor lön. Erik driver även han en stor handel och Johan är provryttare och har en hundra å femtio dollar i månaden. Så de agerar stor härskap alla. Maria och Westberg tackar för hälsningar. Hon är här nu hos sin man i Holmes City och ibland hos sina barn i St Paul. Hon har det bra, hon är som en gammal fru. Men hennes äldsta styfdotter, dotter till Olof Westberg, har nyligen blifvit svagsint. Du vet, hon är af skogsfolket.",
+    "background_source": {
+      "year": 1879,
+      "title": "Per Nilsson till Johannes Nilsson, 17 november 1879",
+      "text": "Jag vill underrätta dig en liten hemlighet, jag bor i grannskapet med en bekant Olof Jönsson från Gransjötorp eller Skog, han har blivit Enkeman här i Amerika. Han har här ett vackert hem och reder sig godt och inga små barn har han, utan de äro tämmeligen uppvuxna. Han önskar en matmoder från Sverige som han skulle jelpa hit om hon vore hugad dertill. Jag har utnämnt Maria på Tallmon men som jag förmodar att hon är ännu i Norrland torde du vara god och gjöra dig underrättad om hännas adres och hitsända den."
+    },
+
+    "template": {
+      "step1": {
+        "question": "Läs bakgrundsbrevet från 1879 ovan. Varför ville Olof Westberg ha hit Maria från Sverige?",
+        "type": "dropdown",
+        "options": [
+          { "text": "Han var kär i henne", "correct": false, "feedback": "Nej, brevet nämner inget om kärlek. Läs igen – vad söker Olof?" },
+          { "text": "Han behövde en matmoder – någon som skötte hushållet", "correct": true, "feedback": "Rätt! Olof var änkeman och behövde praktisk hjälp. Maria var fattighjon i Sverige och såg en möjlighet." },
+          { "text": "Hon var hans släkting", "correct": false, "feedback": "Nej, det framgår inte att de var släkt. Per 'utnämnde' henne – han föreslog henne." }
+        ],
+        "template_output": "Olof Westberg sökte Maria för att [VALT SVAR]."
+      },
+
+      "step2": {
+        "intro_from_previous": "I steg 1 fick du veta att Olof sökte Maria för att [STEG1]. Jämför nu med hur hon beskrivs 18 år senare.",
+        "question": "Jämför Marias situation 1879 med hur hon beskrivs 1897. Hur har hennes liv förändrats? Inled med den föreslagna meningen.",
+        "type": "text_input",
+        "min_length": 50,
+        "template_guide": "Inled ditt svar med:\nÅr 1879 var Maria fattighjon som behövdes som matmoder. År 1897 beskrivs hon som...",
+        "required_concepts": [
+          {
+            "required_keywords": ["stor fru", "fru", "förnäm", "framgång", "rik", "bättre", "förändrats", "barn"],
+            "min_keywords_match": 1,
+            "feedback": "Bra! Du ser hur Marias ställning har förändrats helt."
+          }
+        ],
+        "feedback": {
+          "success": "Utmärkt! Du visar tydligt förändringen i Marias liv – från fattighjon till 'stor fru' med framgångsrika barn.",
+          "needs_improvement": "Jämför mer konkret: Vad var Maria 1879? Vad kallas hon 1897? Hur lever hon nu?"
+        },
+        "template_output": "Marias liv förändrades genom att [ELEVENS FÖRKLARING]."
+      },
+
+      "step3": {
+        "intro_from_previous": "Du har beskrivit hur Marias liv förändrades: [STEG2]. Men Per nämner också något negativt i brevet.",
+        "question": "Per berättar om familjens framgång men nämner också att Anna är svagsint och 'af skogsfolket'. Gör detta brevet mer eller mindre trovärdigt?",
+        "type": "dropdown",
+        "options": [
+          { "text": "Mer trovärdigt – han berättar inte bara det positiva", "correct": true, "feedback": "Bra resonemang. Per verkar ärlig genom att ta med även negativa detaljer. Det visar att han inte bara skönmålar." },
+          { "text": "Lika trovärdigt – han nämner det men skyller på 'skogsfolket'", "correct": true, "feedback": "Bra iakttagelse! Per distanserar problemet från Marias familj genom att poängtera att Anna är styfdotter och 'af skogsfolket'. Tendensen att framställa emigrationen positivt finns kvar, den är bara mer sofistikerad." }
+        ],
+        "template_output": "Informationen om Anna gör brevet [VALT SVAR]."
+      },
+
+      "step4": {
+        "intro_from_previous": "Du har reflekterat kring brevets trovärdighet. Per skriver 'Du vet, hon är af skogsfolket' – men vad vet egentligen Per och Johannes som vi inte vet?",
+        "question": "Per och Johannes kände varandra sedan Lekvattnet i Sverige. De visste båda vilka familjerna var. Vad kan de ha vetat som vi som läsare INTE kan veta utifrån brevet?",
+        "type": "text_input",
+        "min_length": 40,
+        "template_guide": "Inled ditt svar med:\nEftersom Per och Johannes kände varandra sedan innan kan vi inte veta...",
+        "required_concepts": [
+          {
+            "required_keywords": ["vet inte", "kan inte veta", "saknas", "okänt", "förstå", "osäkert", "gissar", "kände", "visste"],
+            "min_keywords_match": 1,
+            "feedback": "Bra! Du identifierar att källan har begränsningar – det finns saker vi inte kan veta."
+          }
+        ],
+        "feedback": {
+          "success": "Utmärkt! Du förstår en viktig källkritisk poäng: brevskrivare som känner varandra delar en bakgrundskunskap som vi som utomstående läsare inte har tillgång till. Det sätter gränser för vad vi kan tolka.",
+          "needs_improvement": "Tänk på: Per skriver 'Du vet, hon är af skogsfolket'. Vad menar han? Varför behöver han inte förklara mer? Vad vet Johannes som vi inte vet?"
+        },
+        "template_output": "En begränsning med denna källa är att [ELEVENS FÖRKLARING]."
+      },
+
+      "step5": {
+        "intro_from_previous": "Du har identifierat vad vi inte kan veta: [STEG4]. Men det vi KAN se är hur Per väljer att berätta. Varför betonar han framgången så starkt?",
+        "question": "Förklara med EGNA ORD varför Per betonar familjens framgång så starkt. Skriv 2–3 meningar.",
+        "help_text": "Tänk: Vem skriver Per till? Vad vill han visa om livet i Amerika?",
+        "type": "text_input",
+        "min_length": 50,
+        "template_guide": "Inled ditt svar med följande formulering:\nI brevet beskriver Per hur bra familjen Westberg har det i Amerika. Han nämner [t.ex. deras inkomster, status, ägodelar]. Det kan bero på att han vill visa [att emigrationen var värd det, att livet i Amerika är bättre].",
+        "highlighted_words": ["framgång", "status"],
+        "required_concepts": [
+          {
+            "required_keywords": ["visa", "berätta", "imponera", "skryta", "framgång", "bra", "bättre", "lyckats", "värt"],
+            "min_keywords_match": 1,
+            "feedback": "Bra! Du förstår att Per vill visa att det går bra i Amerika."
+          }
+        ],
+        "feedback": {
+          "success": "Bra! Du förklarar varför Per betonar framgången i sina brev.",
+          "needs_improvement": "Tänk på: Varför skriver Per så mycket om pengar och status? Vad vill han att Johannes ska tänka om livet i Amerika?"
+        },
+        "template_output": "Per betonar framgången eftersom [ELEVENS FÖRKLARING]."
+      },
+
+      "final_assembly": {
+        "template": "Olof Westberg sökte Maria för att [STEG1]. Marias liv förändrades genom att [STEG2]. Informationen om Anna gör brevet [STEG3]. En begränsning med denna källa är att [STEG4]. Per betonar framgången eftersom [STEG5].",
+        "evaluation": {
+          "5_parts": "Utmärkt! Du har byggt en komplett analys med alla delar: bakgrund, förändring, trovärdighet, källkritisk begränsning och syfte."
+        }
+      }
+    }
+  },
+
+  "level3": {
+    "title": "Nivå 3: Jämför breven",
+    "instruction": "Nu har du tillgång till fyra brev som Per Nilsson skickade hem till Johannes i Kärr mellan 1879 och 1901. Jämför dem och undersök vad som upprepas, vad som förändras och hur Per framställer livet i Amerika.",
+    "source_comparison": {
+      "source_a": {
+        "title": "Per Nilsson till Johannes Nilsson (1879)",
+        "type": "Privat brev / Primärkälla",
+        "year": 1879,
+        "perspective": "Per förmedlar en 'hemlighet' – Olof söker en matmoder från Sverige.",
+        "text": "Jag vill underrätta dig en liten hemlighet, jag bor i grannskapet med en bekant Olof Jönsson från Gransjötorp eller Skog, han har blivit Enkeman här i Amerika. Han har här ett vackert hem och reder sig godt och inga små barn har han, utan de äro tämmeligen uppvuxna. Han önskar en matmoder från Sverige som han skulle jelpa hit om hon vore hugad dertill. Jag har utnämnt Maria på Tallmon men som jag förmodar att hon är ännu i Norrland torde du vara god och gjöra dig underrättad om hännas adres och hitsända den."
+      },
+      "source_b": {
+        "title": "Per Nilsson till Johannes Nilsson (1897)",
+        "type": "Privat brev / Primärkälla",
+        "year": 1897,
+        "perspective": "Per skildrar familjen Westbergs framgång – barnen är 'på ärans trappa'.",
+        "text": "Maria Westberg är för det mesta hos sina barn i St Paul, hon får vara bland dem som en stor fru. Hennes barn är på ärans trappa här i St Paul. Levin och Lovisa driver en stor handel. Erik och även Johan har varit provryttare här i många år med en stor lön. Erik driver även han en stor handel och Johan är provryttare och har en hundra å femtio dollar i månaden. Så de agerar stor härskap alla. Maria och Westberg tackar för hälsningar. Hon är här nu hos sin man i Holmes City och ibland hos sina barn i St Paul. Hon har det bra, hon är som en gammal fru. Men hennes äldsta styfdotter, dotter till Olof Westberg, har nyligen blifvit svagsint. Du vet, hon är af skogsfolket."
+      },
+      "source_c": {
+        "title": "Per Nilsson till Johannes Nilsson (1899)",
+        "type": "Privat brev / Primärkälla",
+        "year": 1899,
+        "perspective": "Olof Westberg har dött. Per rapporterar om dödsfall, livförsäkring och familjens tillstånd.",
+        "text": "Jag kan underrätta eder att Olof Westberg är genom döden bortgången. Han dog i påskveckan och jordades annandag påsk. Då alla hennes barn från St Paul var hit upp och deltog i likprosassen. Han har varit sjuk 1/2 år. Ja, nu är Maria Enka andra gången. Westberg var lifförsäkrad för 1 000 dollar. Han efterlämnar 4 barn, en pojke pålitlig som sköter egendomen. Alla är ogifta. Hans äldsta dotter är svagsint och har varit på dårhus. Men har blifvit bättre, är hemma nu men icke riktig. Enkan Maria ser så ung och rask ut ännu. Hon är så förnäm och grann som den grannaste fru."
+      },
+      "source_d": {
+        "title": "Per Nilsson till Johannes Nilsson (1901)",
+        "type": "Privat brev / Primärkälla",
+        "year": 1901,
+        "perspective": "Per ger en uppdatering om familjen – fortsatt framgång, men Anna är fortfarande sjuk.",
+        "text": "Jag meddelade ditt brev för Lovisa Levin och Maria Westberg i St Paul. Hälsa Aurelius att där har han en framstående dotter en ädel qvinna med utmärkt stort förstånd och en rådgifvare för hennes man i deras stora handel. De har ett kostbart hus och lösegendom. Maria Westberg är hos sina barn och hon får vara som en gammal fru. Här i huset efter Olof Westberg är hans tre barn som brukar egendomen. De lefver ogifta, men den äldsta af flickorna, Anna, är svagsint. De har haft henne på dårhus men blef icke bättre. Ja, Maria Westberg hon har framstående barn i St Paul. Johan han tjänar stora pengar, har 120 dollar i månaden samt en procent af allt han säljer. Erik är handlande och har det bra, Anna tjänar piga."
+      }
+    },
+    "task": {
+      "question": "Jämför de fyra breven. Vad upprepas genom alla brev? Vad förändras? Tror du att Per skriver för att informera Johannes eller för att imponera? Motivera med exempel från breven.",
+      "type": "free_text",
+      "min_words": 50,
+      "evaluation": {
+        "required_concepts": [
+          {
+            "concept_name": "Konsekvent framgångsbild",
+            "keywords": ["upprepas", "samma", "genomgående", "alltid", "hela tiden", "framgång", "pengar", "handel", "status", "stor fru"],
+            "min_keywords_match": 2,
+            "points": 1,
+            "feedback": "✅ Bra! Du ser att Per genomgående betonar familjens framgång i alla brev."
+          },
+          {
+            "concept_name": "Förändring över tid",
+            "keywords": ["förändras", "ändras", "dör", "död", "enka", "sjuk", "svagsint", "dårhus", "bättre", "sämre"],
+            "min_keywords_match": 1,
+            "points": 1,
+            "feedback": "✅ Bra! Du uppmärksammar att det sker förändringar – Olof dör, Anna är sjuk – men framgångsberättelsen består."
+          },
+          {
+            "concept_name": "Informera eller imponera",
+            "keywords": ["imponera", "visa", "skryta", "överdriva", "informera", "berätta", "ärlig", "tendens", "bild"],
+            "min_keywords_match": 1,
+            "points": 1,
+            "feedback": "✅ Utmärkt! Du reflekterar över Pers syfte med breven."
+          }
+        ],
+        "min_concepts_match": 2,
+        "feedback_levels": {
+          "excellent": "Utmärkt! Du visar att Per genomgående målar en framgångsbild men att det också finns nyanser (Anna, Olofs död). Du reflekterar över om Per skriver för att informera eller imponera – det är en central källkritisk fråga för amerikabreven.",
+          "good": "Bra början! Du har identifierat mönster i breven. Försök utveckla: Varför tror du Per betonar framgången så starkt? Och vad säger det om honom som källa?",
+          "needs_improvement": "Jämför breven mer konkret: Vad skriver Per om i ALLA brev? Vad händer med familjen mellan 1879 och 1901? Och fundera: Vill Per informera eller imponera?"
+        }
+      },
+      "hints": [
+        "Tips 1: Vad skriver Per om Marias barn i varje brev? Finns det ett mönster?",
+        "Tips 2: Anna nämns i tre av breven. Hur förändras hennes situation?",
+        "Tips 3: Tänk på att Per och Johannes känner varandra väl. Varför berättar Per så detaljerat om löner och ägodelar?"
+      ],
+      "model_answer": {
+        "text": "I alla fyra breven betonar Per hur bra familjen Westberg har det i Amerika. Han återkommer till barnens framgångar – deras handel, löner och status. Maria beskrivs genomgående som en 'stor fru' eller 'förnäm och grann'. Det som förändras är att Olof dör 1899 och att Anna är sjuk i flera brev. Men Per låter aldrig det negativa ta över – han återgår alltid till framgångsberättelsen. Det tyder på att Per delvis skriver för att imponera och visa att emigrationen lönade sig. Samtidigt är han ärlig nog att nämna Annas sjukdom, vilket gör breven trovärdiga. Men man kan fråga sig varför han behöver upprepa framgången så ofta om den inte behövde bevisas.",
+        "analysis": "Svaret visar förståelse för tendensbegreppet: Per har ett syfte med sitt berättande. Eleven identifierar både det konsekvent positiva mönstret och nyanserna, och ställer den centrala frågan om informera kontra imponera."
+      }
+    }
+  }
+}

@@ -10,7 +10,7 @@ const themes = [
   {
     name: 'Andra världskriget',
     icon: '⚔️',
-    sourceIds: [],
+    sourceIds: ['dagerman_straff_1946', 'himmler_posen_1943', 'white_plundring_1945'],
   },
 ];
 

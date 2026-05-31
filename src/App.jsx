@@ -12,9 +12,12 @@ import per_nilsson from "./sources/per_nilsson_brev.json";
 import bremer1 from "./sources/bremer1.json";
 import bremer2 from "./sources/bremer2.json";
 import munck_friarbrev_1896 from "./sources/munck_friarbrev_1896.json";
+import dagerman from "./sources/dagerman-straff.json";
+import himmler from "./sources/himmler-posen.json";
+import white from "./sources/white-plundring.json";
 
 function App() {
-  const sources = [ida1, per_nilsson, bremer1, bremer2, munck_friarbrev_1896, ].filter(s => s !== undefined);
+  const sources = [ida1, per_nilsson, bremer1, bremer2, munck_friarbrev_1896, dagerman, himmler, white].filter(s => s !== undefined);
   
   const [selectedSource, setSelectedSource] = useState(null);
   const [currentLevel, setCurrentLevel] = useState(1);
